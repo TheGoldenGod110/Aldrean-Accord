@@ -246,7 +246,7 @@ country_event = { ###Donelo Assassinated
 		set_country_flag = donelo_dead
 	}
 }
-country_event = { ###Unione Nazionalista Banned
+country_event = { ###Nationalist Organizations Banned
 	id = batvia.11
 	title = batvia.11.t
 	desc = batvia.11.d
