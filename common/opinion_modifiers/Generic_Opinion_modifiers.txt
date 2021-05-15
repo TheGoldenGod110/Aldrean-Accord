@@ -1,0 +1,10 @@
+opinion_modifiers = {
+	AA_trade_agreement = {
+		value = 50
+		trade = yes
+	}
+	AA_= {
+		value = 50
+		trade = yes
+	}
+}
