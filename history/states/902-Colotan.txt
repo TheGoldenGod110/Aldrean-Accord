@@ -1,0 +1,9 @@
+state={
+	id=902
+	name="STATE_902"
+	provinces={
+		877 962 2465 2894 3160 3502 3560 4097 4971 5330 5968 10866 10888 10922 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
