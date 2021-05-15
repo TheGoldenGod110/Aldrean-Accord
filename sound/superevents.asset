@@ -1,0 +1,24 @@
+
+soundeffect =
+{
+	name = "superev_collapse"
+	sounds = {
+		sound = "super_collapse"
+	}
+	volume = 0.65
+}
+soundeffect =
+{
+	name = "superev_hcw"
+	sounds = {
+		sound = "super_hadernishcivilwar"
+	}
+	volume = 0.65
+}
+soundeffect = {
+	name = "superev_fire"
+	sounds = {
+		sound = "super_fire"
+	}
+	volume = 0.8
+}

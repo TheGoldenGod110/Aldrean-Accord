@@ -1,0 +1,28 @@
+
+sound = {
+	name = "super_collapse"
+	file = "menu/collapse.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound = {
+	name = "super_fall"
+	file = "menu/fall.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "super_fire"
+	file = "menu/EventFire.wav"
+	volume = 0.95
+	always_load = yes
+}
+sound = {
+	name = "super_hadernishcivilwar"
+	file = "menu/HadernishCivilWar.wav"
+	volume = 0.95
+	always_load = yes
+}
+
+
