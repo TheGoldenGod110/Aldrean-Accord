@@ -1,3 +1,0 @@
-graphical_culture = western_european_gfx
-graphical_culture_2d = SOV
-color = {18 40 35}
