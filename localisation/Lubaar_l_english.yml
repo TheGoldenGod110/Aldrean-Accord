@@ -53,6 +53,12 @@
  LBR_coronation_of_william_desc:0 "Long live the king! But let's hope the kingdom lives longer..."
  LBR_loyalty_to_the_king:0 "Loyalty to the King"
  LBR_loyalty_to_the_king_desc:0 ""
+
+ LBR_burn_the_old_institutions:0 "End of the Old Institutions"
+ LBR_burn_the_old_institutions_desc:0 "The unthinkable has happened. The military has seized power, revealing that the old institutions of royalty and clergy were flimsier than we thought."
+
+ LBR_the_four_edicts:0 "The Four Edicts"
+ LBR_the_four_edicts_desc:0 ""
  
  ###Flavour Events###
  
@@ -63,7 +69,7 @@
 
  ###James Events###
  james.1.t:0 "The Coronation of William"
- james.1.d:0 "With the sudden death of David IV in late 1935, the kingdom was thrown into panic. The late king was the longest reigning king in recent memory, with many having lived an entire lifetime under the same ruler. Expectedly, the national period of mourning brought forth an unearthly silence across the nation. Tens of thousands turned out to the streets of Cardinnia as the king's casket was carried to the royal funeral service.\n\nWilliam I, the former king's only son and heir apparent, subsequently ascended to the throne, later addressing the kingdom, stating a promise to continue his father's legacy. Today, as the youngest king in Lubaar's long history, William was coronated in the halls of the ancient vulguthist Temple of Cardinnia, where the bishop of Siram preformed the rites of the monarchy.\n\nLater, the king appeared on the balcony of Rihan Palace, greeted below by a throng of enthusiastic subjects. And some detractors..."
+ james.1.d:0 "With the sudden death of David IV in late 1935, the kingdom was thrown into panic. The late king was the longest reigning sovereign in recent memory, with many having lived an entire lifetime under the same ruler. Expectedly, the national period of mourning brought forth an unearthly silence across the nation. Tens of thousands turned out to the streets of Cardinnia as the king's casket was carried to the royal funeral service.\n\nWilliam I, the former king's only son and heir apparent, subsequently ascended to the throne, later addressing the kingdom, stating a promise to continue his father's legacy. Today, as the youngest king in Lubaar's long history, William was coronated in the halls of the ancient vulguthist Temple of Cardinnia, where the bishop of Siram preformed the rites of the monarchy.\n\nLater, the king appeared on the balcony of Rihan Palace, greeted below by a throng of enthusiastic subjects. And some detractors..."
  james.1.a:0 "Long live the king!"
 
  james.2.t:0 "Standoff at Court"
@@ -77,7 +83,13 @@
  james.3.b:0 "Surely that's not needed..."
 
  james.4.t:0 "The "Royal" Army"
- james.4.d:0 "In modern times, the royal army has become a growing concern among the governing nobility. Effectively running itself indepdently of the aging institutions, some consider it a rogue force, accountable to noone...But the king of course. That is, in theory at least. The kings of recent memory have seldom excercised power over the autonomous military. This has undoubtedly lead to arrogance among military leadership.\n\nGrowing anti-royal thought in the ranks and a protacted popular resistance have both been increasingly on the mind of the new king. And he was beginning to wonder if these problems had a common factor..."
+ james.4.d:0 "In modern times, the royal army has become a growing concern among the governing nobility. Effectively running itself indepdently of the aging institutions, some consider it a rogue force, accountable to noone...But the king of course. That is, in theory at least. The kings of recent memory have seldom excercised power over the largely autonomous military. This has undoubtedly lead to arrogance among military leadership.\n\nGrowing anti-royal thought in the ranks and a protacted popular resistance have both been increasingly on the mind of the new king. And he was beginning to wonder if these problems had a common factor..."
+ james.4.a:0 "Maybe one day the truth will be revealed."
+
+ james.5.t:0 "Order Restored"
+ james.5.d:0 "After many weeks of Loyalist riots and general civil unrest, the army has pushed the dissidents back into the shadows. The enemies of the new Lubaar have been either arrested or otherwise silenced. Finally, a new government can be formed from the ashes. Chosen by the military, of course."
+ james.5.a:0 "Finally."
+
  ###General Flavour Events###
  
  ###Decision Events###

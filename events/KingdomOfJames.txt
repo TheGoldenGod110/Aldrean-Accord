@@ -56,11 +56,16 @@ country_event = { ###The Army
 	is_triggered_only = yes
 	option = { 
 		name = james.4.a
-		add_stability = -0.01
-		set_country_flag = martial_law
 	}
+}
+country_event = { ###Order Restored
+	id = james.5
+	title = james.5.t
+	desc = james.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
 	option = { 
-		name = james.4.b
-		add_stability = -0.01
+		name = james.5.a
+		add_stability = 0.15
 	}
 }

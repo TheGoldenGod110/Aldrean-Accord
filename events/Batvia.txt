@@ -1,6 +1,6 @@
 add_namespace = batvia
 
-country_event = { ###Major BSP Rally
+country_event = { ###Major PCB Rally
 	id = batvia.1
 	title = batvia.1.t
 	desc = batvia.1.d
@@ -77,7 +77,7 @@ country_event = { ###1936 Election
 		}
 		set_country_flag = elections_over
 		hidden_effect = {
-
+			country_event = { id = batvia.14 days = 8 }
 			news_event = { id = aanews.1 days = 1 }
 		}
 		ai_chance = { factor = 25 }
@@ -283,20 +283,37 @@ country_event = { ###Riots of [GetMonth]
 		add_stability = -0.03
 	}
 }
-country_event = { ###Oxo Criticizes the President-elect
+country_event = { ###Oxo Criticizes the President-elect: Donelo
 	id = batvia.13
 	title = batvia.13.t
 	desc = batvia.13.d
-	picture = GFX_report_event_DEN_amalienborg_riot
+	picture = GFX_report_event_generic_reporters
 	
 	is_triggered_only = yes
 	
 	option = { 
 		name = batvia.13.a
 		add_popularity = {
-			ideology = voulgerism
-			popularity = 0.02
+			ideology = communism
+			popularity = -0.01
 		}
-		add_stability = -0.05
+		add_stability = -0.01
+	}
+}
+country_event = { ###Oxo Criticizes the President-elect: Vasto
+	id = batvia.14
+	title = batvia.14.t
+	desc = batvia.14.d
+	picture = GFX_report_event_generic_reporters
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = batvia.14.a
+		add_popularity = {
+			ideology = voulgerism
+			popularity = -0.01
+		}
+		add_stability = -0.01
 	}
 }

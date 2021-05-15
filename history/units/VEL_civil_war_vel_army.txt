@@ -67,6 +67,9 @@ division_template = {# Motorized
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}
 	priority = 2
 }
 units = {
@@ -94,9 +97,9 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = { # 
-		name = "3rd Hadernsk Infanteridivisjon"
+		name = "5th Hadernsk Motorisert"
 		location = 7045 #Bøgeskov
-		division_template = "Hadernsk Infanteridivisjon"
+		division_template = "Rød Motorisert Divisjoner"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}

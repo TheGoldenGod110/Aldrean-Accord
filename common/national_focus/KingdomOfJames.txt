@@ -33,6 +33,9 @@ focus_tree = {
 		icon = GFX_focus_william_seaton
 		relative_position_id = LBR_coronation_of_william
 		prerequisite = {focus = LBR_coronation_of_william }
+		mutually_exclusive = {
+			focus = LBR_burn_the_old_institutions
+		}
 		x = -4
 		y = 1
 		cost = 5
@@ -47,13 +50,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LBR_t
-		icon = GFX_Generic_Crown_Kaiser
-		relative_position_id = LBR_coronation_of_william
-		prerequisite = {focus = LBR_coronation_of_william }
-		x = 4
+		id = LBR_the_four_edicts
+		icon = GFX_goal_POR_royal_edicts
+		relative_position_id = LBR_loyalty_to_the_king
+		prerequisite = {focus = LBR_loyalty_to_the_king }
+		x = -2
 		y = 1
-		cost = 5
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -62,6 +65,27 @@ focus_tree = {
 		
 		completion_reward = {
 			
+		}
+	}
+	focus = {
+		id = LBR_burn_the_old_institutions
+		icon = GFX_goal_NFA_end_parliamentarism
+		relative_position_id = LBR_coronation_of_william
+		prerequisite = {focus = LBR_coronation_of_william }
+		mutually_exclusive = {
+			focus = LBR_loyalty_to_the_king
+		}
+		x = 4
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 5
+		}
+		cancelable = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = {id = james.5}
 		}
 	}
 }
