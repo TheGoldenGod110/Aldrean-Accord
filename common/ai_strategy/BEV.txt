@@ -1,0 +1,61 @@
+BEV_defend_against_international = {
+	allowed = {
+		tag = BEV
+	}
+
+	enable = {
+		OR = {
+			country_exists = ETT
+			country_exists = ABR
+			country_exists = VEL
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = ETT
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ABR
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = VEL
+		value = 100
+	}
+	ai_strategy = {
+		type = contain
+		id = VEL
+		value = 100
+	}
+	ai_strategy = {
+		type = contain
+		id = ETT
+		value = 100
+	}
+	ai_strategy = {
+		type = contain
+		id = ABR
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = VEL
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ETT
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ABR
+		value = 100
+	}
+}
