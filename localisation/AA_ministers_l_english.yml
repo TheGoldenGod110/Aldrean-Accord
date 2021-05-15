@@ -1,0 +1,291 @@
+﻿l_english:
+ Allows_Democratic_Ministers:0 "Allows §YDemocratic§! Ministers"
+
+###########################################
+## Ministers
+###########################################
+ minister:0 "Ministers"
+ 
+ head_of_government:0 "Deputy"
+ foreign_minister:0 "Foreign Minister"
+ security_minister:0 "Security Minister"
+ economy_minister:0 "Economics Minister"
+ minister:0 "Minister"
+
+ Chief_of_Staff:0 "Chief of Staff"
+ Chief_of_Army:0 "Chief of Army"
+ Chief_of_Navy:0 "Chief of Navy"
+ Chief_of_Airforce:0 "Chief of Airforce"
+ head_of_intel:0 "Head of Intelligence"
+
+###########################################
+## Subideologies for Leaders 
+###########################################
+ 
+ 
+###########################################
+## Traits 
+###########################################
+# Ideologies
+
+# Head of State traits
+ HoS_Barking_Buffoon:0 "Barking Buffoon"
+ HoS_Stern_Imperialist:0 "Stern Imperialist"
+ HoS_Autocratic_Charmer:0 "Autocratic Charmer"
+ HoS_Benevolent_Gentleman:0 "Benevolent Gentleman"
+ HoS_Insignificant_Layman:0 "Insignificant Layman"
+ HoS_Popular_Figurehead:0 "Popular Figurehead"
+ HoS_Resigned_Generalissimo:0 "Resigned Generalissimo"
+ HoS_PowerHungry_Demagogue:0 "Power-Hungry Demagogue"
+ HoS_Die_Hard_Reformer:0 "Die-Hard Reformer"
+ HoS_Weary_Stiff_Neck:0 "Weary Stiff-Neck"
+ HoS_Ruthless_Powermonger:0 "Ruthless Powermonger"
+ HoS_Pig_Headed_Isolationist:0 "Pig-Headed Isolationist"
+
+ HoS_The_Kingfish:0 "The Kingfish"
+ HoS_Paranoid_Megalomaniac:0 "Paranoid Megalomaniac"
+ HoS_Carols_Extravagance:0 "Carol's Extravagance"
+ HoS_Carols_Extravagance_1:0 "Carol's Extravagance"
+ HoS_The_Old_Marshal:0 "Le Vieux Maréchal"
+ HoS_The_Showa:0 "The Showa Emperor"
+ HoS_Democratic_Idealist:0 "Democratic Idealist"
+ HoS_Model_Governor:0 "Model Governor"
+
+# Head of Government traits
+ HoG_Silent_Workhorse:0 "Silent Workhorse"
+ HoG_Naive_Optimist:0 "Naive Optimist"
+ HoG_Flamboyant_Tough_Guy:0 "Flamboyant Tough Guy"
+ HoG_Happy_Amateur:0 "Happy Amateur"
+ HoG_Backroom_Backstabber:0 "Backroom Backstabber"
+ HoG_Smiling_Oilman:0 "Smiling Oilman"
+ HoG_Old_General:0 "Old General"
+ HoG_Old_Admiral:0 "Old Admiral"
+ HoG_Old_Airmarshal:0 "Old Air Marshal"
+ HoG_Political_Protege:0 "Political Protégé"
+ HoG_Ambitious_Union_Boss:0 "Ambitious Union Boss"
+ HoG_Corporate_Suit:0 "Corporate Suit"
+ HoG_Local_Tyrant:0 "Local Tyrant"
+ HoG_Old_Lawyer:0 "Old Lawyer"
+
+ HoG_Bulldog:0 "The Bulldog" # Churchill
+ HoG_Imperialist_Buffoon:0 "Imperialist Buffoon" #Benito Mussolini
+ HoG_The_Tiger:0 "The Tiger" #Clemenceau
+ HoG_Revolutionary_Leader:0 "Revolutionary Leader" #Zapata
+ HoG_Father_of_Guerrilla_Warfare:0 "Father of Guerrilla Warfare" #Abd el-Krim el-Khattabi
+ HoG_The_Brown_Eminence:0 "The Brown Eminence"
+ HoG_Guilty_Man:0 "Guilty Man" # Baldwin
+ HoG_The_Pacifier:0 "The Pacifier" # Chamberlain
+ HoG_Collectivizer:0 "Chairman of the Sovnarkom" # Molotov
+ HoG_Razor:0 "Razor" # Tojo
+ HoG_Zhou_enlai:0 "Zhou Enlai"
+ HoG_Outspoken_Feminist:0 "Outspoken Feminist"
+ 
+# Foreign Minister traits
+ FM_Biased_Intellectual:0 "Biased Intellectual"
+ FM_Ideological_Crusader:0 "Ideological Crusader"
+ FM_Apologetic_Clerk:0 "Apologetic Clerk"
+ FM_Iron_Fisted_Brute:0 "Iron-fisted Brute"
+ FM_Great_Compromiser:0 "Great Compromiser"
+ FM_General_Staffer:0 "General Staffer"
+ FM_The_Cloak_N_Dagger_Schemer:0 "The Cloak-and-Dagger Schemer"
+ 
+ FM_Respectable_Compromiser:0 "Respectable Compromiser" # von Neurath
+ FM_Salesman_Of_Deception:0 "The Salesman of Deception" #von Ribbentrop
+ FM_The_Appeaser:0 "The Appeaser" #Halifax
+ FM_Fascist_Crusader:0 "Fascist Crusader" #Galeazzo Ciano
+ FM_Aggressive_Nationalist:0 "Aggressive Nationalist" #Mussolini
+ FM_Persuader_Of_Democracies:0 "Persuader of Democracies" #Litvinov
+ FM_Father_Of_United_Nations:0 "Father of the UN" #Corder Hull
+ FM_Ambassador_To_UN:0 "Ambassador to the UN" #Edward Stettinius
+ FM_Messianic_Zealot:0 "Messianic Zealot"
+ FM_Traveling_Salesman:0 "Traveling Salesman"
+
+#Minister of Security traits
+ MoS_Silent_Lawyer:0 "Silent Lawyer"
+ MoS_Compassionate_Gentleman:0 "Compassionate Gentleman"
+ MoS_Crime_Fighter:0 "Crime Fighter"
+ MoS_Prince_Of_Terror:0 "Prince of Terror"
+ MoS_Back_Stabber:0 "Back Stabber"
+ MoS_Man_Of_The_People:0 "Man of the People"
+ MoS_Efficient_Sociopath:0 "Efficient Sociopath"
+ MoS_Crooked_Kleptocrat:0 "Crooked Kleptocrat"
+ MoS_Media_Magnate:0 "Media Magnate"
+ MoS_Health_And_Safety:0 "Health and Safety"
+ MoS_Secret_Police_Chief:0 "Secret Police Chief"
+ 
+ MoS_SS_Reichsfuhrer:0 "Reichsführer-SS" # Himmler
+ MoS_Ruthless_Organizer:0 "The Ruthless Organizer" # Frick
+ MoS_Master_Of_Propaganda:0 "Master of Propaganda" # Goebbles
+ MoS_Purged_Purger:0 "Purged Purger" # Genrikh Yagoda
+ MoS_Director_Of_FBI:0 "Director of the FBI" # Hoover
+ MoS_Opposer_Of_The_Far_Right:0 "Opposer of the Far Right" # Marx Dormoy
+ MoS_Culture_Warrior:0 "Culture Warrior"
+ 
+
+ #Armaments Minister traits
+ AM_Administrative_Genius:0 "Administrative Genius"
+ AM_Resource_Industrialist:0 "Resource Industrialist"
+ AM_Laissez_faire_Capitalist:0 "Laissez-faire Capitalist"
+ AM_Theoretical_Scientist:0 "Theoretical Scientist"
+ AM_Military_Entrepreneur:0 "Military Entrepreneur"
+ AM_Corrupt_Kleptocrat:0 "Corrupt Kleptocrat"
+ AM_Oil_Baron:0 "Oil Baron"
+ AM_Steel_Magnate:0 "Steel Magnate"
+ AM_Industrial_Chemist:0 "Industrial Chemist"
+ AM_Planned_Economy_Proponent:0 "Planned Economy Proponent"
+ AM_Keynesian_Economy:0 "Keynesian Economy"
+ AM_Reformer:0 "Reformer"
+ AM_Construction_Magnate:0 "Construction Magnate"
+ AM_Balanced_Budget_Economy:0 "Balanced Budget Proponent"
+ AM_Mixed_Economy:0 "Mixed Economy Proponent"
+
+ AM_Battle_Fleet_Proponent:0 "Battle Fleet Proponent"
+ AM_Submarine_Proponent:0 "Submarine Proponent"
+ AM_Tank_Proponent:0 "Tank Proponent"
+ AM_Infantry_Proponent:0 "Infantry Proponent"
+ AM_Air_To_Ground_Proponent:0 "Air to Ground Proponent"
+ AM_Air_To_Sea_Proponent:0 "Air to Ground Proponent"
+ AM_Strategic_Air_Proponent:0 "Strategic Destruction Proponent"
+ AM_Air_Superiority_Proponent:0 "Air Superiority Proponent"
+ 
+ AM_Genius_Organizer:0 "Genius Organizer" # Speer
+ AM_Organization_todt:0 "Organization 'Todt'" #Todt
+ AM_Autarkic_Fascist:0 "Autarkic Fascist" # Mussolini
+ AM_Iron_Lazar:0 "Iron Lazar" # Lazar M. Kaganovich
+ AM_Orthodox_Economist:0 "Orthodox Economist" # Henry Morgenthau
+ AM_Secretary_Of_War:0 "Secretary of War" # Henry L. Stimson
+ AM_Secretary_Of_The_Interior:0 "Secretary of the Interior" # Harold Ickes
+ AM_Supporter_Of_Devaluation:0 "Supporter of Devaluation" # Auriol
+ AM_Opposer_To_Military_Spending:0 "Opposer to Military Spending" # Georges Bonnet
+ AM_Mad_Man:0 "Mad Man"
+ AM_Space_Enthusiast:0 "Space Enthusiast" #Korolev
+ AM_Gosplan_Boss:0 "Gosplan Boss"
+ 
+
+ # Head of Intelligence traits
+ HoI_Technical_Specialist:0 "Technical Specialist"
+ HoI_Logistics_Specialist:0 "Logistics Specialist"
+ HoI_Political_Specialist:0 "Political Specialist"
+ HoI_Dismal_Enigma:0 "Dismal Enigma"
+ HoI_Industrial_Specialist:0 "Industrial Specialist"
+ HoI_Naval_Intelligence_Specialist:0 "Naval Intelligence Specialist"
+ 
+ HoI_Brilliant_Spymaster:0 "Brilliant Spymaster" #Canaris
+ HoI_The_Hangman:0 "The Hangman" # Heydrich
+ HoI_Quex:0 "Quex" # Hugh Sinclair
+ HoI_Cryptographer:0 "Cryptographer" # William F. Friedman
+ HoI_Double_Agent:0 "Double Agent"
+ HoI_Dai_li_2:0 "Dai li"
+
+ 
+# Chief of Staff traits 
+ CoStaff_School_Of_Manoeuvre:0 "School of Manouevre" 
+ CoStaff_School_Of_Fire_Support:0 "School of Fire Support" 
+ CoStaff_School_Of_Mass_Combat:0 "School of Mass Combat"
+ CoStaff_School_Of_Psychology:0 "School of Psychology"
+ CoStaff_School_Of_Defence:0 "School of Defense"
+ CoStaff_Commando_Doctrine_Staff:0 "School of Special Forces"
+
+ CoStaff_Counterattack_Genius:0 "Counterattack Genius" #Foch
+ CoStaff_Popular_Military_Leader:0 "Popular Military Leader" #Hindenburg
+ CoStaff_Stubborn_Disciplinarian:0 "Stubborn Disciplinarian" #Cadorna
+ CoStaff_Deep_Battle_Proponent:0 "Deep Battle Proponent" #Tukhachevsky
+ CoStaff_Fortifications_Supporter:0 "Fortifications Supporter" #Maurice Gamelin
+ 
+ 
+# Chief of Army traits 
+ CoArmy_Elastic_Defence_Doctrine:0 "Elastic Defence Doctrine" 
+ CoArmy_Static_Defence_Doctrine:0 "Static Defence Doctrine" 
+ CoArmy_Decisive_Battle_Doctrine:0 "Decisive Battle Doctrine" 
+ CoArmy_Armoured_Spearhead_Doctrine:0 "Armoured Spearhead Doctrine" 
+ CoArmy_Guns_And_Butter_Doctrine:0 "Guns and Butter Doctrine" 
+ CoArmy_Commando_Doctrine_Army:0 "Special Forces Doctrine" 
+ CoArmy_Doctrine_Of_Autonomy:0 "Autonomy Doctrine"
+ 
+ CoArmy_Innovative_Offensive_General:0 "Innovative Offensive General" #Brusilov
+ CoArmy_Guerilla_Warfare_Doctrine:0 "Guerilla Warfare Doctrine" # Zapata, Mao ...
+ CoArmy_Undersecretary_Of_War:0 "Undersecretary of War" # Alberto Pariani
+ CoArmy_Static_Defense_Supporter:0 "Static Defense Supporter" # Maurice Gamelin
+ 
+ 
+# Chief of Navy traits 
+ CoNavy_Open_Seas_Doctrine:0 "Open Seas Doctrine" 
+ CoNavy_Decisive_Naval_Battle_Doctrine:0 "Decisive Naval Battle Doctrine" 
+ CoNavy_Power_Projection_Doctrine:0 "Power Projection Doctrine" 
+ CoNavy_Indirect_Approach_Doctrine:0 "Indirect Approach Doctrine" 
+ CoNavy_Base_Control_Doctrine:0 "Base Control Doctrine"
+ 
+ CoNavy_Old_School_Admiral:0 "Old School Admiral" #Cavagnari
+ 
+# Chief of Airforce traits
+ CoAir_Air_Superiority_Doctrine:0 "Air Superiority Doctrine" 
+ CoAir_Naval_Aviation_Doctrine:0 "Naval Aviation Doctrine" 
+ CoAir_Army_Aviation_Doctrine:0 "Army Aviation Doctrine" 
+ CoAir_Carpet_Bombing_Doctrine:0 "Carpet Bombing Doctrine" 
+ CoAir_Vertical_Envelopment_Doctrine:0 "Vertical Envelopment Doctrine"
+ 
+ CoAir_The_Iron_Knight:0 "The Iron Knight" # Goering
+ ###Minister ideologies
+ authoritarian_socialist:0 "Authoritarian Socialist"
+ holmarist:0 "Syndicalist"
+ radical_socialist:0 "Radical Socialist"
+ social_democrat:0 "Social Democrat"
+ liberal_ideology:0 "Liberal"
+ theocrat:0 "Theocrat"
+ conservative_ideology:0 "Social Conservative"
+ auth_democrat:0 "Authoritarian Democrat"
+ autocrat:0 "Autocrat"
+ voulgerist_ideology:0 "Voulgerist"
+ ###Minister localisation
+ LBR_HoG_archille_gerin:0 "Archille Gerin"
+ LBR_HoG_vacant_position:0 "Vacant Position"
+ 
+ BAT_HoG_theodor_olex:0 "Theodor Olex"
+ BAT_FM_alanus_statia:0 "Alanus Statia"
+ BAT_EM_vansarn_coldi:0 "Vansarn Coldi"
+ BAT_MoS_robaldo_ficco:0 "Robaldo Ficco"
+ BAT_HoI_antioco_vila:0 "Antioco Vila"
+ BAT_HoG_vacant_position:0 "Vacant Position"
+ BAT_FM_valan_helona:0 "Valan Helona"
+ BAT_FM_calma_dolantis:0 "Calma Dolantis"
+ BAT_EM_afred_widlen:0 "Afred Widlen"
+ BAT_EM_ganden_vilati:0 "Ganden Vilati"
+ BAT_MoS_kahan_stelma:0 "Kahan Stelma"
+ BAT_MoS_roni_vilidiun:0 "Roni Vilidiun"
+ BAT_HoG_ermilo_roselini:0 "Ermilo Roselini"
+ BAT_HoG_stasimus_betto:0 "Stasimus Betto"
+ 
+ VEL_HoG_leah_foster:0 "Leah Foster"
+ VEL_HoG_patrick_busken:0 "Patrick Busken"
+ VEL_HoG_alma_bergen:0 "Alma Bergen"
+ VEL_FM_frank_hjort:0 "Frank Hjort"
+ VEL_FM_katja_birk:0 "Katja Birk"
+ VEL_FM_erling_torpjaer:0 "Erling Torpjaer"
+ VEL_EM_viktor_elkjaer:0 "Viktor Elkjaer"
+ VEL_EM_jorgen_kjeldsen:0 "Jorgen Kjeldsen"
+ VEL_MoS_robert_vester:0 "Robert Vester"
+ VEL_MoS_osvald_carlsen:0 "Osvald Carlsen"
+ VEL_HoI_jakob_vilmsen:0 "Jakob Vilmsen"
+ VEL_HoG_henning_korsten:0 "Henning Korsten"
+ VEL_FM_tomrik_skov:0 "Tomrik Skov"
+ VEL_EM_oskar_rohde:0 "Oskar Rohde"
+ VEL_MoS_kristina_birch:0 "Kristina Birch"
+ VEL_HoG_robin_voll:0 "Robin Voll"
+ VEL_FM_bjorn_jahr:0 "Bjorn Jahr"
+ VEL_EM_filip_hoener:0 "Filip Hoener"
+ VEL_MoS_ola_vea:0 "Ola Vea"
+ 
+ BEV_HoG_vacant_position:0 "Vacant Position"
+ BEV_HoG_nathan_brasseur:0 "Nathan Brasseur"
+ BEV_HoG_remily_maxian:0 "Remily Maxian"
+ BEV_FM_valan_malux:0 "Valan Malux"
+ BEV_FM_celeon_veaux:0 "Celeon Veaux"
+ BEV_FM_limone_moreau:0 "Limone Moreau"
+ BEV_EM_gaetan_auglen:0 "Gaetan Auglen"
+ BEV_EM_eferen_le_seur:0 "Eferen Le Seur"
+ BEV_EM_josel_vola:0 "Josel Vola"
+ BEV_MoS_rogeny_veilus:0 "Rogeny Veilus"
+ BEV_MoS_albert_rault:0 "Albert Rault"
+ BEV_MoS_cyril_marchier:0 "Cyril Marchier"
+ BEV_HoI_jean_baniste:0 "Jean Baniste"
+ BEV_HoI_abel_beauln:0 "Abel Beauln"
