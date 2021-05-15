@@ -1,0 +1,17 @@
+
+state={
+	id=672
+	name="STATE_672"
+	state_category = rural
+	provinces={
+		48 80 191 589 954 1216 1297 1312 1341 2324 2344 2983 3317 3766 4185 4275 4502 4547 4614 4860 5219 5383 10667 10668 10709 10725 
+	}
+	manpower=1087699
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

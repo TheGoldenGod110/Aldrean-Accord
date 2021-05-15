@@ -1,0 +1,22 @@
+state={
+	id=371
+	name="STATE_371"
+	state_category = rural
+	provinces={
+		2191 2370 2496 3609 10051 
+	}
+	manpower=157165
+	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			10051 10
+		}
+	}
+}

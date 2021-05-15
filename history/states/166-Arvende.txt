@@ -1,0 +1,22 @@
+state={
+	id=166
+	name="STATE_166"
+	state_category = rural
+	provinces={
+		6035 6377 8967 8985 9001 9015 
+	}
+	manpower=352671
+	buildings_max_level_factor=1.000
+	history={
+		owner = RBG
+		controller = RBG
+		add_core_of = RBG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			9001 10
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=713
+	name="STATE_713"
+	state_category = town
+	provinces={
+		17 285 635 1338 1939 2615 2831 4100 10511 10609 
+	}
+	manpower=2985615
+	buildings_max_level_factor=1.000
+	history={
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			2831 10
+		}
+	}
+}
