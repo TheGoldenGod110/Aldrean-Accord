@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_holmarism_group"
+		texturefile = "gfx//interface//ideologies//holmarism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_radical_socialist_group"
+		texturefile = "gfx//interface//ideologies//radical_socialist_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_social_democrat_group"
+		texturefile = "gfx//interface//ideologies//social_democrat_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_autocracy_group"
+		texturefile = "gfx//interface//ideologies//autocracy_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberal_group"
+		texturefile = "gfx//interface//ideologies//liberal_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_authoritarian_democracy_group"
+		texturefile = "gfx//interface//ideologies//authoritarian_democracy_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_conservative_group"
+		texturefile = "gfx//interface//ideologies//conservative_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_authoritarian_socialism_group"
+		texturefile = "gfx//interface//ideologies//authoritarian_socialism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_anarchist_holmarist"
+		texturefile = "gfx//interface//ideologies//anarchist_holmarist.dds"
+	}
+}

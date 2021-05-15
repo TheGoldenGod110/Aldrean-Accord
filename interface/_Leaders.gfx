@@ -1,0 +1,20 @@
+#######################################################################
+# Generated using the Plaza Modding Toolkit (PMT)
+#######################################################################
+
+spriteTypes = {
+	spriteType = {
+        name = "GFX_no_portrait"
+        texturefile = "gfx/leaders/VEL/noportrait.tga"
+    }
+}
+spriteTypes = {
+	spriteType = {
+        name = "GFX_leah_foster"
+        texturefile = "gfx/leaders/VEL/leah_foster.tga"
+    }
+    spriteType = {
+        name = "GFX_alma_bergen"
+        texturefile = "gfx/leaders/VEL/alma_bergen.tga"
+    }
+}
