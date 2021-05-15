@@ -1,0 +1,23 @@
+state={
+	id=623
+	name="STATE_623"
+	state_category = city
+	provinces={
+		245 253 965 1030 1156 1429 1825 1846 2143 2371 2604 4634 4884 5423 7770 
+	}
+	manpower=2657283
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			1156 10
+		}
+	}
+}

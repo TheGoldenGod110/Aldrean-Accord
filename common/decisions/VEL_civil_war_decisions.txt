@@ -1,0 +1,1474 @@
+VEL_civil_war_decisions = {
+
+	recruit_rodlund = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 52
+		}
+		available = {
+			controls_state = 52
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			52 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 18
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			52 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			52 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_9_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					52 = {
+						create_unit = {
+							division = "name = \"1st Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"6th Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"7th Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"8th Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"9th Rødlund Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_6_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					52 = {
+						create_unit = {
+							division = "name = \"1st Rødlund Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Rødlund Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Rødlund Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Rødlund Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Rødlund Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"6th Rødlund Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 9
+			modifier = {
+				factor = 2.0
+				52 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_kalvar = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 42
+		}
+		available = {
+			controls_state = 42
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			42 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 18
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			42 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			42 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_3_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					42 = {
+						create_unit = {
+							division = "name = \"1st Kalvar Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"2nd Kalvar Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"3rd Kalvar Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_9_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					42 = {
+						create_unit = {
+							division = "name = \"1st Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"6th Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"7th Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"8th Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"9th Kalvar Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 9
+			modifier = {
+				factor = 2.0
+				42 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_vilngard = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 58
+		}
+		available = {
+			controls_state = 58
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			58 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 16
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			58 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			58 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_6_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					58 = {
+						create_unit = {
+							division = "name = \"1st Vilngard Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Vilngard Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Vilngard Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Vilngard Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Vilngard Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"6th Vilngard Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_3_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					58 = {
+						create_unit = {
+							division = "name = \"1st Vilngard Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Vilngard Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Vilngard Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				factor = 2.0
+				58 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_ressen = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 43
+		}
+		available = {
+			controls_state = 43
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			43 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 16
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			43 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			43 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_5_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					43 = {
+						create_unit = {
+							division = "name = \"1st Ressen Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"2nd Ressen Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Ressen Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Ressen Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Ressen Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_9_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					create_HRG_infantry_template = yes
+					43 = {
+						create_unit = {
+							division = "name = \"1st Ressen Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"2nd Ressen Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"3rd Ressen Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"4th Ressen Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Ressen Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"6th Ressen Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"1st Ressen Rigesinfanteri\" division_template = \"Rige Infantry Division\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"2nd Ressen Rigesinfanteri\" division_template = \"Rige Infantry Division\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 2.0
+				43 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_medjyvik = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 47
+		}
+		available = {
+			controls_state = 47
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			47 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 14
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			47 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			47 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_3_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					47 = {
+						create_unit = {
+							division = "name = \"1st Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"2nd Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_6_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					create_HRG_infantry_template = yes
+					47 = {
+						create_unit = {
+							division = "name = \"1st Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"1st Medjyvik Rigesinfanteri\" division_template = \"Rige Infantry Division\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				factor = 2.0
+				47 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_horjby = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 60
+		}
+		available = {
+			controls_state = 60
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			60 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 13
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			60 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			60 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_5_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					create_VEL_infantry_template = yes
+					60 = {
+						create_unit = {
+							division = "name = \"1st Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.2"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"4th Medjyvik Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"1st Hadernsk Infanteridivisjon\" division_template = \"Hadernsk Infanteridivisjon\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_5_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					create_HRG_infantry_template = yes
+					60 = {
+						create_unit = {
+							division = "name = \"1st Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"1st Medjyvik Rigesinfanteri\" division_template = \"Rige Infantry Division\"  start_experience_factor = 0.3"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"4th Medjyvik Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.0"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2.0
+				60 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_vibern = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 51
+		}
+		available = {
+			controls_state = 51
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			51 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 9
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			51 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			51 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_2_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					51 = {
+						create_unit = {
+							division = "name = \"1st Vibern Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Vibern Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_2_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					51 = {
+						create_unit = {
+							division = "name = \"1st Vibern Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Vibern Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2.0
+				51 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	recruit_cantrabia = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		highlight_state_targets = {
+			state = 48
+		}
+		available = {
+			controls_state = 48
+			NOT = { has_country_flag = HCW_is_recruiting }
+		}
+
+		visible = {
+			48 = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = HCW_recruited_@ROOT }
+			}
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+			OR = {
+				country_exists = HRG
+				has_global_flag = VEL_civil_war_begun_flag
+			}
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 16
+		
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = HCW_is_recruiting
+			48 = { set_state_flag = HCW_recruiting_@ROOT }
+		}
+		remove_effect = {
+			clr_country_flag = HCW_is_recruiting
+			48 = {
+				clr_state_flag = HCW_recruiting_@ROOT
+				set_state_flag = HCW_recruited_@ROOT
+			}
+			if = {
+				limit = {
+					tag = VEL
+				}
+				custom_effect_tooltip = HCW_recruit_3_units
+				hidden_effect = {
+					create_VEL_militia_template = yes
+					48 = {
+						create_unit = {
+							division = "name = \"1st Cantrabia Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"2nd Cantrabia Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"3rd Cantrabia Arbeiderhær\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = HRG
+				}
+				custom_effect_tooltip = HCW_recruit_6_units
+				hidden_effect = {
+					create_HRG_militia_template = yes
+					48 = {
+						create_unit = {
+							division = "name = \"1st Cantrabia Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"2nd Cantrabia Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"3rd Cantrabia Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"4th Cantrabia Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"5th Cantrabia Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+						create_unit = {
+							division = "name = \"6th Cantrabia Gronvagt\" division_template = \"Gronvagt\"  start_experience_factor = 0.1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ROOT
+							id = 1000
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				factor = 2.0
+				48 = { is_core_of = ROOT }
+			}
+			
+		}
+	}
+	incite_strikes_in_HRG = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = VEL
+		}
+		available = {
+		
+		}
+
+		visible = {
+			country_exists = HRG
+		}
+
+		cancel_trigger = {
+			has_global_flag = VEL_civil_war_over_flag_global
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		days_remove = 40
+		
+		cost = 40
+
+		complete_effect = {
+			set_country_flag = inciting_strikes
+			HRG = {
+				country_event = { id = hadernland.24 }
+			}
+		}
+		remove_effect = {
+			clr_country_flag = inciting_strikes
+		}
+		ai_will_do = {
+			factor = 4
+		}
+	}
+}
+
+VEL_foreign_volunteers = {
+	HCW_support_VEL = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			NOT = {
+				tag = HRG
+				tag = VEL
+			}
+		}
+
+		visible = {
+			has_global_flag = VEL_civil_war_begun_flag_global
+			NOT = {
+				has_global_flag = VEL_civil_war_over_flag_global
+			}
+			arms_factory > 4
+			has_socialist_government = yes
+			NOT = {
+				has_war_with = VEL
+				has_country_flag = HCW_supported_HRG
+				has_country_flag = HCW_supported_VEL
+			}
+			VEL = {
+				has_war_with = HRG
+			}
+		}
+		fire_only_once = no
+		days_remove = 240
+
+		remove_effect = {
+			clr_country_flag = HCW_supported_VEL
+		}
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = 1000_infantry_equipment_1
+		fire_only_once = no
+		
+		complete_effect = {
+			army_experience = 5
+			send_equipment = { target = VEL type = infantry_equipment amount = 1000 }
+			set_country_flag = HCW_supported_VEL
+			VEL = {
+				country_event = { id = hadernland.29 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_equipment = { infantry_equipment < 2000 }
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				AND = {
+					has_government = holmarism
+					VEL = { has_government = holmarism }
+				}
+			}
+		}
+	}
+	HCW_support_HRG = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			NOT = {
+				tag = HRG
+				tag = VEL
+			}
+		}
+
+		visible = {
+			has_global_flag = VEL_civil_war_begun_flag_global
+			NOT = {
+				has_global_flag = VEL_civil_war_over_flag_global
+			}
+			arms_factory > 4
+			has_government = voulgerism
+			NOT = {
+				has_war_with = HRG
+				has_country_flag = HCW_supported_VEL
+				has_country_flag = HCW_supported_HRG
+			}
+			HRG = {
+				has_war_with = VEL
+			}
+		}
+		fire_only_once = no
+		days_remove = 240
+		remove_effect = {
+			clr_country_flag = HCW_supported_HRG
+		}
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = 1000_infantry_equipment_1
+		fire_only_once = no
+		
+		complete_effect = {
+			army_experience = 5
+			send_equipment = { target = HRG type = infantry_equipment amount = 1000 }
+			HRG = {
+				country_event = { id = hadernland.29 }
+			}
+			set_country_flag = HCW_supported_HRG
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_equipment = { infantry_equipment < 2000 }
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				AND = {
+					has_government = voulgerism
+					HRG = { has_government = voulgerism }
+				}
+			}
+		}
+	}
+}
+HCW_restore_order_decisions = {
+	HCW_suppress_resistance = {
+		icon = generic_police_action
+
+		available = {
+			has_full_control_of_state = FROM
+		}
+		allowed = {
+			OR = {
+				tag = VEL
+				tag = HRG
+			}
+		}
+		visible = {
+			FROM = {
+				OR = {
+					region = 3
+					region = 4
+				}
+				has_resistance = yes
+			}
+			has_global_flag = VEL_civil_war_begun_flag_global
+			NOT = { has_global_flag = VEL_civil_war_over_flag_global }
+		}
+
+		state_target = yes
+		target_array = controlled_states
+		target_trigger = {
+			FROM = {
+				OR = {
+					region = 3
+					region = 4
+				}
+				has_resistance = yes
+			}
+		}
+
+		cost = 15
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 0
+				political_power_daily < 0
+			}
+			modifier = {
+				add = FROM.resistance
+			}
+			modifier = {
+				add = FROM.resistance_target
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_compliance = 5
+				add_resistance_target = {
+					amount = -10
+					tooltip = HCW_suppress_resistance_tooltip
+					days = 90
+				}
+				set_garrison_strength = 1
+			}
+		}
+	}
+	HCW_restore_order = {
+		icon = generic_army_support
+
+		available = {
+			has_full_control_of_state = FROM
+			FROM = { compliance > 40 }
+			FROM = { resistance < 10 }
+			FROM = { any_neighbor_state = { is_core_of = ROOT } }
+		}
+
+		visible = {
+			FROM = {
+				OR = {
+					region = 3
+					region = 4
+				}
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		state_target = yes
+		target_array = controlled_states
+		target_trigger = {
+			FROM = {
+				OR = {
+					region = 3
+					region = 4
+				}
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		cost = 0
+		days_remove = 45
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = FROM.state_strategic_value
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { FROM = { is_claimed_by = ROOT } }
+				remove_state_claim = FROM
+			}
+			add_state_core = FROM
+			if = {
+				limit = {tag = VEL}
+				FROM = {
+					remove_core_of = HRG
+					add_claim_by = VEL
+				}
+			}
+			if = {
+				limit = {tag = HRG}
+				FROM = {
+					remove_core_of = VEL
+					add_claim_by = HRG
+				}
+			}
+		}
+	}
+}

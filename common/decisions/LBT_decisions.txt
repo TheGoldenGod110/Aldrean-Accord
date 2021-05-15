@@ -1,0 +1,309 @@
+LBT_march_west = {
+
+	occupy_vijeh = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 308
+				owns_state = 339
+				owns_state = 337
+				owns_state = 312
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 100
+		days_remove = 200
+		
+		complete_effect = {
+			set_country_flag = LBT_marching
+			set_state_owner = 338
+		}
+		remove_effect = {
+			338 = {
+				add_core_of = LBT
+			}
+			clr_country_flag = LBT_marching
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	occupy_salemeh = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 308
+				owns_state = 312
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 80
+		days_remove = 200
+		
+		complete_effect = {
+			set_state_owner = 311
+			set_country_flag = LBT_marching
+		}
+		remove_effect = {
+			311 = {
+				add_core_of = LBT
+			}
+			clr_country_flag = LBT_marching
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	occupy_bujek = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 338
+				owns_state = 339
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 180
+		days_remove = 250
+		
+		complete_effect = {
+			set_country_flag = LBT_marching
+			set_state_owner = 337
+		}
+		remove_effect = {
+			337 = {
+				add_core_of = LBT
+			}
+			clr_country_flag = LBT_marching
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	occupy_sajyn = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 338
+				owns_state = 337
+				owns_state = 310
+				owns_state = 308
+				owns_state = 699
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 180
+		days_remove = 250
+		
+		complete_effect = {
+			set_state_owner = 339
+			set_country_flag = LBT_marching
+		}
+		remove_effect = {
+			339 = {
+				add_core_of = LBT
+			}
+			clr_country_flag = LBT_marching
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	occupy_central_maleban = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 311
+				owns_state = 312
+				owns_state = 338
+				owns_state = 339
+				owns_state = 310
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 60
+		days_remove = 120
+		
+		complete_effect = {
+			set_country_flag = LBT_marching
+			set_state_owner = 308
+		}
+		remove_effect = {
+			308 = {
+				add_core_of = LBT
+			}
+			clr_country_flag = LBT_marching
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	occupy_southern_maleban = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 339
+				owns_state = 699
+				owns_state = 364
+				owns_state = 308
+				owns_state = 310
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 60
+		days_remove = 120
+		
+		complete_effect = {
+			set_country_flag = LBT_marching
+			set_state_owner = 310
+		}
+		remove_effect = {
+			clr_country_flag = LBT_marching
+			310 = {
+				add_core_of = LBT
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	occupy_soyow = {
+
+		icon = GFX_decision_lubertatian_army
+
+		allowed = {
+			tag = LBT
+			ANR = { exists = yes }
+		}
+		available = {
+			OR = {
+				owns_state = 339
+				owns_state = 310
+				owns_state = 364
+			}
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 100
+		days_remove = 140
+		
+		complete_effect = {
+			set_country_flag = LBT_marching
+		}
+		remove_effect = {
+			set_state_owner = 699
+			clr_country_flag = LBT_marching
+			699 = {
+				add_core_of = LBT
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

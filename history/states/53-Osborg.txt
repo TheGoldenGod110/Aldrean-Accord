@@ -1,0 +1,26 @@
+state={
+	id=53
+	name="STATE_53"
+	state_category = large_town
+	provinces={
+		5238 5965 7207 7213 7259 7284 7307 7352 7399 
+	}
+	manpower=1065244
+	buildings_max_level_factor=1.000
+	history={
+		owner = VEL
+		controller = VEL
+		add_core_of = VEL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			7284 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			7284 10
+		}
+	}
+}

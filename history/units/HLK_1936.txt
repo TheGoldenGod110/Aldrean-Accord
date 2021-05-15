@@ -1,0 +1,99 @@
+﻿division_template = {
+	name = "Cantersk Infanteridivisjon"			# Infantry Division - Planned formation for mobilization of divisions, 1937-1940
+	division_names_group = SWE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+      	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+      	infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		
+	}
+}
+division_template = {
+	name = "Arbeiderhær"			# Workers militia
+	division_names_group = SWE_INF_01
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+units = {
+	######## LAND UNITS ########
+	##### Red Army #####
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7451 #Arviken
+		division_template = "Cantersk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7260
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2940
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 2940
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+}
+air_wings = {
+}
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HLK"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HLK"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+}

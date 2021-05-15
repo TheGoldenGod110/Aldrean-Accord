@@ -1,0 +1,23 @@
+
+state={
+	id=306
+	name="STATE_306"
+	state_category = rural
+	provinces={
+		335 408 676 743 1088 1113 1920 2529 2668 3340 4395 4410 5682 9323 9345 9369 9371 9385 9462 9468 9519 
+	}
+	manpower=107818
+	buildings_max_level_factor=1.000
+	history={
+		owner = UZH
+		controller = UZH
+		add_core_of = UZH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			408 10
+		}
+	}
+}

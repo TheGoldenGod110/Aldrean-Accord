@@ -1,0 +1,24 @@
+state={
+	id=212
+	name="STATE_212"
+	state_category = large_town
+	provinces={
+		1023 2692 4070 4299 8683 8691 8699 8700 8716 8733 
+	}
+	manpower=2236672
+	buildings_max_level_factor=1.000
+	history={
+		owner = ORN
+		controller = ORN
+		add_core_of = ORN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			1023 10
+		}
+	}
+}

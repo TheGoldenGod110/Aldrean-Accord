@@ -1,0 +1,297 @@
+BEV_ignore_ettin_claims = {
+	allowed = {
+		tag = BEV
+	}
+	enable = {
+		is_faction_leader = yes
+		date < 1940.1.1
+		country_exists = ETT
+		NOT = { has_war_with = ETT }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "ETT"
+		value = 1
+	}
+}
+international_bevarania = {
+	enable = {
+		is_in_faction_with = VEL
+		has_socialist_government = yes
+		country_exists = BEV
+		BEV = { is_faction_leader = yes }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = contain
+		id = "BEV"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BEV"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "BEV"
+		value = 200
+	}
+}
+hadernland_protect_international = {
+	allowed = {
+		tag = VEL
+	}
+	enable = {
+		has_war_with = BEV
+		is_in_faction_with = ETT
+		num_divisions > 5
+		BEV = { has_capitulated = no }
+		NOT = {
+			OR = {
+				surrender_progress > 0
+				has_war_with = HRG
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 5
+	}
+	ai_strategy = {
+		type = protect
+		id = "ETT"
+		value = 25
+	}
+	ai_strategy = {
+		type = support
+		id = "ETT"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ETT"
+		value = 10000
+	}
+	ai_strategy = {
+		type = protect
+		id = "ABR"
+		value = 150
+	}
+	ai_strategy = {
+		type = support
+		id = "ABR"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ABR"
+		value = 10000
+	}
+}
+international_hadernland = {
+	allowed = {
+		NOT = { tag = VEL }
+	}
+	enable = {
+		is_in_faction_with = VEL
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "VEL"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "VEL"
+		value = 200
+	}
+}
+holmarists_to_hadernland = {
+	allowed = {
+		NOT = {
+			tag = ETT
+			tag = ABR
+		}
+	}
+	enable = {
+		has_socialist_government = yes
+		NOT = { is_in_faction_with = VEL }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "VEL"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "VEL"
+		value = 100
+	}
+}
+holmarists_to_ettinland = {
+	allowed = {
+		NOT = {
+			tag = VEL
+			tag = ABR
+		}
+	}
+	enable = {
+		has_socialist_government = yes
+		NOT = { is_in_faction_with = VEL }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "ETT"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ETT"
+		value = 100
+	}
+}
+international_likes_ABR = {
+	allowed = {
+		NOT = { tag = ABR }
+	}
+	enable = {
+		is_in_faction_with = VEL
+		has_socialist_government = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "ABR"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ABR"
+		value = 100
+	}
+}
+international_likes_batvia = {
+	allowed = {
+		NOT = { tag = BAT }
+	}
+	enable = {
+		is_in_faction_with = VEL
+		has_socialist_government = yes
+		BAT= {
+			has_socialist_government = yes
+			NOT = { has_war_with = VEL }
+		}
+		BAT = {
+			is_in_faction_with = VEL
+			has_socialist_government = yes
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "BAT"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "BAT"
+		value = 100
+	}
+}
+international_dislikes_auth_helgaria = {
+	allowed = {
+		NOT = { tag = HLG }
+		NOT = { has_government = authoritarian_socialism }
+	}
+	enable = {
+		is_in_faction_with = VEL
+		has_socialist_government = yes
+		HLG = {
+			has_government = authoritarian_socialism
+		}
+		NOT = {
+			HLG = {
+				is_in_faction_with = VEL
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "HLG"
+		value = -100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "HLG"
+		value = -100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "HLG"
+		value = 100
+	}
+}
+VEL_dont_naval_invade_bevarania = {
+	allowed = { tag = VEL }
+	enable = {
+		has_war_with = BEV
+		ETT= { has_capitulated = no }
+		ABR = { has_capitulated = no }
+		BEV = { surrender_progress < 0.25 }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "BEV"
+		value = -2000
+	}
+}
+VEL_keep_garrison = {
+	allowed = { tag = VEL }
+	enable = {
+		tag = VEL
+		has_global_flag = VEL_civil_war_over_flag_global
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		ratio = 0.20
+
+		states = {
+			42 #Kalvar
+			43 #Ressen
+			53 #Rodlund
+			48 #Cantrabia
+		}
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=91
+	name="STATE_91"
+	state_category = town
+	provinces={
+		33 305 337 1091 1131 1644 2827 3209 4002 4335 4438 5391 5794 5811 5880 6131 6230 6977 7008 7018 7064 7121 7161 7212 
+	}
+	manpower=732561
+	buildings_max_level_factor=1.000
+	history={
+		owner = ETT
+		controller = ETT
+		add_core_of = ETT
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+			4335 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			4335 10
+		}
+	}
+}

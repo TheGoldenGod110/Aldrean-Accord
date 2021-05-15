@@ -1,0 +1,23 @@
+state={
+	id=635
+	name="STATE_635"
+	state_category = city
+	provinces={
+		2838 5028 5855 5983 6463 7073 7124 7125 
+	}
+	manpower=1825442
+	buildings_max_level_factor=1.000
+	history={
+		owner = OXM
+		controller = OXM
+		add_core_of = OXM
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			5028 25
+		}
+	}
+}

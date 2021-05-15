@@ -1,0 +1,26 @@
+state={
+	id=603
+	name="STATE_603"
+	state_category = rural
+	provinces={
+		97 537 1325 1357 2551 3080 4264 4586 4991 5957 6619 6627 6635 6639 6648 6667 6701 
+	}
+	manpower=423461
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			4586 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			4586 10
+		}
+	}
+}

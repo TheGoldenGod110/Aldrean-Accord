@@ -1,0 +1,22 @@
+state={
+	id=661
+	name="STATE_661"
+	state_category = large_town
+	provinces={
+		363 1890 2205 3547 6493 7368 
+	}
+	manpower=1299362
+	buildings_max_level_factor=1.000
+	history={
+		owner = AVI
+		controller = AVI
+		add_core_of = AVI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			1890 20
+		}
+	}
+}

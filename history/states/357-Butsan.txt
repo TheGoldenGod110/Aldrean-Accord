@@ -1,0 +1,27 @@
+
+state={
+	id=357
+	name="STATE_357"
+	state_category = town
+	provinces={
+		244 1331 1967 2161 2340 2707 3504 3518 3769 6167 6181 6275 6450 9942 10004 10013 
+	}
+	manpower=1256719
+	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			2340 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			9942 10
+		}
+	}
+}

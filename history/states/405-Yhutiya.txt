@@ -1,0 +1,24 @@
+
+state={
+	id=405
+	name="STATE_405"
+	state_category = town
+	provinces={
+		100 845 1254 1434 2836 4111 4718 9358 9365 9509 
+	}
+	manpower=1043763
+	buildings_max_level_factor=1.000
+	history={
+		owner = UZK
+		controller = UZK
+		add_core_of = UZK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			1434 10
+		}
+	}
+}

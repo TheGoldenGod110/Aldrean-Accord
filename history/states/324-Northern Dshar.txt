@@ -1,0 +1,29 @@
+state={
+	id=324
+	name="STATE_324"
+	state_category = town
+	resources = {
+		rubber = 75
+	}
+	provinces={
+		497 1681 2189 2879 3916 5027 9905 9909 9936 9952 9972 
+	}
+	manpower=2816678
+	buildings_max_level_factor=1.000
+	history={
+		owner = HMR
+		controller = HMR
+		add_core_of = HMR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			9909 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			3916 20
+		}
+	}
+}

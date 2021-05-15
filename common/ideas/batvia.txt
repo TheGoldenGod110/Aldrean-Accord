@@ -1,0 +1,199 @@
+ideas = {
+	country = {
+		economic_recession = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = economic_recession
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		recovering_economic_recession = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = economic_recession
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		lobbyists = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = powerful_lobbyists
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = -0.5
+			}
+		}
+		socialist_internment = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = socialist_internment
+			
+			modifier = {
+				holmarism_drift = -0.1
+				weekly_manpower = -20
+			}
+		}
+		corporatist_economy = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = corporatist_economy
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		batvian_revisionism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = batvian_revisionism
+			
+			modifier = {
+				voulgerism_drift = 0.05
+				conscription_factor = 0.15
+			}
+		}
+		batvian_revisionism_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = batvian_revisionism
+			
+			modifier = {
+				voulgerism_drift = 0.05
+				conscription_factor = 0.20
+				army_morale_factor = 0.1
+			}
+		}
+		racial_inequality = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				conscription_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+		decentralized_government = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = anarchist_government
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = 0.15
+			}
+		}
+		supreme_presidential_power = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = no
+			}
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_gain = 0.5
+				authoritarian_socialism_drift = 0.05
+			}
+		}
+	}
+}

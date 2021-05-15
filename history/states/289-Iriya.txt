@@ -1,0 +1,24 @@
+
+state={
+	id=289
+	name="STATE_289"
+	state_category = town
+	provinces={
+		6219 6291 9737 9791 
+	}
+	manpower=168018
+	buildings_max_level_factor=1.000
+	history={
+		owner = LBT
+		controller = LBT
+		add_core_of = LBT
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			9791 30
+		}
+	}
+}

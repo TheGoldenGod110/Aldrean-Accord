@@ -1,0 +1,23 @@
+state={
+	id=333
+	name="STATE_333"
+	state_category = town
+	provinces={
+		2307 2711 3008 3976 4235 5042 5069 5455 6315 10037 10052 10062 10084 10085 10089 10106 10111 10118 10160 10190 
+	}
+	manpower=2167810
+	buildings_max_level_factor=1.000
+	history={
+		owner = HMR
+		controller = HMR
+		add_core_of = HMR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			10037 10
+		}
+	}
+}

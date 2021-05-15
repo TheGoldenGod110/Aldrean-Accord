@@ -1,0 +1,23 @@
+
+state={
+	id=297
+	name="STATE_297"
+	state_category = rural
+	provinces={
+		1455 1848 2149 2289 2296 3345 3565 5044 5139 5415 5590 5636 5748 5923 6127 6558 9390 9502 9517 9557 
+	}
+	manpower=156288
+	buildings_max_level_factor=1.000
+	history={
+		owner = OZR
+		controller = OZR
+		add_core_of = OZR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			5636 10
+		}
+	}
+}

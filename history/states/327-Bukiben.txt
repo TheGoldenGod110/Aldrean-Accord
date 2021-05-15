@@ -1,0 +1,23 @@
+state={
+	id=327
+	name="STATE_327"
+	state_category = large_town
+	provinces={
+		2246 3688 3803 5177 5657 10102 10151 10158 10163 
+	}
+	manpower=1667156
+	buildings_max_level_factor=1.000
+	history={
+		owner = HMR
+		controller = HMR
+		add_core_of = HMR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			5657 10
+		}
+	}
+}

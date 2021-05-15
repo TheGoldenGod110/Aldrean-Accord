@@ -1,0 +1,24 @@
+state={
+	id=96
+	name="STATE_96"
+	state_category = town
+	provinces={
+		2454 4089 4492 6195 7093 7139 7181 7182 7206 7252 7302 
+	}
+	manpower=1034722
+	buildings_max_level_factor=1.000
+	history={
+		owner = GDY
+		controller = GDY
+		add_core_of = GDY
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+		}
+		victory_points = {
+			7252 10
+		}
+	}
+}

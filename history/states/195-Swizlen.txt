@@ -1,0 +1,27 @@
+
+state={
+	id=195
+	name="STATE_195"
+	state_category = town
+	provinces={
+		939 1752 3134 3420 3615 3618 6166 8312 8342 8346 8361 8390 8395 8440 8533 8567 
+	}
+	manpower=1725550
+	buildings_max_level_factor=1.000
+	history={
+		owner = ORN
+		controller = ORN
+		add_core_of = ORN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			6166 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			8533 10
+		}
+	}
+}

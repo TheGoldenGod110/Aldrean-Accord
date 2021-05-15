@@ -1,0 +1,27 @@
+state={
+	id=589
+	name="STATE_589"
+	state_category = metropolis
+	provinces={
+		2202 2600 2715 3944 5912 7099 7143 7174 7273 
+	}
+	manpower=3715512
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+			2202 = {
+				naval_base = 7
+			}
+		}
+		victory_points = {
+			2202 45
+		}
+	}
+}

@@ -1,0 +1,358 @@
+has_same_government_as_ROOT = {
+	OR = {
+		AND = {
+			has_government = holmarism
+			ROOT = { has_government = holmarism }
+		}
+		AND = {
+			has_government = authoritarian_socialism
+			ROOT = { has_government = authoritarian_socialism }
+		}
+		AND = {
+			has_government = radical_socialist
+			ROOT = { has_government = radical_socialist }
+		}
+		AND = {
+			has_government = social_democrat
+			ROOT = { has_government = social_democrat }
+		}
+		AND = {
+			has_government = liberal
+			ROOT = { has_government = liberal }
+		}
+		AND = {
+			has_government = theocratic
+			ROOT = { has_government = theocratic }
+		}
+		AND = {
+			has_government = conservative
+			ROOT = { has_government = conservative}
+		}
+		AND = {
+			has_government = authoritarian_democracy
+			ROOT = { has_government = authoritarian_democracy }
+		}
+		AND = {
+			has_government = autocracy
+			ROOT = { has_government = autocracy }
+		}
+		AND = {
+			has_government = voulgerism
+			ROOT = { has_government = voulgerism }
+		}
+	}
+}
+has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_socialist
+		OR = {
+			has_government = radical_socialist
+			has_government = holmarism
+			has_government = authoritarian_socialism
+		}
+	}
+}
+not_has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_not_socialist
+		NOT = {
+			has_government = holmarism
+			has_government = radical_socialist
+			has_government = authoritarian_socialism
+		}
+	}
+}
+has_elected_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_elected
+		OR = {
+			has_government = liberal
+			has_government = social_democrat
+			has_government = conservative
+		}
+	}
+}
+not_has_elected_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_not_elected
+		NOT = {
+			has_government = liberal
+			has_government = social_democrat
+			has_government = conservative
+		}
+	}
+}
+has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_democratic
+		OR = {
+			has_government = liberal
+			has_government = social_democrat
+			has_government = conservative
+			has_government = authoritarian_democracy
+		}
+	}
+}
+not_has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_not_democratic
+		NOT = {
+			has_government = liberal
+			has_government = social_democrat
+			has_government = conservative
+			has_government = authoritarian_democracy
+		}
+	}
+}
+has_authoritarian_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_authoritarian
+		OR = {
+			has_government = autocracy
+			has_government = authoritarian_democracy
+			has_government = theocratic
+			has_government = voulgerism
+		}
+	}
+}
+not_has_authoritarian_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_not_authoritarian
+		NOT = {
+			has_government = authoritarian_democracy
+			has_government = autocracy
+			has_government = theocratic
+			has_government = voulgerism
+		}
+	}
+}
+has_dictatorship_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_dictatorship
+		OR = {
+			has_government = autocracy
+			has_government = voulgerism
+		}
+	}
+}
+not_has_dictatorship_government = {
+	custom_trigger_tooltip = {
+		tooltip = AA_is_not_dictatorship
+		NOT = {
+			has_government = autocracy
+			has_government = voulgerism
+		}
+	}
+}
+same_government_type_as_ROOT = {
+	OR = {
+		AND = {
+			has_socialist_government = yes
+			ROOT = { has_socialist_government = yes }
+		}
+		AND = {
+			has_democratic_government = yes
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			has_dictatorship_government = yes
+			ROOT = { has_dictatorship_government = yes }
+		}
+	}
+}
+has_head_of_government = {
+	OR = {
+		has_idea_with_trait = HoG_Silent_Workhorse
+		has_idea_with_trait = HoG_Naive_Optimist
+		has_idea_with_trait = HoG_Flamboyant_Tough_Guy
+		has_idea_with_trait = HoG_Happy_Amateur
+		has_idea_with_trait = HoG_Backroom_Backstabber
+		has_idea_with_trait = HoG_Smiling_Oilman
+		has_idea_with_trait = HoG_Old_General
+		has_idea_with_trait = HoG_Old_Admiral
+		has_idea_with_trait = HoG_Old_Airmarshal
+		has_idea_with_trait = HoG_Political_Protege
+		has_idea_with_trait = HoG_Ambitious_Union_Boss
+		has_idea_with_trait = HoG_Corporate_Suit
+		has_idea_with_trait = HoG_Local_Tyrant
+		has_idea_with_trait = HoG_Old_Lawyer
+		has_idea_with_trait = HoG_Bulldog
+		has_idea_with_trait = HoG_Imperialist_Buffoon
+		has_idea_with_trait = HoG_The_Tiger
+		has_idea_with_trait = HoG_Revolutionary_Leader
+		has_idea_with_trait = HoG_The_Brown_Eminence
+		has_idea_with_trait = HoG_Guilty_Man
+		has_idea_with_trait = HoG_The_Pacifier
+		has_idea_with_trait = HoG_Collectivizer
+		has_idea_with_trait = HoG_Razor
+		has_idea_with_trait = HoG_Zhou_enlai
+		has_idea_with_trait = HoG_Jiang_jieshi_1
+		has_idea_with_trait = HoG_Sun_Zhongshan_2
+		has_idea_with_trait = HoG_Outspoken_Feminist
+	}
+}
+
+has_foreign_minsiter = {
+	OR = {
+		has_idea_with_trait = FM_Biased_Intellectual
+		has_idea_with_trait = FM_Ideological_Crusader
+		has_idea_with_trait = FM_Apologetic_Clerk
+		has_idea_with_trait = FM_Iron_Fisted_Brute
+		has_idea_with_trait = FM_Great_Compromiser
+		has_idea_with_trait = FM_General_Staffer
+		has_idea_with_trait = FM_The_Cloak_N_Dagger_Schemer
+		has_idea_with_trait = FM_Respectable_Compromiser
+		has_idea_with_trait = FM_Salesman_Of_Deception
+		has_idea_with_trait = FM_The_Appeaser
+		has_idea_with_trait = FM_Fascist_Crusader
+		has_idea_with_trait = FM_Aggressive_Nationalist
+		has_idea_with_trait = FM_Persuader_Of_Democracies
+		has_idea_with_trait = FM_Father_Of_United_Nations
+		has_idea_with_trait = FM_Ambassador_To_UN
+		has_idea_with_trait = FM_Supporter_Of_Friendly_Relations
+		has_idea_with_trait = FM_Messianic_Zealot
+		has_idea_with_trait = FM_Traveling_Salesman
+	}
+}
+
+has_minister_of_security = {
+	OR = {
+		has_idea_with_trait = MoS_Silent_Lawyer
+		has_idea_with_trait = MoS_Compassionate_Gentleman
+		has_idea_with_trait = MoS_Crime_Fighter
+		has_idea_with_trait = MoS_Prince_Of_Terror
+		has_idea_with_trait = MoS_Back_Stabber
+		has_idea_with_trait = MoS_Man_Of_The_People
+		has_idea_with_trait = MoS_Efficient_Sociopath
+		has_idea_with_trait = MoS_Crooked_Kleptocrat
+		has_idea_with_trait = MoS_Media_Magnate
+		has_idea_with_trait = MoS_Health_And_Safety
+		has_idea_with_trait = MoS_Secret_Police_Chief
+		has_idea_with_trait = MoS_SS_Reichsfuhrer
+		has_idea_with_trait = MoS_Ruthless_Organizer
+		has_idea_with_trait = MoS_Master_Of_Propaganda
+		has_idea_with_trait = MoS_Purged_Purger
+		has_idea_with_trait = MoS_Director_Of_FBI
+		has_idea_with_trait = MoS_Opposer_Of_The_Far_Right
+		has_idea_with_trait = MoS_Culture_Warrior
+		has_idea_with_trait = MoS_Dai_li_1
+	}
+}
+
+has_armaments_minister = {
+	OR = {
+		has_idea_with_trait = AM_Administrative_Genius
+		has_idea_with_trait = AM_Resource_Industrialist
+		has_idea_with_trait = AM_Laissez-faire_Capitalist
+		has_idea_with_trait = AM_Theoretical_Scientist
+		has_idea_with_trait = AM_Military_Entrepreneur
+		has_idea_with_trait = AM_Corrupt_Kleptocrat
+		has_idea_with_trait = AM_Oil_Baron
+		has_idea_with_trait = AM_Steel_Magnate
+		has_idea_with_trait = AM_Industrial_Chemist
+		has_idea_with_trait = AM_Planned_Economy_Proponent
+		has_idea_with_trait = AM_Keynesian_Economy
+		has_idea_with_trait = AM_Reformer
+		has_idea_with_trait = AM_Construction_Magnate
+		has_idea_with_trait = AM_Balanced_Budget_Economy
+		has_idea_with_trait = AM_Mixed_Economy
+		has_idea_with_trait = AM_Battle_Fleet_Proponent
+		has_idea_with_trait = AM_Submarine_Proponent
+		has_idea_with_trait = AM_Tank_Proponent
+		has_idea_with_trait = AM_Infantry_Proponent
+		has_idea_with_trait = AM_Air_To_Ground_Proponent
+		has_idea_with_trait = AM_Air_To_Sea_Proponent
+		has_idea_with_trait = AM_Strategic_Air_Proponent
+		has_idea_with_trait = AM_Air_Superiority_Proponent
+		has_idea_with_trait = AM_Genius_Organizer
+		has_idea_with_trait = AM_Organization_todt
+		has_idea_with_trait = AM_Autarkic_Fascist
+		has_idea_with_trait = AM_Iron_Lazar
+		has_idea_with_trait = AM_Orthodox_Economist
+		has_idea_with_trait = AM_Secretary_Of_War
+		has_idea_with_trait = AM_Secretary_Of_The_Interior
+		has_idea_with_trait = AM_Supporter_Of_Devaluation
+		has_idea_with_trait = AM_Opposer_To_Military_Spending
+		has_idea_with_trait = AM_Mad_Man
+		has_idea_with_trait = AM_Space_Enthusiast
+		has_idea_with_trait = AM_Gosplan_Boss
+	}
+}
+
+has_head_of_intelligence = {
+	OR = {
+		has_idea_with_trait = HoI_Technical_Specialist
+		has_idea_with_trait = HoI_Logistics_Specialist
+		has_idea_with_trait = HoI_Political_Specialist
+		has_idea_with_trait = HoI_Dismal_Enigma
+		has_idea_with_trait = HoI_Industrial_Specialist
+		has_idea_with_trait = HoI_Naval_Intelligence_Specialist
+		has_idea_with_trait = HoI_Brilliant_Spymaster
+		has_idea_with_trait = HoI_The_Hangman
+		has_idea_with_trait = HoI_Quex
+		has_idea_with_trait = HoI_Double_Agent
+		has_idea_with_trait = HoI_Cryptographer
+		has_idea_with_trait = HoI_Dai_li_2
+	}
+}
+
+has_chief_of_staff = {
+	OR = {
+		has_idea_with_trait = CoStaff_School_Of_Manoeuvre
+		has_idea_with_trait = CoStaff_School_Of_Fire_Support
+		has_idea_with_trait = CoStaff_School_Of_Mass_Combat
+		has_idea_with_trait = CoStaff_School_Of_Psychology
+		has_idea_with_trait = CoStaff_School_Of_Defence
+		has_idea_with_trait = CoStaff_Commando_Doctrine_Staff
+		has_idea_with_trait = CoStaff_Counterattack_Genius
+		has_idea_with_trait = CoStaff_Popular_Military_Leader
+		has_idea_with_trait = CoStaff_Stubborn_Disciplinarian
+		has_idea_with_trait = CoStaff_Deep_Battle_Proponent
+		has_idea_with_trait = CoStaff_Fortifications_Supporter
+	}
+}
+
+has_chief_of_army = {
+	OR = {
+		has_idea_with_trait = CoArmy_Elastic_Defence_Doctrine
+		has_idea_with_trait = CoArmy_Static_Defence_Doctrine
+		has_idea_with_trait = CoArmy_Decisive_Battle_Doctrine
+		has_idea_with_trait = CoArmy_Armoured_Spearhead_Doctrine
+		has_idea_with_trait = CoArmy_Guns_And_Butter_Doctrine
+		has_idea_with_trait = CoArmy_Commando_Doctrine_Army
+		has_idea_with_trait = CoArmy_Doctrine_Of_Autonomy
+		has_idea_with_trait = CoArmy_Innovative_Offensive_General
+		has_idea_with_trait = CoArmy_Guerilla_Warfare_Doctrine
+		has_idea_with_trait = CoArmy_Undersecretary_Of_War
+		has_idea_with_trait = CoArmy_Static_Defense_Supporter
+	}
+}
+
+has_chief_of_navy = {
+	OR = {
+		has_idea_with_trait = CoNavy_Open_Seas_Doctrine
+		has_idea_with_trait = CoNavy_Decisive_Naval_Battle_Doctrine
+		has_idea_with_trait = CoNavy_Power_Projection_Doctrine
+		has_idea_with_trait = CoNavy_Indirect_Approach_Doctrine
+		has_idea_with_trait = CoNavy_Base_Control_Doctrine
+		has_idea_with_trait = CoNavy_Old_School_Admiral
+	}
+}
+
+has_chief_of_air = {
+	OR = {
+		has_idea_with_trait = CoAir_Air_Superiority_Doctrine
+		has_idea_with_trait = CoAir_Naval_Aviation_Doctrine
+		has_idea_with_trait = CoAir_Army_Aviation_Doctrine
+		has_idea_with_trait = CoAir_Carpet_Bombing_Doctrine
+		has_idea_with_trait = CoAir_Vertical_Envelopment_Doctrine
+		has_idea_with_trait = CoAir_The_Iron_Knight
+	}
+}
+is_metropolis_state = {
+	OR = {
+		has_state_category = metropolis
+		has_state_category = large_city
+		has_state_category = city
+	}
+}

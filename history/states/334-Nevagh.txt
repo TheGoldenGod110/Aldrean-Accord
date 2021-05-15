@@ -1,0 +1,25 @@
+state={
+	id=334
+	name="STATE_334"
+	state_category = rural
+	provinces={
+		225 2047 3346 3481 3819 4782 4902 5542 5570 5622 5856 9924 9983 9999 10012 
+	}
+	manpower=1826781
+	buildings_max_level_factor=1.000
+	history={
+		owner = HMR
+		controller = HMR
+		add_core_of = HMR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			5622 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			5622 10
+		}
+	}
+}

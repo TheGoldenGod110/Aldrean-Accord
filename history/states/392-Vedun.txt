@@ -1,0 +1,24 @@
+
+state={
+	id=392
+	name="STATE_392"
+	state_category = town
+	provinces={
+		460 815 961 1327 2654 2657 3414 3466 3893 4048 4231 4233 4527 4630 4751 5066 5297 5725 5846 9634 9653 9677 9707 
+	}
+	manpower=1926761
+	buildings_max_level_factor=1.000
+	history={
+		owner = OLG
+		controller = OLG
+		add_core_of = OLG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			9677 10
+		}
+	}
+}

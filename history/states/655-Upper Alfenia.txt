@@ -1,0 +1,27 @@
+
+state={
+	id=655
+	name="STATE_655"
+	state_category = town
+	provinces={
+		529 1233 2803 3865 4763 7538 7658 7696 7731 14086 
+	}
+	manpower=785230
+	buildings_max_level_factor=1.000
+	history={
+		owner = AVI
+		controller = AVI
+		add_core_of = AVI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			3865 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			3865 10
+		}
+	}
+}

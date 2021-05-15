@@ -1,0 +1,20 @@
+state={
+	id=631
+	name="STATE_631"
+	state_category = town
+	provinces={
+		202 203 265 549 1472 1971 2365 2414 3783 4781 4809 4829 5047 5123 5963 6496 7006 7187 
+	}
+	manpower=836522
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+}

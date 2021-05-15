@@ -1,0 +1,23 @@
+state={
+	id=3
+	name="STATE_3"
+	state_category = large_town
+	provinces={
+		2305 3707 4234 8411 8454 8463 8508 
+	}
+	manpower=1523453
+	buildings_max_level_factor=1.000
+	history={
+		owner = LOV
+		controller = LOV
+		add_core_of = LOV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			2305 10
+		}
+	}
+}

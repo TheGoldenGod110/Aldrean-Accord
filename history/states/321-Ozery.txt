@@ -1,0 +1,26 @@
+
+state={
+	id=321
+	name="STATE_321"
+	state_category = rural
+	provinces={
+		1058 1249 2350 2892 2926 3756 4149 4305 4383 4504 9182 9191 9221 9227 9232 9441 
+	}
+	manpower=627851
+	buildings_max_level_factor=1.000
+	history={
+		owner = OLG
+		controller = OLG
+		add_core_of = OLG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9191 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			9191 10
+		}
+	}
+}

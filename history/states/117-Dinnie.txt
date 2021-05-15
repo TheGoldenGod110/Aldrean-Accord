@@ -1,0 +1,30 @@
+
+state={
+	id=117
+	name="STATE_117"
+	state_category = large_town
+	resources = {
+		oil = 40
+	}
+	provinces={
+		55 878 5663 6549 6553 9320 9333 9349 9351 9366 9380 9383 9402 9405 9420 
+	}
+	manpower=1826562
+	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			9333 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			9333 20
+		}
+	}
+}

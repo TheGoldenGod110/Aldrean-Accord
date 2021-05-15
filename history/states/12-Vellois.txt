@@ -1,0 +1,28 @@
+state={
+	id=12
+	name="STATE_12"
+	state_category = megalopolis
+	resources = {
+		steel = 70
+		aluminium = 20
+	}
+	provinces={
+		2024 3261 3666 4638 5106 5271 6103 8094 8095 8167 8202 8224 8257 
+	}
+	manpower=7771667
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 2
+		}
+		victory_points = {
+			3261 40
+		}
+	}
+}

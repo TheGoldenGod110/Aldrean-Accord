@@ -1,0 +1,27 @@
+
+state={
+	id=728
+	name="STATE_728"
+	state_category = town
+	provinces={
+		241 850 1197 1253 1493 1524 1826 1956 2358 2856 3007 3117 3505 4073 4109 4468 5607 5633 6101 7719 7810 7969 7980 8002 8096 8192 
+	}
+	manpower=1465523
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			2856 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			2856 10
+		}
+	}
+}

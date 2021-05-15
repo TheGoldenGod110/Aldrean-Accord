@@ -1,0 +1,24 @@
+state={
+	id=101
+	name="STATE_101"
+	state_category = city
+	provinces={
+		1279 1656 3850 5074 5256 5848 6003 7505 7511 7521 7567 7608 
+	}
+	manpower=2163425
+	buildings_max_level_factor=1.000
+	history={
+		owner = GDY
+		controller = GDY
+		add_core_of = GDY
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			7608 35
+		}
+	}
+}

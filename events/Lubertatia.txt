@@ -1,0 +1,18 @@
+add_namespace = lubertatia
+
+country_event = { ###The March West
+	id = lubertatia.1
+	title = lubertatia.1.t
+	desc = lubertatia.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = lubertatia.1.a
+		set_state_owner = 312
+		312 = {
+			add_core_of = LBT
+		}
+		add_political_power = -20
+		news_event = aanews.28
+	}
+}

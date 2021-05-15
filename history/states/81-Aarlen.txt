@@ -1,0 +1,22 @@
+state={
+	id=81
+	name="STATE_81"
+	state_category = town
+	provinces={
+		190 673 1566 2859 8890 8929 8936 8957 8968 8976 
+	}
+	manpower=1672551
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			8957 10
+		}
+	}
+}

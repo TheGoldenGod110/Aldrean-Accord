@@ -1,0 +1,9 @@
+VEL_workers_of_the_world = {
+	icon = GFX_decision_cat_annexation
+	picture = GFX_decision_cat_picture_annexation
+	priority = 100
+
+	allowed = {
+		tag = VEL
+	}
+}

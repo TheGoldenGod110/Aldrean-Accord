@@ -1,0 +1,24 @@
+
+state={
+	id=273
+	name="STATE_273"
+	state_category = large_town
+	provinces={
+		1877 2583 3503 3899 5664 5684 6105 6398 6478 7699 7704 7726 7727 7745 7803 7836 7872 
+	}
+	manpower=1725667
+	buildings_max_level_factor=1.000
+	history={
+		owner = HLG
+		controller = HLG
+		add_core_of = HLG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			3503 10
+		}
+	}
+}

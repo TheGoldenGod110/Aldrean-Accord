@@ -1,0 +1,28 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Avellian Fleet"			
+		naval_base = 8830
+		task_force = {				
+			name = "Destroyer Force"
+			location = 8830
+			ship = { name = "HMS 12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AVY version_name = "Wicin Class" } } }
+			ship = { name = "HMS 13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AVY version_name = "Wicin Class" } } }
+			ship = { name = "HMS 14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AVY version_name = "Wicin Class" } } }
+			ship = { name = "HMS 15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AVY version_name = "Wicin Class" } } }
+		}
+		task_force = {				
+			name = "Submarine Force 1"
+			location = 8830
+			ship = { name = "HMS 32" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AVY  version_name = "Volka Class" } } }
+			ship = { name = "HMS 33" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AVY version_name = "Volka Class" } } }
+			ship = { name = "HMS 34" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AVY version_name = "Volka Class" } } }
+			ship = { name = "HMS 35" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AVY version_name = "Volka Class" } } }
+			ship = { name = "HMS 36" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AVY version_name = "Volka Class" } } }
+		}
+	}
+}	
+
+#####################

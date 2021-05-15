@@ -1,0 +1,20 @@
+
+state={
+	id=364
+	name="STATE_364"
+	state_category = rural
+	provinces={
+		104 288 306 400 730 1028 1202 1440 1508 1822 2331 2410 2485 3673 4389 5357 9841 9914 9986 10098 
+	}
+	manpower=65270
+	buildings_max_level_factor=1.000
+	history={
+		owner = ANR
+		controller = ANR
+		add_core_of = ANR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+}

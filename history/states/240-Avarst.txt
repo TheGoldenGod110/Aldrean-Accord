@@ -1,0 +1,24 @@
+
+state={
+	id=240
+	name="STATE_240"
+	state_category = town
+	provinces={
+		814 4345 4429 4835 8222 8231 8286 8345 8360 
+	}
+	manpower=782833
+	buildings_max_level_factor=1.000
+	history={
+		owner = ETR
+		controller = ETR
+		add_core_of = ETR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			4345 10
+		}
+	}
+}

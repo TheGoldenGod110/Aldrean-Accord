@@ -1,0 +1,26 @@
+state={
+	id=657
+	name="STATE_657"
+	state_category = city
+	provinces={
+		2166 2848 3712 5885 7865 7870 
+	}
+	manpower=2624671
+	buildings_max_level_factor=1.000
+	history={
+		owner = TRC
+		controller = TRC
+		add_core_of = TRC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			5885 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			7870 20
+		}
+	}
+}

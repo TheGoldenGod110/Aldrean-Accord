@@ -1,0 +1,23 @@
+state={
+	id=171
+	name="STATE_171"
+	state_category = large_town
+	provinces={
+		1318 2181 2375 2458 3535 6156 6266 9004 9010 9055 
+	}
+	manpower=1232399
+	buildings_max_level_factor=1.000
+	history={
+		owner = EDL
+		controller = EDL
+		add_core_of = EDL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			3535 10
+		}
+	}
+}

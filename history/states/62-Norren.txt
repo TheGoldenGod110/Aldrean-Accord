@@ -1,0 +1,23 @@
+state={
+	id=62
+	name="STATE_62"
+	state_category = town
+	provinces={
+		1775 2384 2473 2537 4436 4447 5440 6351 6723 6734 6745 6749 6770 6787 
+	}
+	manpower=561557
+	buildings_max_level_factor=1.000
+	history={
+		owner = VEL
+		controller = VEL
+		add_core_of = VEL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			6770 10
+		}
+	}
+}

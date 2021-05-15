@@ -1,0 +1,138 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	##### Vaelish Fleet #####
+	### BATTLE FLEET ###
+	fleet = {
+		name = "RVF West"			
+		naval_base = 3675
+		task_force = {				
+			name = "Vanguard Force"
+			location = 3675
+			ship = { name = "SVHR Holmar" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = VEL version_name = "Harla Class" } } }	
+			ship = { name = "SVHR Karlan" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = VEL version_name = "Harla Class" } } }
+			ship = { name = "SVHR Alma" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = VEL version_name = "Harla Class" } } }
+			ship = { name = "SVHR Kerlaa" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = VEL version_name = "Harla Class" } } }
+			ship = { name = "SVHR Hesmara" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = VEL version_name = "Harla Class" } } }
+			ship = { name = "SVHR Vysik" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Straggen Class" } } }
+			ship = { name = "SVHR Bera" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Straggen Class" } } }
+			ship = { name = "SVHR Jorg" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Straggen Class" } } }
+			ship = { name = "SVHR Vismea" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Galtia Class" } } }
+			ship = { name = "SVHR Smark" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Goda" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Tream" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Vea" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+		}
+		task_force = {				
+			name = "Destroyer Force 1"
+			location = 3675
+			ship = { name = "SVHR Mealar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Cantrabia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Vilnberg" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Vaeda" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Olmer" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Rema" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Vaeskan" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Voste" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Uvar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Hemma" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Otta" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Retra" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Huden Class" } } }
+			ship = { name = "SVHR Jirst" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Huden Class" } } }
+			ship = { name = "SVHR Ostar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Huden Class" } } }
+			ship = { name = "SVHR Olmark" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Jamarik" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Remandar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Vanden" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Venda" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Rodlund" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Namark" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Vanst" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+		}
+		task_force = {				
+			name = "Destroyer Force 2"
+			location = 7615
+			ship = { name = "SVHR Helsta" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Olstad" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Vistanda" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Vels" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Colst" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Kelga" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Hamme" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Jhavar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Plemberg" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Krast" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Hadravia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Kelm" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+		}
+		task_force = {				
+			name = "Submarine Force 1"
+			location = 7615
+			ship = { name = "SVHR Alaberg" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Elst" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Baerg" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Vergen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Stelvar" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Jomyr" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Tyra" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Verad" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Sargen" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+		}
+	}
+	fleet = {
+		name = "RVF East"			
+		naval_base = 3373
+		task_force = {				
+			name = "Cruiser Force"
+			location = 3373
+			ship = { name = "SVHR Erland" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = VEL version_name = "Frantia Class" } } }
+			ship = { name = "SVHR Kerl" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = VEL version_name = "Frantia Class" } } }
+			ship = { name = "SVHR Arla" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = VEL version_name = "Frantia Class" } } }
+			ship = { name = "SVHR Visren" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Straggen Class" } } }
+			ship = { name = "SVHR Karsten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Straggen Class" } } }
+			ship = { name = "SVHR Tiran" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VEL version_name = "Straggen Class" } } }
+		}
+		task_force = {				
+			name = "Destroyer Force 2"
+			location = 1575
+			ship = { name = "SVHR Kelar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Venst" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Smask" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = VEL version_name = "Hjört Class" } } }
+			ship = { name = "SVHR Ordo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Arlenda" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Kemmaran" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Obe" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Homran" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Vysk" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+		}
+		task_force = {				
+			name = "Destroyer Force 3"
+			location = 1575
+			ship = { name = "SVHR Vemms" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Gardan" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Kemmlen" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Volste" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Nederlev Class" } } }
+			ship = { name = "SVHR Rimmar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Lugard" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Valnstad" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Hadern" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+			ship = { name = "SVHR Alev" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = VEL version_name = "Svöld Class" } } }
+		}
+		task_force = {				
+			name = "Submarine Force 2"
+			location = 1575
+			ship = { name = "SVHR Kremm" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Ellam" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Bergen" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Limben" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = VEL version_name = "Rødvek Class" } } }
+			ship = { name = "SVHR Vauben" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Lendsk" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Grada" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Kamman" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+			ship = { name = "SVHR Grimmar" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEL version_name = "Valek Class" } } }
+		}
+	}
+}	
+
+#####################

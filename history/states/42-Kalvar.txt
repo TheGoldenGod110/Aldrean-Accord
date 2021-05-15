@@ -1,0 +1,28 @@
+state={
+	id=42
+	name="STATE_42"
+	state_category = megalopolis
+	provinces={
+		2077 3675 4196 7314 7336 7363 7379 7408 7466 
+	}
+	manpower=4657161
+	buildings_max_level_factor=1.000
+	history={
+		owner = VEL
+		controller = VEL
+		add_core_of = VEL
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+			dockyard = 3
+			3675 = {
+				naval_base = 7
+			}
+		}
+		victory_points = {
+			3675 40
+		}
+	}
+}

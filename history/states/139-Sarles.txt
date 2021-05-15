@@ -1,0 +1,23 @@
+state={
+	id=139
+	name="STATE_139"
+	state_category = city
+	provinces={
+		4186 4601 9132 9135 9157 9163 9168 9186 9200 9203 9228 
+	}
+	manpower=1342566
+	buildings_max_level_factor=1.000
+	history={
+		owner = EDL
+		controller = EDL
+		add_core_of = EDL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			9168 10
+		}
+	}
+}

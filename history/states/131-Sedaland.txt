@@ -1,0 +1,24 @@
+
+state={
+	id=131
+	name="STATE_131"
+	state_category = large_town
+	provinces={
+		2636 3068 4993 5818 8424 8462 8479 8554 8555 
+	}
+	manpower=1338990
+	buildings_max_level_factor=1.000
+	history={
+		owner = AVY
+		controller = AVY
+		add_core_of = AVY
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			3068 10
+		}
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=766
+	name="STATE_766"
+	state_category = rural
+	provinces={
+		2568 10001 10995 10996 
+	}
+	manpower=98765
+	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			10001 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10001 10
+		}
+	}
+}

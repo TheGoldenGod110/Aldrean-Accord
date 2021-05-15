@@ -1,0 +1,57 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "VEL"
+		default = yes
+		
+		"VEL"={
+			history = "VEL_GATHERING_STORM_DESC"
+			ideology = holmarism
+			focuses = {
+				VEL_second_red_army
+				VEL_10th_arbeider
+			}
+		}
+		"ETT"={
+			history = "ETT_GATHERING_STORM_DESC"
+			ideology = holmarism
+		}
+		"ABR"={
+			history = "ABR_GATHERING_STORM_DESC"
+			ideology = holmarism
+		}
+		"OLG"={
+			history = "OLG_GATHERING_STORM_DESC"
+			ideology = autocracy
+		}
+		"BAT"={
+			history = "BAT_GATHERING_STORM_DESC"
+			focuses = {
+				BAT_stona_donelo_wins
+				BAT_oxo_wins_again
+				BAT_leon_vasto_wins
+			}
+			ideas = {
+				racial_inequality
+				economic_recession
+				lobbyists
+			}
+			ideology = liberal
+		}
+		"SVL"={
+			history = "SVL_GATHERING_STORM_DESC"
+			ideology = authoritarian_democracy
+		}
+		"BEV"={
+			history = "BEV_GATHERING_STORM_DESC"
+			ideology = autocracy
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

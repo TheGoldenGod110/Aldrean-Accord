@@ -1,0 +1,22 @@
+state={
+	id=394
+	name="STATE_394"
+	state_category = rural
+	provinces={
+		1883 2946 4870 4919 4997 9392 9395 9424 
+	}
+	manpower=1097251
+	buildings_max_level_factor=1.000
+	history={
+		owner = OLG
+		controller = OLG
+		add_core_of = OLG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			2946 10
+		}
+	}
+}

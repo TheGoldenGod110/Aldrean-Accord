@@ -1,0 +1,27 @@
+state={
+	id=228
+	name="STATE_228"
+	state_category = large_city
+	provinces={
+		159 6138 6263 7189 7217 7282 7291 7300 7334 
+	}
+	manpower=2534330
+	buildings_max_level_factor=1.000
+	history={
+		owner = BAT
+		controller = BAT
+		add_core_of = BAT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+			7189 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			7189 25
+		}
+	}
+}

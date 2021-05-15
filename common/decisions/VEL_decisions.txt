@@ -1,0 +1,182 @@
+VEL_workers_of_the_world = {
+
+	batvian_comrades = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			tag = VEL
+			BAT = { exists = yes }
+		}
+		available = {
+			
+		}
+		highlight_state_targets = {
+			state = 213
+		}
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		cost = 25
+		days_remove = 120
+		
+		complete_effect = {
+			
+			if = {
+				limit = { 
+					BAT = { 
+						has_socialist_government = yes
+					}
+				}
+				BAT = {
+					country_event = hadernland.100
+				}
+			}
+			else_if = {
+				limit = {
+					BAT = {
+						has_elected_government = yes
+					}
+				}
+				BAT = {
+					country_event = { id = hadernland.101 }
+				}
+			}
+			else = {
+				BAT = {
+					country_event = { id = hadernland.102 }
+				}
+			}
+		}
+		remove_effect = {
+			BAT = {
+				if = {
+					limit = {
+						has_idea = hadernish_economic_aid
+					}
+					remove_ideas = hadernish_economic_aid
+				}
+				if = {
+					limit = {
+						has_idea = hadernish_socialist_aid
+					}
+					remove_ideas = hadernish_socialist_aid
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	synothesian_comrades = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			tag = VEL
+			SYN = { exists = yes }
+		}
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+		highlight_state_targets = {
+			state = 152
+		}
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		cost = 25
+		days_remove = 120
+		
+		complete_effect = {
+			
+			if = {
+				limit = { 
+					SYN = { 
+						has_socialist_government = yes
+					}
+				}
+				SYN = {
+					country_event = hadernland.100
+				}
+			}
+			else_if = {
+				limit = {
+					SYN = {
+						has_elected_government = yes
+					}
+				}
+				SYN = {
+					country_event = { id = hadernland.101 }
+				}
+			}
+			else = {
+				SYN = {
+					country_event = { id = hadernland.102 }
+				}
+			}
+		}
+		remove_effect = {
+			SYN = {
+				if = {
+					limit = {
+						has_idea = hadernish_economic_aid
+					}
+					remove_ideas = hadernish_economic_aid
+				}
+				if = {
+					limit = {
+						has_idea = hadernish_socialist_aid
+					}
+					remove_ideas = hadernish_socialist_aid
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	sevil_sea_mission = {
+
+		icon = GFX_decision_workers_militias
+
+		allowed = {
+			tag = VEL
+		}
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			custom_effect_tooltip = rubyhalsen_begins
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

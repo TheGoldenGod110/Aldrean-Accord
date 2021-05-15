@@ -1,0 +1,26 @@
+state={
+	id=266
+	name="STATE_266"
+	state_category = city
+	provinces={
+		3135 3679 3824 4293 4686 5539 7381 7389 7423 7438 7462 7471 7472 7503 7520 7542 7554 7614 
+	}
+	manpower=1725781
+	buildings_max_level_factor=1.000
+	history={
+		owner = UTR
+		controller = UTR
+		add_core_of = UTR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			7389 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			4293 20
+		}
+	}
+}

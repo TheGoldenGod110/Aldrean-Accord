@@ -1,0 +1,25 @@
+
+state={
+	id=156
+	name="STATE_156"
+	state_category = metropolis
+	provinces={
+		264 2151 4219 8299 
+	}
+	manpower=2927653
+	buildings_max_level_factor=1.000
+	history={
+		owner = SRC
+		controller = SRC
+		add_core_of = SRC
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+		}
+		victory_points = {
+			8299 35
+		}
+	}
+}

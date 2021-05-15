@@ -1,0 +1,25 @@
+
+state={
+	id=312
+	name="STATE_312"
+	state_category = rural
+	provinces={
+		2229 4914 6387 9808 9834 9839 9853 9858 9859 9890 9908 
+	}
+	manpower=451678
+	buildings_max_level_factor=1.000
+	history={
+		owner = ANR
+		controller = ANR
+		add_core_of = ANR
+		add_claim_of = LBR
+		add_claim_of = LBT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			9859 20
+		}
+	}
+}

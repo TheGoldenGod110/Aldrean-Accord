@@ -1,0 +1,22 @@
+state={
+	id=382
+	name="STATE_382"
+	state_category = rural
+	provinces={
+		1565 3384 3798 9416 9489 9602 9660 
+	}
+	manpower=765121
+	buildings_max_level_factor=1.000
+	history={
+		owner = OLG
+		controller = OLG
+		add_core_of = OLG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			9602 10
+		}
+	}
+}

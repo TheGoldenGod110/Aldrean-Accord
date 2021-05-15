@@ -1,0 +1,26 @@
+state={
+	id=599
+	name="STATE_599"
+	state_category = city
+	provinces={
+		808 1148 2214 3314 3474 4132 4378 5431 5569 6132 7048 7098 7137 7156 7195 7198 7294 
+	}
+	manpower=2016662
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 3
+			6132 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			7098 10
+		}
+	}
+}

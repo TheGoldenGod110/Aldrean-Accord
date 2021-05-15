@@ -1,0 +1,26 @@
+state={
+	id=160
+	name="STATE_160"
+	state_category = town
+	provinces={
+		2259 4127 4663 8590 8661 
+	}
+	manpower=924725
+	buildings_max_level_factor=1.000
+	history={
+		owner = SYN
+		controller = SYN
+		add_core_of = SYN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			8590 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			8590 10
+		}
+	}
+}

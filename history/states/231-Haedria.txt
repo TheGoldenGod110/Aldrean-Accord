@@ -1,0 +1,26 @@
+state={
+	id=231
+	name="STATE_231"
+	state_category = city
+	provinces={
+		2878 4016 5097 7393 7454 7460 7487 7509 7539 7553 
+	}
+	manpower=2002651
+	buildings_max_level_factor=1.000
+	history={
+		owner = BAT
+		controller = BAT
+		add_core_of = BAT
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+			7393 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			2878 10
+		}
+	}
+}

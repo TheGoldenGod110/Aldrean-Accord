@@ -1,0 +1,23 @@
+state={
+	id=245
+	name="STATE_245"
+	state_category = town
+	provinces={
+		1090 2578 7613 7639 7651 7667 7741 7774 7775 7782 
+	}
+	manpower=1092363
+	buildings_max_level_factor=1.000
+	history={
+		owner = ETR
+		controller = ETR
+		add_core_of = ETR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			7667 10
+		}
+	}
+}

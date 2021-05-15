@@ -1,0 +1,54 @@
+﻿l_english:
+
+ ###Flags###
+ 
+ ###Tooltips###
+ 
+ ###Parties###
+ ETT_holmarism_party:0 "Vakbondsleden"
+ ETT_holmarism_party_long:0 "Vakbondsleden"
+ ETT_radical_socialist_party:0 "VS"
+ ETT_radical_socialist_party_long:0 "Vaelische Socialisten"
+ ETT_authoritarian_socialism_party:0 "HV"
+ ETT_authoritarian_socialism_party_long:0 "Holmaristisch Verbond"
+ ETT_communism_party:0 "EKP"
+ ETT_communism_party_long:0 "Ettinsche Kommunist Parti"
+ ###Ideas###
+ 
+ ###Decisions###
+ 
+ ###Political Focuses###
+ 
+ ###Flavour Events###
+ 
+ ###Events###
+ ettinland.2.t:0 "Ettinlandic Paranoia"
+ ettinland.2.d:0 "Ettinland is a syndicalist republic in a precarious situation, separated from our International allies across the Gondric Sea. There is a constant threat of Bevaranian malice on our southern border. This is the pervasive fear of the Trade Union Council, and why the Ettinlandic People's army must remain ever-vigilant. The communes bordering Bevarania have been ordered to keep their militias armed and ready at all times, in the event of Bevaranian attack.\n\nSome congress representatives have even taken the belief in an iminent strike to the extreme - supporting a state of unbelievable military build-up.\n\nAs long as a reactionary Bevaranian government exists, this problem will most likely remain."
+ ettinland.2.a:0 "Always at the ready!"
+ 
+ ###Vakbondsraad Events###
+ ettinland.1.t:0 "The 2nd Congress"
+ ettinland.1.d:0 "Today, the 2nd congress of the Trade Union Council (Vakbondsraad) convened in Esdoornkam. The various factions will debate subjects such as economic, internal, and military policy. The Vakbonsleden (Trade Unionists), the faction that currently holds a majority in congress and the presidency, seek to push orthodox syndicalism in the congress; while the Vaelische Socialisten (Vaelish Socialists), desire a government that expands the rural communes, supporting a 'Vaelish' (Religious) form of socialism. Meanwhile, the Holmaristisch Verbond (Holmarist Union) advances the ideology of national-syndicalism, which advocates for militaristic, absolute state control of the economy and society.\n\nAs presidential elections draw nearer, the new political orthodoxy of syndicalism, established after the revolution of 1929, is already being thoroughly tested - with the republic's future hanging in the balance."
+ ettinland.1.a:0 "Let it begin!"
+
+ ettinland.3.t:0 "Vakbondsraad - Economic Policy"
+ ettinland.3.d:0 "The first vote in this year's congress is on the topic of the economy. More specifically, the industrialisation of the nation.\n\nThe Vakbonsleden support the present bills put up and want to further the current course of syndicalist industrialisation. The Vaelische Socialisten support the agrarian and rural communes, wanting economic policy based around them. Willem Hoek's Holmaristisch Verbond have fiercely argued for total, immediate industrialisation."
+ ettinland.3.a:0 "Focus on industrialisation"
+ ettinland.3.b:0 "Focus on agriculture"
+ ettinland.3.c:0 "Total Industrialisation."
+
+ ettinland.4.t:0 "Vakbondsraad - A New Chamber of Congress?"
+ ettinland.4.d:0 "The Trade Union Council is, at its heart, a federation of democratic unions in Ettinland, which have sent hundreds of representatives for this year's congress. Currently, the Trade Union Council is locked in debate on more internal matters, after the President advised the Trade Unionists to propose a second chamber of congress; similiar to the Federal Congress of Hadernland.\n\nThe Holmarist Union immediately struck back against the idea, with many in the faction decrying the notion of dividing power between new branches of government, instead arguing for empowering the presidency instead. The Vaelish Socialists, meanwhile, support the syndicalist idea of a second chamber of congress, though there have been some disagreements on what form this new chamber should ultimately take."
+ ettinland.4.a:0 "A new chamber of congress, with legislative powers!"
+ ettinland.4.b:0 "A new chamber of congress, but only with advisory powers!"
+ ettinland.4.c:0 "That's the last thing we need."
+ 
+ ettinland.5.t:0 "Vakbondsraad - Military Policy"
+ ettinland.5.d:0 "The People's Army is crucial to the existence of the Commune of Ettinland. With enemies facing us down on all of our land borders, we can't merely rely on our allies to defend us.\n\nThe orthodox-syndicalist Trade Unionists"
+
+
+ ###General Flavour Events###
+ 
+ ###Decision Events###
+ 
+ 

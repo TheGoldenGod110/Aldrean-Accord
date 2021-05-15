@@ -1,0 +1,157 @@
+﻿capital = 272
+
+set_research_slots = 3
+
+oob = "HLG_1936"
+set_stability = 0.5
+set_war_support = 0.15
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "HLG_1936_naval_mtg"
+	else = {
+		
+		set_naval_oob = "HLG_1936_naval_legacy"
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	CAS1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	motorised_infantry = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		transport = 1
+		early_battleship = 1
+	}
+}
+
+add_ideas = {
+	limited_exports
+}
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1935.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	social_democrat = 40
+	holmarism = 26
+	authoritarian_socialism = 34
+}
+
+set_convoys = 100
+
+
+
+
+create_country_leader = {
+	name = "Norbert Barta"
+	desc = "POLITICS_VACLAV_SITEK_DESC"
+	picture = "norbert_barta.dds"
+	expire = "1965.1.1"
+	ideology = reformist_socialism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Tibor Orosz"
+	desc = "POLITICS_ARTURN_OLSVEK_DESC"
+	picture = "alma_kelar.dds"
+	expire = "1965.1.1"
+	ideology = conservative_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Erik Födur"
+	desc = "POLITICS_IVAH_SORLAN_DESC"
+	picture = "portrait_USA_alf_landon.dds"
+	expire = "1965.1.1"
+	ideology = karlanism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Josef Kereky"
+	desc = "POLITICS_IVAH_SORLAN_DESC"
+	picture = "tibor_orosz.dds"
+	expire = "1965.1.1"
+	ideology = vanguardism
+	traits = {
+		
+	}
+}
+create_corps_commander = {
+	name = "Benedek Antal"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { commando }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Szabolcs Csatár"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  hill_fighter }
+	skill = 2
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Albert Vászoly"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  hill_fighter }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Bence Székely"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { battleship_adherent blockade_runner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 4
+}

@@ -1,0 +1,22 @@
+state={
+	id=45
+	name="STATE_45"
+	state_category = rural
+	provinces={
+		2565 7397 
+	}
+	manpower=462765
+	buildings_max_level_factor=1.000
+	history={
+		owner = VEL
+		controller = VEL
+		add_core_of = VEL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			2565 10
+		}
+	}
+}

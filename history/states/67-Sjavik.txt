@@ -1,0 +1,25 @@
+state={
+	id=67
+	name="STATE_67"
+	state_category = rural
+	provinces={
+		74 308 873 889 1540 2491 2795 4011 4279 4280 4433 6603 6604 6612 
+	}
+	manpower=69651
+	buildings_max_level_factor=1.000
+	history={
+		owner = VEL
+		controller = VEL
+		add_core_of = VEL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			4011 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			4011 10
+		}
+	}
+}

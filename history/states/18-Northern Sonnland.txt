@@ -1,0 +1,28 @@
+
+state={
+	id=18
+	name="STATE_18"
+	state_category = city
+	resources = {
+		tungsten = 35
+	}
+	provinces={
+		3631 4069 8026 8043 8080 8086 8116 
+	}
+	manpower=1854512
+	buildings_max_level_factor=1.000
+	history={
+		owner = ABR
+		controller = ABR
+		add_core_of = ABR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+		}
+		victory_points = {
+			8116 25
+		}
+	}
+}

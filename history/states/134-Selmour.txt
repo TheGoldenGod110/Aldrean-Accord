@@ -1,0 +1,26 @@
+state={
+	id=134
+	name="STATE_134"
+	state_category = town
+	provinces={
+		2446 2954 5861 6422 9202 9234 9265 
+	}
+	manpower=782663
+	buildings_max_level_factor=1.000
+	history={
+		owner = RBG
+		controller = RBG
+		add_core_of = RBG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			6422 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			6422 10
+		}
+	}
+}

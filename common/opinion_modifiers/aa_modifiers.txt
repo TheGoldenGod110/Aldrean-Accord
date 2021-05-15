@@ -1,0 +1,14 @@
+opinion_modifiers = {
+	aa_similar_ideology = {
+		value = 20
+	}
+	aa_different_ideology = {
+		value = -40
+	}
+	aa_same_ideology = {
+		value = 40
+	}
+	aa_factional_rivalry = { 
+		value = -30 
+	}
+}

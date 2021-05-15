@@ -1,0 +1,69 @@
+###Vaelnavian Sphere
+ABR = "countries/Alberen.txt"
+VEL = "countries/UnionOfHadernland.txt"
+ETT = "countries/Ettinland.txt"
+GDY = "countries/Grendany.txt"
+HRG = "countries/HadernskRige.txt"
+HLK = "countries/Helkland.txt"
+HAD = "countries/HadernskFederalRepublic.txt"
+
+###Eastern Aldrea
+BEV = "countries/Bevarania.txt"
+LOV = "countries/Lovaria.txt"
+VLG = "countries/Velugia.txt"
+AVY = "countries/Avelly.txt"
+VAE = "countries/Vaelonia.txt"
+
+###Central Aldrea
+HLG = "countries/Helgaria.txt"
+ORN = "countries/Ornland.txt"
+
+###Southern Aldrea
+SVL = "countries/Sevilland.txt"
+LBR = "countries/Lubaar.txt"
+LBT = "countries/Lubertatia.txt"
+EDL = "countries/Endlia.txt"
+MND = "countries/Mendary.txt"
+RBG = "countries/Rebegal.txt"
+
+###Northern Eshen
+OLG = "countries/OlgumenSultanate.txt"
+VDK = "countries/Vordok.txt"
+OZR = "countries/Ozrodek.txt"
+UZH = "countries/Uzhan.txt"
+ORD = "countries/Ordava.txt"
+
+###Middle Eshen
+ANR = "countries/Anarchy.txt"
+
+###Eastern Eshen
+HMR = "countries/Hamar.txt"
+HSR = "countries/Hessadir.txt"
+
+###
+YVK = "countries/Yvikstan.txt"
+UZK = "countries/Uzkaryer.txt"
+
+###East Hateria
+BAT = "countries/Batvia.txt"
+SYN = "countries/Synothese.txt"
+ETR = "countries/Etraci.txt"
+SRC = "countries/SynothesianRepublic.txt"
+BSI = "countries/Bossi.txt"
+OXF = "countries/Oxef.txt"
+UTR = "countries/Ultrysia.txt"
+
+###West Hateria
+HLH = "countries/Halh.txt"
+OXM = "countries/Oxumut.txt"
+TRC = "countries/Traceli.txt"
+AVI = "countries/Avion.txt"
+
+###Northern Vogrea
+ALR = "countries/Alaria.txt"
+
+###Colonial Protectorates
+BES = "countries/BevaranianEshen.txt"
+
+###Getica
+BTT = "countries/Battenland.txt"

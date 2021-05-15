@@ -1,0 +1,26 @@
+state={
+	id=111
+	name="STATE_111"
+	state_category = city
+	provinces={
+		3201 5327 5405 6030 6184 9494 9525 9526 9546 9562 9575 9583 9594 9604 
+	}
+	manpower=1545621
+	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			9546 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			9546 10
+		}
+	}
+}

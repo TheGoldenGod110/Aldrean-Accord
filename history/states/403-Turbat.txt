@@ -1,0 +1,23 @@
+state={
+	id=403
+	name="STATE_403"
+	state_category = town
+	provinces={
+		393 433 439 475 948 2029 3797 4413 4605 5943 
+	}
+	manpower=2102675
+	buildings_max_level_factor=1.000
+	history={
+		owner = YVK
+		controller = YVK
+		add_core_of = YVK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			4413 20
+		}
+	}
+}

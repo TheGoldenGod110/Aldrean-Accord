@@ -1,0 +1,26 @@
+state={
+	id=575
+	name="STATE_575"
+	state_category = metropolis
+	provinces={
+		1355 5358 5509 5722 5869 7501 7528 7529 7564 7611 
+	}
+	manpower=4233455
+	buildings_max_level_factor=1.000
+	history={
+		owner = OXM
+		controller = OXM
+		add_core_of = OXM
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 2
+			1355 = {
+				naval_base = 7
+			}
+		}
+		victory_points = {
+			1355 45
+		}
+	}
+}

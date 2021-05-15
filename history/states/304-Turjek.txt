@@ -1,0 +1,22 @@
+state={
+	id=304
+	name="STATE_304"
+	state_category = rural
+	provinces={
+		666 1909 2357 3863 4506 5029 6136 9656 9696 9706 9722 9746 
+	}
+	manpower=254611
+	buildings_max_level_factor=1.000
+	history={
+		owner = OZR
+		controller = OZR
+		add_core_of = OZR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4506 10
+		}
+	}
+}

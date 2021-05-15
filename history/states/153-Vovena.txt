@@ -1,0 +1,26 @@
+state={
+	id=153
+	name="STATE_153"
+	state_category = city
+	provinces={
+		650 2799 4006 4244 4538 8542 8546 8566 
+	}
+	manpower=1727633
+	buildings_max_level_factor=1.000
+	history={
+		owner = SYN
+		controller = SYN
+		add_core_of = SYN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			4538 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			4538 10
+		}
+	}
+}
