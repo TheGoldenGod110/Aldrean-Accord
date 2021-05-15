@@ -1,0 +1,25 @@
+state={
+	id=765
+	name="STATE_765"
+	state_category = rural
+	provinces={
+		1099 1405 1529 1947 2218 2483 3680 4038 4416 4962 5420 5598 6078 6234 6575 6660 6679 6681 6700 6704 6711 6715 6719 6725 6729 6744 
+	}
+	manpower=157322
+	buildings_max_level_factor=1.000
+	history={
+		owner = BTT
+		controller = BTT
+		add_core_of = BTT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			2483 {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			2483 10
+		}
+	}
+}

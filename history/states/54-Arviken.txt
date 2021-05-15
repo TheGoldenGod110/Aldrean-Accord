@@ -1,0 +1,29 @@
+state={
+	id=54
+	name="STATE_54"
+	state_category = large_city
+	resources = {
+		tungsten = 10
+	}
+	provinces={
+		2308 2978 4618 5385 5475 5918 7260 7304 7435 7451 
+	}
+	manpower=2641671
+	buildings_max_level_factor=1.000
+	history={
+		owner = HLK
+		controller = HLK
+		add_core_of = HLK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			7451 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			7451 20
+		}
+	}
+}

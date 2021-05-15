@@ -1,0 +1,27 @@
+
+state={
+	id=135
+	name="STATE_135"
+	state_category = city
+	provinces={
+		1960 3602 4440 4664 9223 9243 9257 9264 9286 9291 9316 9342 9343 9356 9364 
+	}
+	manpower=1627762
+	buildings_max_level_factor=1.000
+	history={
+		owner = MND
+		controller = MND
+		add_core_of = MND
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			9316 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			9316 30
+		}
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=604
+	name="STATE_604"
+	state_category = rural
+	provinces={
+		11 37 320 384 452 639 670 750 755 759 928 1056 1306 1754 1812 2180 2253 2434 2674 2934 3024 3613 3660 4181 4818 4896 5111 5451 5739 6436 6600 6601 6602 6622 6644 6651 6685 6718 
+	}
+	manpower=532351
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			3660 10
+		}
+	}
+}

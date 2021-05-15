@@ -1,0 +1,25 @@
+state={
+	id=93
+	name="STATE_93"
+	state_category = rural
+	provinces={
+		133 1046 1368 1556 2395 2490 2539 3093 3273 3498 5089 5735 6200 6435 6828 6839 6860 6862 6922 6941 6951 6986 6987 7051 7067 7076 7077 7102 7117 
+	}
+	manpower=1278191
+	buildings_max_level_factor=1.000
+	history={
+		owner = GDY
+		controller = GDY
+		add_core_of = GDY
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			6828 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			6828 10
+		}
+	}
+}

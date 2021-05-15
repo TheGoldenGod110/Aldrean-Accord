@@ -1,0 +1,28 @@
+state={
+	id=751
+	name="STATE_751"
+	state_category = metropolis
+	provinces={
+		369 2645 2693 4146 5921 6926 6967 6988 7003 7012 7068 
+	}
+	manpower=2423255
+	buildings_max_level_factor=1.000
+	history={
+		owner = BTT
+		controller = BTT
+		add_core_of = BTT
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 3
+			dockyard = 3
+			369 = {
+				naval_base = 7
+			}
+		}
+		victory_points = {
+			369 30
+		}
+	}
+}

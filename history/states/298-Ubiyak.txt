@@ -1,0 +1,26 @@
+
+state={
+	id=298
+	name="STATE_298"
+	state_category = large_town
+	provinces={
+		1165 1662 2548 4178 5724 6483 9503 9540 9541 9547 9563 9586 9608 9616 9620 9642 9643 
+	}
+	manpower=1625880
+	buildings_max_level_factor=1.000
+	history={
+		owner = OZR
+		controller = OZR
+		add_core_of = OZR
+		add_core_of = ORD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			9608 10
+		}
+	}
+}

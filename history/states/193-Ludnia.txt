@@ -1,0 +1,28 @@
+
+state={
+	id=193
+	name="STATE_193"
+	state_category = metropolis
+	provinces={
+		3269 6211 8681 8714 8715 8756 8765 8795 8806 
+	}
+	manpower=3826552
+	buildings_max_level_factor=1.000
+	history={
+		owner = ORN
+		controller = ORN
+		add_core_of = ORN
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+			8714 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			3269 45
+		}
+	}
+}
