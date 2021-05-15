@@ -1,0 +1,163 @@
+add_namespace = ettinland
+
+
+###Vakbondsraad Elctions###
+###########################
+
+country_event = { ###Trade Union Council Begins
+	id = ettinland.1
+	title = ettinland.1.t
+	desc = ettinland.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = ettinland.1.a
+		hidden_effect = {
+			set_country_flag = {
+				flag = ETT_TUC_vakbonsleden
+				value = 0
+			}
+			set_country_flag = {
+				flag = ETT_TUC_vaelische
+				value = 0
+			}
+			set_country_flag = {
+				flag = ETT_TUC_holmaristisch
+				value = 0
+			}
+			country_event = {id = ettinland.3 days = 10}
+		}
+	}
+}
+country_event = { ###Economic Policy
+	id = ettinland.3
+	title = ettinland.3.t
+	desc = ettinland.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = ettinland.3.a
+		modify_country_flag = {
+			flag = ETT_TUC_vakbonsleden
+			value = 1
+		}
+		add_popularity = {
+			ideology = holmarism ###This was renamed to syndicalism via localisation
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = ettinland.3.b
+		modify_country_flag = {
+			flag = ETT_TUC_vaelische
+			value = 1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = ettinland.3.c
+		modify_country_flag = {
+			flag = ETT_TUC_holmaristisch
+			value = 1
+		}
+		add_popularity = {
+			ideology = authoritarian_socialism
+			popularity = 0.05
+		}
+	}
+}
+country_event = { ###Internal Policy
+	id = ettinland.4
+	title = ettinland.4.t
+	desc = ettinland.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = ettinland.4.a
+		modify_country_flag = {
+			flag = ETT_TUC_vakbonsleden
+			value = 1
+		}
+		add_popularity = {
+			ideology = holmarism ###This was renamed to syndicalism via localisation
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = ettinland.4.b
+		modify_country_flag = {
+			flag = ETT_TUC_vaelische
+			value = 1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = ettinland.4.c
+		modify_country_flag = {
+			flag = ETT_TUC_holmaristisch
+			value = 1
+		}
+		add_popularity = {
+			ideology = authoritarian_socialism
+			popularity = 0.05
+		}
+	}
+}
+country_event = { ###Internal Policy
+	id = ettinland.5
+	title = ettinland.5.t
+	desc = ettinland.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = ettinland.5.a
+		modify_country_flag = {
+			flag = ETT_TUC_vakbonsleden
+			value = 1
+		}
+		add_popularity = {
+			ideology = holmarism ###This was renamed to syndicalism via localisation
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = ettinland.5.b
+		modify_country_flag = {
+			flag = ETT_TUC_vaelische
+			value = 1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = ettinland.5.c
+		modify_country_flag = {
+			flag = ETT_TUC_holmaristisch
+			value = 1
+		}
+		add_popularity = {
+			ideology = authoritarian_socialism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { ###Ettinlandic Paranoia
+	id = ettinland.2
+	title = ettinland.2.t
+	desc = ettinland.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = ettinland.2.a
+		add_war_support = 0.01
+	}
+}

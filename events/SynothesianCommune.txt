@@ -1,0 +1,12 @@
+add_namespace = syncom
+
+country_event = { ###The Revolutionary Fires
+	id = syncom.1
+	title = syncom.1.t
+	desc = syncom.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = syncom.1.a
+	}
+}
