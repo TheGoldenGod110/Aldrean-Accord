@@ -1,0 +1,67 @@
+focus_tree = {
+	id = lubertatia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LBT
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1400 }
+	default = no
+
+	focus = {
+		id = LBT_the_march_west
+		icon = GFX_focus_integrated_militias
+		x = 8
+		y = 0
+		cost = 11
+		ai_will_do = {
+			factor = 5
+		}
+		cancelable = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = lubertatia.1
+		}
+	}
+	focus = {
+		id = LBT_free_army_government
+		prerequisite = { focus = LBT_the_march_west }
+		relative_position_id = LBT_the_march_west
+		mutually_exclusive = {focus = LBT_civilian_government}
+		icon = GFX_generic_revanchism
+		x = 3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LBT_civilian_government
+		prerequisite = { focus = LBT_the_march_west }
+		relative_position_id = LBT_the_march_west
+		mutually_exclusive = {focus = LBT_free_army_government}
+		icon = GFX_generic_revolutionary_government
+		x = -3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+}

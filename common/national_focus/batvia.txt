@@ -1,0 +1,326 @@
+focus_tree = {
+	id = batvia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BAT
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 1600 }
+	focus = {
+		id = BAT_the_issues_at_hand
+		icon = GFX_goal_tripartite_pact
+		x = 8
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+			
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BAT_social_security_act
+		icon = GFX_generic_working_class_family
+		relative_position_id = BAT_the_issues_at_hand
+		prerequisite = { focus = BAT_the_issues_at_hand }
+		mutually_exclusive = { focus = BAT_industrial_relief_plan }
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+			
+		}
+		available = {
+			has_country_flag = social_security_bill_passes
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = economic_recession
+				add_idea = recovering_economic_recession
+			}
+			add_popularity = {
+				ideology = holmarism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = BAT_industrial_relief_plan
+		icon = GFX_generic_industrialization
+		relative_position_id = BAT_the_issues_at_hand
+		prerequisite = { focus = BAT_the_issues_at_hand }
+		mutually_exclusive = { focus = BAT_social_security_act }
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+			
+		}
+		available = {
+			has_country_flag = social_security_bill_fails
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = economic_recession
+				add_idea = recovering_economic_recession
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = BAT_1936_presidential_elections
+		icon = GFX_focus_generic_elections
+		x = 8
+		y = 2
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = { focus = BAT_social_security_act focus = BAT_industrial_relief_plan}
+		available_if_capitulated = yes
+		bypass = {
+			has_country_flag = elections_over
+		}
+		available = {
+			always = no
+		}
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAT_oxo_wins_again
+		icon = GFX_focus_limon_oxo_wins
+		relative_position_id = BAT_1936_presidential_elections
+		prerequisite = { focus =  BAT_1936_presidential_elections }
+		mutually_exclusive = { focus = BAT_stona_donelo_wins }
+		mutually_exclusive = { focus = BAT_leon_vasto_wins }
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			has_country_flag = oxo_wins
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = BAT_fight_the_radicals
+		icon = GFX_freedom_of_press
+		relative_position_id = BAT_1936_presidential_elections
+		prerequisite = { focus =  BAT_oxo_wins_again }
+		x = -1
+		y = 2
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = voulgerism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = BAT_a_recovering_economy
+		icon = GFX_Focus_Export_Economy
+		relative_position_id = BAT_1936_presidential_elections
+		prerequisite = { focus =  BAT_oxo_wins_again }
+		x = 1
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			remove_ideas = recovering_economic_recession
+		}
+	}
+	focus = {
+		id = BAT_leon_vasto_wins
+		icon = GFX_focus_leon_vasto_wins
+		relative_position_id = BAT_1936_presidential_elections
+		prerequisite = { focus =  BAT_1936_presidential_elections }
+		mutually_exclusive = { focus = BAT_oxo_wins_again }
+		mutually_exclusive = { focus = BAT_stona_donelo_wins }
+		x = 4
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			has_country_flag = vasto_sworn_in
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = voulgerism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = BAT_stona_donelo_wins
+		icon = GFX_focus_stona_donelo_wins 
+		relative_position_id = BAT_1936_presidential_elections
+		prerequisite = { focus =  BAT_1936_presidential_elections }
+		mutually_exclusive = { focus = BAT_oxo_wins_again }
+		mutually_exclusive = { focus = BAT_leon_vasto_wins }
+		x = -4
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			has_country_flag = donelo_sworn_in
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = BAT_fight_reactionaries
+		icon = GFX_Focus_Grabbing_Arm 
+		relative_position_id = BAT_stona_donelo_wins
+		prerequisite = { focus =  BAT_stona_donelo_wins }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			country_event = batvia.11
+		}
+	}
+	focus = {
+		id = BAT_early_reforms
+		icon = GFX_Generic_Pass_Legislation 
+		relative_position_id = BAT_stona_donelo_wins
+		prerequisite = { focus =  BAT_stona_donelo_wins }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BAT_supreme_workers_assembly
+		icon = GFX_generic_revolutionary_government 
+		relative_position_id = BAT_stona_donelo_wins
+		prerequisite = { focus =  BAT_fight_reactionaries }
+		prerequisite = { focus =  BAT_early_reforms }
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			has_country_flag = communist_victory
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+}

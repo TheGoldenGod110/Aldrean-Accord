@@ -1,0 +1,540 @@
+focus_tree = {
+	id = rige_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HRG
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1400 }
+	default = no
+
+	focus = {
+		id = HRG_the_revolution
+		icon = GFX_focus_generic_coalition_army
+		x = 8
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_1
+				add_idea = voulgerist_army_2
+			}
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = HRG_ramsland_plan
+		icon = GFX_focus_generic_static_defense
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_the_revolution }
+		mutually_exclusive = { focus = HRG_odegaard_plan }
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_2
+				add_idea = voulgerist_army_3
+			}
+			set_country_flag = ramsland_plan
+		}
+	}
+	focus = {
+		id = HRG_artillery
+		icon = GFX_focus_superior_firepower_doctrine
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_ramsland_plan }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_ideas = artillery_schools
+		}
+	}
+	focus = {
+		id = HRG_repurpose_old_guns
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_artillery }
+		x = 4
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+				producer = HRG
+			}
+		}
+	}
+	focus = {
+		id = HRG_coordinated_fire
+		icon = GFX_goal_generic_army_artillery
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_repurpose_old_guns }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = artillery_schools
+				add_idea = artillery_schools_2
+			}
+		}
+	}
+	focus = {
+		id = HRG_fortify_the_line
+		icon = GFX_generic_soldiers_defense_doctrine
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_ramsland_plan }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_3
+				add_idea = voulgerist_army_8
+			}
+		}
+	}
+	focus = {
+		id = HRG_logistics
+		icon = GFX_focus_lend_lease
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_fortify_the_line }
+		x = 2
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_8
+				add_idea = voulgerist_army_9
+			}
+		}
+	}
+	focus = {
+		id = HRG_counterattack_plan
+		icon = GFX_focus_mass_assault
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_logistics }
+		x = 2
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_9
+				add_idea = voulgerist_army_10
+			}
+		}
+	}
+	focus = {
+		id = HRG_odegaard_plan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_the_revolution }
+		mutually_exclusive = { focus = HRG_ramsland_plan }
+		x = -2
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_2
+				add_idea = voulgerist_army_4
+			}
+			set_country_flag = odegaard_plan
+		}
+	}
+	focus = {
+		id = HRG_mobilize_the_nation
+		icon = GFX_focus_volunteer_army
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_odegaard_plan focus = HRG_ramsland_plan }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_ideas = national_conscription
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							has_idea = limited_conscription
+						}
+						NOT = {
+							has_idea = extensive_conscription
+						}
+						NOT = {
+							has_idea = service_by_requirement
+						}
+						NOT = {
+							has_idea = all_adults_serve
+						}
+						NOT = {
+							has_idea = scraping_the_barrel
+						}
+					}
+				}
+				add_ideas = limited_conscription
+			}
+		}
+	}
+	focus = {
+		id = HRG_guns
+		icon = GFX_focus_generic_military_equipment
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_mobilize_the_nation }
+		x = 0
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = HRG
+			}
+		}
+	}
+	focus = {
+		id = HRG_modernist_army
+		icon = GFX_generic_corporatism
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_guns }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_ideas = modernist_army
+		}
+	}
+	focus = {
+		id = HRG_coordinated_attack_plan
+		icon = GFX_generic_volunteer_corps
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_odegaard_plan }
+		x = -2
+		y = 2
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_4
+				add_idea = voulgerist_army_5
+			}
+		}
+	}
+	focus = {
+		id = HRG_mass_assault
+		icon = GFX_focus_mass_assault
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_coordinated_attack_plan }
+		x = -2
+		y = 3
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_5
+				add_idea = voulgerist_army_6
+			}
+		}
+	}
+	focus = {
+		id = HRG_modern_infantry_doctrine
+		icon = GFX_generic_infantry_training
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_mass_assault }
+		x = -2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = voulgerist_army_6
+				add_idea = voulgerist_army_7
+			}
+			army_experience = 50
+			add_tech_bonus = {
+				name = HRG_modern_infantry_doctrine
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = HRG_new_tank_program
+		icon = GFX_focus_generic_tank_upgrade
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_odegaard_plan }
+		x = -4
+		y = 2
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = HRG_new_tank_program
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+			add_ideas = motor_industry_1
+		}
+	}
+	focus = {
+		id = HRG_motorization
+		icon = GFX_focus_mobile_warfare
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_new_tank_program }
+		x = -4
+		y = 3
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = HRG_motorization
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+			swap_ideas = {
+				remove_idea = motor_industry_1
+				add_idea = motor_industry_2
+			}
+		}
+	}
+	focus = {
+		id = HRG_streamlined_tank_production
+		icon = GFX_generic_industry_tanks
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_motorization }
+		x = -4
+		y = 4
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = motor_industry_2
+				add_idea = motor_industry_3
+			}
+		}
+	}
+	focus = {
+		id = HRG_in_the_aftermath
+		icon = GFX_generic_ultranationalist_volunteers
+		relative_position_id = HRG_the_revolution
+		prerequisite = { focus = HRG_streamlined_tank_production focus = HRG_coordinated_fire }
+		prerequisite = { focus = HRG_modernist_army }
+		prerequisite = { focus = HRG_modern_infantry_doctrine focus = HRG_counterattack_plan }
+		x = 0
+		y = 5
+		cost = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				has_country_flag = VEL_civil_war_over_flag
+				NOT = {
+					country_exists = VEL
+				}
+			}
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+}

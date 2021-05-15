@@ -1,0 +1,67 @@
+focus_tree = {
+	id = james_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LBR
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1400 }
+	default = no
+
+	focus = {
+		id = LBR_coronation_of_william
+		icon = GFX_Generic_Crown_Kaiser
+		x = 8
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		cancelable = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = james.1
+		}
+	}
+	focus = {
+		id = LBR_loyalty_to_the_king
+		icon = GFX_focus_william_seaton
+		relative_position_id = LBR_coronation_of_william
+		prerequisite = {focus = LBR_coronation_of_william }
+		x = -4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		cancelable = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LBR_t
+		icon = GFX_Generic_Crown_Kaiser
+		relative_position_id = LBR_coronation_of_william
+		prerequisite = {focus = LBR_coronation_of_william }
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		cancelable = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+}
