@@ -1,0 +1,281 @@
+ideas = {
+
+  ################################################################################################################################################################################################
+  ### BEV
+  ################################################################################################################################################################################################
+
+	head_of_government = { ### Head of Government ###
+		BEV_HoG_remily_maxian = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = remily_maxian_unavailable }
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hog
+			}
+			
+			traits = { POSITION_Chancellor HoG_Silent_Workhorse head_of_government voulgerist_ideology }
+		}
+		BEV_HoG_nathan_brasseur = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = nathan_brasseur_unavailable }
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hog
+			}
+			
+			traits = { POSITION_Chancellor HoG_Old_Lawyer head_of_government voulgerist_ideology }
+		}
+		BEV_HoG_vacant_position = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = vacant_position_unavailable }
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hog
+			}
+			
+			traits = { POSITION_Chancellor head_of_government }
+		}
+	}
+	foreign_minister = {
+		BEV_FM_valan_malux = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_fm
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = valan_malux_unavailable }
+			}
+			
+			
+			traits = { FM_Biased_Intellectual foreign_minister voulgerist_ideology }
+		}
+		BEV_FM_celeon_veaux = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_fm
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = celeon_veaux_unavailable }
+			}
+			
+			
+			traits = { FM_Ideological_Crusader foreign_minister voulgerist_ideology }
+		}
+		BEV_FM_limone_moreau = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_fm
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = limone_moreau_unavailable }
+			}
+			
+			
+			traits = { FM_Apologetic_Clerk foreign_minister autocrat }
+		}
+	}
+	economy_minister = {
+		BEV_EM_gaetan_auglen = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_em
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = gaetan_auglen_unavailable }
+			}
+			
+			
+			traits = { AM_Administrative_Genius economy_minister voulgerist_ideology }
+		}
+		BEV_EM_eferen_le_seur = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_em
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = eferen_le_seur_unavailable }
+			}
+			
+			
+			traits = { AM_Resource_Industrialist economy_minister autocrat }
+		}
+		BEV_EM_josel_vola = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_em
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = josel_vola_unavailable }
+			}
+			
+			
+			traits = { AM_Planned_Economy_Proponent economy_minister voulgerist_ideology }
+		}
+	}
+	security_minister = {
+		BEV_MoS_rogeny_veilus = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_sm
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = rogeny_veilus_unavailable }
+			}
+			
+			
+			traits = { 
+				MoS_Silent_Lawyer 
+				security_minister
+				voulgerist_ideology 
+			}
+		}
+		BEV_MoS_albert_rault = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_sm
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = albert_rault_unavailable }
+			}
+			
+			
+			traits = { 
+				MoS_Prince_Of_Terror 
+				security_minister
+				voulgerist_ideology
+			}
+		}
+		BEV_MoS_cyril_marchier = {
+			picture = Generic_Portrait
+			allowed = { tag = BEV }
+			available = {
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_sm
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = cyril_marchier_unavailable }
+			}
+			
+			
+			traits = { 
+				MoS_Health_And_Safety 
+				security_minister
+				autocrat
+			}
+		}
+	}
+	head_of_intel = {
+		BEV_HoI_jean_baniste = {
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hoi
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = jean_baniste_unavailable }
+			}
+			
+			
+			traits = { 
+				HoI_Political_Specialist 
+				head_of_intel 
+				voulgerist_ideology
+			}
+		}
+		BEV_HoI_abel_beauln = {
+			allowed = { tag = BEV }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hoi
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = abel_beauln_unavailable }
+			}
+			
+			
+			traits = { 
+				HoI_Dismal_Enigma
+				head_of_intel 
+				autocrat
+			}
+		}
+	}
+}

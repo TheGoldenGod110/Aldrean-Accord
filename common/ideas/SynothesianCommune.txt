@@ -1,0 +1,140 @@
+ideas = {
+	country = {
+		revolutionary_anarchism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = SPR_anarchist_society
+			
+			modifier = {
+				conscription_factor = 0.1
+				political_power_gain = -0.25
+				radical_socialist_drift = 0.05
+				justify_war_goal_time = -0.1
+			}
+		}
+		revolutionary_anarchism_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = SPR_anarchist_society
+			
+			modifier = {
+				conscription_factor = 0.5
+				political_power_gain = -0.25
+				radical_socialist_drift = 0.05
+				justify_war_goal_time = -0.25
+			}
+		}
+		state_socialism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				conscription = 0.02
+				political_power_gain = 0.25
+				communism_drift = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		state_socialism_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				conscription = 0.02
+				political_power_gain = 0.50
+				communism_drift = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+		syn_five_year_plan = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.25
+				global_building_slots_factor = 0.3
+			}
+		}
+		syn_five_year_plan_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.35
+				global_building_slots_factor = 0.3
+				production_speed_buildings_factor = 0.25
+				stability_factor = -0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+ideas = {
+
+  ################################################################################################################################################################################################
+  ### VEL
+  ################################################################################################################################################################################################
+
+	head_of_government = { ### Head of Government ###
+		LBR_HoG_archille_gerin = {
+			picture = Generic_Portrait
+			allowed = { tag = LBR }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hog
+			}
+			visible = {
+				date > 1934.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = archille_gerin_unavailable }
+			}
+			
+			
+			traits = { POSITION_Prime_Minister HoG_Old_General head_of_government}
+		}
+		LBR_HoG_vacant_position = {
+			picture = Generic_Portrait
+			allowed = { tag = LBR }
+			available = {
+				
+			}
+			allowed_to_remove = {
+				has_country_flag = can_replace_hog
+			}
+			visible = {
+				date > 1934.1.1
+				date < 1964.1.1
+				NOT = { has_country_flag = vacant_position_unavailable }
+			}
+			
+			
+			traits = { head_of_government POSITION_Prime_Minister}
+		}
+	}
+}
