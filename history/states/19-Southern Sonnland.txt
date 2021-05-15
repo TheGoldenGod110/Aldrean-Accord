@@ -1,0 +1,23 @@
+state={
+	id=19
+	name="STATE_19"
+	state_category = town
+	provinces={
+		252 4180 5368 8183 8242 
+	}
+	manpower=643341
+	buildings_max_level_factor=1.000
+	history={
+		owner = ABR
+		controller = ABR
+		add_core_of = ABR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			4180 10
+		}
+	}
+}

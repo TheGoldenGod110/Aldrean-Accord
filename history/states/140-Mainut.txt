@@ -1,0 +1,23 @@
+state={
+	id=140
+	name="STATE_140"
+	state_category = city
+	provinces={
+		1989 3734 5133 5745 9123 9160 9180 9215 
+	}
+	manpower=2136690
+	buildings_max_level_factor=1.000
+	history={
+		owner = EDL
+		controller = EDL
+		add_core_of = EDL
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			5133 25
+		}
+	}
+}

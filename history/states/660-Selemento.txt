@@ -1,0 +1,24 @@
+
+state={
+	id=660
+	name="STATE_660"
+	state_category = large_town
+	provinces={
+		3298 3973 5064 6261 7812 
+	}
+	manpower=1654642
+	buildings_max_level_factor=1.000
+	history={
+		owner = TRC
+		controller = TRC
+		add_core_of = TRC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			3973 30
+		}
+	}
+}

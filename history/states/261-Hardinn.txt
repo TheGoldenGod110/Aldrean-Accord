@@ -1,0 +1,22 @@
+state={
+	id=261
+	name="STATE_261"
+	state_category = rural
+	provinces={
+		820 1745 2635 5196 5638 5803 5822 5884 6773 6822 6885 6894 
+	}
+	manpower=235772
+	buildings_max_level_factor=1.000
+	history={
+		owner = BAT
+		controller = BAT
+		add_core_of = BAT
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			5638 10
+		}
+	}
+}

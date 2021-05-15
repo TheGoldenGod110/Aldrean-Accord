@@ -1,0 +1,23 @@
+state={
+	id=167
+	name="STATE_167"
+	state_category = town
+	provinces={
+		9086 9109 9117 9141 
+	}
+	manpower=826552
+	buildings_max_level_factor=1.000
+	history={
+		owner = RBG
+		controller = RBG
+		add_core_of = RBG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			9136 10
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=649
+	name="STATE_649"
+	state_category = town
+	provinces={
+		289 5218 6551 7305 7310 7354 14109 
+	}
+	manpower=1023656
+	buildings_max_level_factor=1.000
+	history={
+		owner = OXM
+		controller = OXM
+		add_core_of = OXM
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			7310 10
+		}
+	}
+}

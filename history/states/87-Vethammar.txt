@@ -1,0 +1,24 @@
+
+state={
+	id=87
+	name="STATE_87"
+	state_category = city
+	provinces={
+		3940 4156 6118 6403 7589 7597 7618 7624 7656 
+	}
+	manpower=1531533
+	buildings_max_level_factor=1.000
+	history={
+		owner = ETT
+		controller = ETT
+		add_core_of = ETT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			6118 15
+		}
+	}
+}

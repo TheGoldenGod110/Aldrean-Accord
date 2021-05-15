@@ -1,0 +1,24 @@
+
+state={
+	id=10
+	name="STATE_10"
+	state_category = town
+	provinces={
+		8273 8293 8313 8348 
+	}
+	manpower=673523
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			8293 10
+		}
+	}
+}

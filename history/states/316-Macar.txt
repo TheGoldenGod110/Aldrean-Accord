@@ -1,0 +1,25 @@
+state={
+	id=316
+	name="STATE_316"
+	state_category = rural
+	provinces={
+		936 8814 
+	}
+	manpower=72546
+	buildings_max_level_factor=1.000
+	history={
+		owner = VDK
+		controller = VDK
+		add_core_of = VDK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			8814 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8814 10
+		}
+	}
+}

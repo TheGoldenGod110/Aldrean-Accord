@@ -1,0 +1,23 @@
+state={
+	id=960
+	name="STATE_960"
+	state_category = large_town
+	provinces={
+		102 238 3092 3370 4688 7576 
+	}
+	manpower=937835
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			3092 10
+		}
+	}
+}

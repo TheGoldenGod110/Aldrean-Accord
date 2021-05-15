@@ -1,0 +1,22 @@
+state={
+	id=710
+	name="STATE_710"
+	state_category = rural
+	provinces={
+		157 295 821 1608 2184 3275 4708 5702 5706 10890 
+	}
+	manpower=461751
+	buildings_max_level_factor=1.000
+	history={
+		owner = BES
+		controller = BES
+		add_core_of = BES
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			5702 10
+		}
+	}
+}

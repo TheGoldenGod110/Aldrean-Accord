@@ -1,0 +1,24 @@
+
+state={
+	id=35
+	name="STATE_35"
+	state_category = large_town
+	provinces={
+		3828 4289 5671 6583 8470 8489 8509 
+	}
+	manpower=1845612
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			3828 10
+		}
+	}
+}

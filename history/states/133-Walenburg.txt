@@ -1,0 +1,25 @@
+
+state={
+	id=133
+	name="STATE_133"
+	state_category = town
+	provinces={
+		8011 8061 
+	}
+	manpower=182551
+	buildings_max_level_factor=1.000
+	history={
+		owner = ETT
+		controller = ETT
+		add_core_of = ETT
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			8011 10
+		}
+	}
+}

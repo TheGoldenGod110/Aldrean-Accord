@@ -1,0 +1,23 @@
+state={
+	id=75
+	name="STATE_75"
+	state_category = metropolis
+	provinces={
+		2787 3458 8718 8752 8785 8825 8826 8848 
+	}
+	manpower=3423181
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 4
+		}
+		victory_points = {
+			8848 20
+		}
+	}
+}
