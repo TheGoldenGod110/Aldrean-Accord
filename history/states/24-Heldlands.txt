@@ -1,0 +1,27 @@
+
+state={
+	id=24
+	name="STATE_24"
+	state_category = large_town
+	provinces={
+		2775 3431 5528 6162 8187 8233 8251 8295 
+	}
+	manpower=1456145
+	buildings_max_level_factor=1.000
+	history={
+		owner = ABR
+		controller = ABR
+		add_core_of = ABR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			8233 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			6162 15
+		}
+	}
+}

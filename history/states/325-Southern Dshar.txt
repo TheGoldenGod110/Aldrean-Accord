@@ -1,0 +1,26 @@
+state={
+	id=325
+	name="STATE_325"
+	state_category = town
+	resources = {
+		rubber = 90
+	}
+	provinces={
+		590 643 941 1670 2260 5263 5784 6205 10035 10036 10053 10071 
+	}
+	manpower=1927661
+	buildings_max_level_factor=1.000
+	history={
+		owner = HMR
+		controller = HMR
+		add_core_of = HMR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			643 10
+		}
+	}
+}

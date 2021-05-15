@@ -1,0 +1,23 @@
+state={
+	id=337
+	name="STATE_337"
+	state_category = town
+	provinces={
+		218 339 491 2001 2542 3005 3060 3592 5154 5294 5453 6262 10064 10080 10081 10093 10167 10249 
+	}
+	manpower=1451661
+	buildings_max_level_factor=1.000
+	history={
+		owner = ANR
+		controller = ANR
+		add_core_of = ANR
+		add_claim_of = HMR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			491 20
+		}
+	}
+}

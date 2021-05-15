@@ -1,0 +1,26 @@
+state={
+	id=698
+	name="STATE_698"
+	state_category = large_town
+	provinces={
+		52 106 407 2013 2141 2624 3891 4699 10926 10966 
+	}
+	manpower=2561546
+	buildings_max_level_factor=1.000
+	history={
+		owner = BES
+		controller = BES
+		add_core_of = BES
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			4699 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			4699 30
+		}
+	}
+}

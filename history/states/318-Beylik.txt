@@ -1,0 +1,27 @@
+state={
+	id=318
+	name="STATE_318"
+	state_category = large_city
+	provinces={
+		2900 4592 8934 8948 8955 
+	}
+	manpower=2425613
+	buildings_max_level_factor=1.000
+	history={
+		owner = VDK
+		controller = VDK
+		add_core_of = VDK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+			8955 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			8955 30
+		}
+	}
+}

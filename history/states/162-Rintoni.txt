@@ -1,0 +1,26 @@
+state={
+	id=162
+	name="STATE_162"
+	state_category = large_town
+	provinces={
+		979 3382 5496 5757 8713 8730 8746 8767 
+	}
+	manpower=1426511
+	buildings_max_level_factor=1.000
+	history={
+		owner = SYN
+		controller = SYN
+		add_core_of = SYN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			5496 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			5496 10
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=606
+	name="STATE_606"
+	state_category = town
+	provinces={
+		204 454 1195 1231 1373 1447 1465 1832 2494 3644 5715 6359 6752 6757 6864 6898 6911 6945 
+	}
+	manpower=765250
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			6752 10
+		}
+	}
+}

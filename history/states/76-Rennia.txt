@@ -1,0 +1,27 @@
+
+state={
+	id=76
+	name="STATE_76"
+	state_category = large_town
+	resources = {
+		oil = 10
+	}
+	provinces={
+		1147 3377 3856 4066 5090 6215 6381 8654 8665 
+	}
+	manpower=1863561
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			8665 10
+		}
+	}
+}

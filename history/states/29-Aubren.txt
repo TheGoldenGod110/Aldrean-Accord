@@ -1,0 +1,26 @@
+state={
+	id=29
+	name="STATE_29"
+	state_category = city
+	provinces={
+		1247 5709 8496 8510 8534 8571 8591 8596 8597 8613 8631 8636 
+	}
+	manpower=1799722
+	buildings_max_level_factor=1.000
+	history={
+		owner = BEV
+		controller = BEV
+		add_core_of = BEV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			8596 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			8596 20
+		}
+	}
+}

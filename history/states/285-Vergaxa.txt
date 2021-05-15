@@ -1,0 +1,26 @@
+state={
+	id=285
+	name="STATE_285"
+	state_category = metropolis
+	provinces={
+		2417 3497 6552 8112 8156 8173 8194 8195 
+	}
+	manpower=6826552
+	buildings_max_level_factor=1.000
+	history={
+		owner = HLH
+		controller = HLH
+		add_core_of = HLH
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 2
+			8194 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			2417 30
+		}
+	}
+}

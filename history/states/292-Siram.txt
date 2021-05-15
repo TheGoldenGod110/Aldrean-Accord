@@ -1,0 +1,27 @@
+state={
+	id=292
+	name="STATE_292"
+	state_category = city
+	provinces={
+		183 4973 5099 9702 9728 9738 
+	}
+	manpower=1372512
+	buildings_max_level_factor=1.000
+	history={
+		owner = LBR
+		controller = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+			183 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			183 10
+		}
+	}
+}

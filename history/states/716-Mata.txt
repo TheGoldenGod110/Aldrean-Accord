@@ -1,0 +1,26 @@
+state={
+	id=716
+	name="STATE_716"
+	state_category = town
+	provinces={
+		270 746 788 1553 4134 4344 6313 10598 10599 
+	}
+	manpower=2615551
+	buildings_max_level_factor=1.000
+	history={
+		owner = BES
+		controller = BES
+		add_core_of = BES
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			10599 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10599 10
+		}
+	}
+}
