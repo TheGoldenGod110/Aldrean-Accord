@@ -280,7 +280,7 @@ country_event = { ###Riots of [GetMonth]
 			ideology = voulgerism
 			popularity = 0.02
 		}
-		add_stability = -0.05
+		add_stability = -0.03
 	}
 }
 country_event = { ###Oxo Criticizes the President-elect
