@@ -1,0 +1,24 @@
+state={
+	id=172
+	name="STATE_172"
+	state_category = city
+	provinces={
+		145 5552 8099 8151 8201 8208 8255 8256 8264 8301 
+	}
+	manpower=2132234
+	buildings_max_level_factor=1.000
+	history={
+		owner = HLG
+		controller = HLG
+		add_core_of = HLG
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 3
+		}
+		victory_points = {
+			8256 25
+		}
+	}
+}

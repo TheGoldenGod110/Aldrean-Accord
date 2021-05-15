@@ -1,0 +1,24 @@
+
+state={
+	id=320
+	name="STATE_320"
+	state_category = town
+	provinces={
+		1517 1974 3532 3881 4277 5035 5175 5488 9019 9060 9237 
+	}
+	manpower=782635
+	buildings_max_level_factor=1.000
+	history={
+		owner = VDK
+		controller = VDK
+		add_core_of = VDK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			4277 10
+		}
+	}
+}

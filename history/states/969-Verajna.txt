@@ -1,0 +1,23 @@
+state={
+	id=969
+	name="STATE_969"
+	state_category = large_town
+	provinces={
+		510 1860 1871 2251 3106 4773 9407 9432 9459 9485 
+	}
+	manpower=2144413
+	buildings_max_level_factor=1.000
+	history={
+		owner = OLG
+		controller = OLG
+		add_core_of = OLG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			1860 10
+		}
+	}
+}

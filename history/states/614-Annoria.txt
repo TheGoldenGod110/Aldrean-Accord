@@ -1,0 +1,23 @@
+state={
+	id=614
+	name="STATE_614"
+	state_category = large_town
+	provinces={
+		23 178 1669 5262 6252 6920 6961 7063 7219 7256 
+	}
+	manpower=1424689
+	buildings_max_level_factor=1.000
+	history={
+		owner = ALR
+		controller = ALR
+		add_core_of = ALR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			178 10
+		}
+	}
+}

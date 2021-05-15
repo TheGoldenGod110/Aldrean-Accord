@@ -1,0 +1,25 @@
+state={
+	id=666
+	name="STATE_666"
+	state_category = rural
+	provinces={
+		1980 3111 3208 3386 4485 6769 6789 6810 6876 
+	}
+	manpower=525453
+	buildings_max_level_factor=1.000
+	history={
+		owner = OXM
+		controller = OXM
+		add_core_of = OXM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			6789 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			6810 10
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=288
+	name="STATE_288"
+	state_category = rural
+	provinces={
+		2335 4072 5039 5292 9644 9668 9671 9685 9688 9692 9727 
+	}
+	manpower=524456
+	buildings_max_level_factor=1.000
+	history={
+		owner = LBR
+		controller = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			4072 10
+		}
+	}
+}

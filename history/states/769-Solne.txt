@@ -1,0 +1,26 @@
+state={
+	id=769
+	name="STATE_769"
+	state_category = town
+	provinces={
+		1657 4559 5774 7108 7150 7214 
+	}
+	manpower=235467
+	buildings_max_level_factor=1.000
+	history={
+		owner = BTT
+		controller = BTT
+		add_core_of = BTT
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 2
+			7214 {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			7214 10
+		}
+	}
+}

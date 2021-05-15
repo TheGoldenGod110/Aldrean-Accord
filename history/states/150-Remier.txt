@@ -1,0 +1,23 @@
+state={
+	id=150
+	name="STATE_150"
+	state_category = large_town
+	provinces={
+		1621 1906 4867 4915 9161 9183 9187 9188 9212 9220 
+	}
+	manpower=1526772
+	buildings_max_level_factor=1.000
+	history={
+		owner = MND
+		controller = MND
+		add_core_of = MND
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			4867 10
+		}
+	}
+}

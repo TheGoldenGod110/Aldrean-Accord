@@ -1,0 +1,23 @@
+state={
+	id=277
+	name="STATE_277"
+	state_category = city
+	provinces={
+		582 3553 4036 4042 4421 8054 8090 8103 8126 8223 8249 
+	}
+	manpower=2173722
+	buildings_max_level_factor=1.000
+	history={
+		owner = HLG
+		controller = HLG
+		add_core_of = HLG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			8223 20
+		}
+	}
+}
