@@ -1,0 +1,26 @@
+state={
+	id=284
+	name="STATE_284"
+	state_category = large_city
+	provinces={
+		5171 5310 6544 8029 8157 
+	}
+	manpower=3826542
+	buildings_max_level_factor=1.000
+	history={
+		owner = HLH
+		controller = HLH
+		add_core_of = HLH
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			8157 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			8157 10
+		}
+	}
+}

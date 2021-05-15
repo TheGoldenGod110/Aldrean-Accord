@@ -1,0 +1,27 @@
+
+state={
+	id=287
+	name="STATE_287"
+	state_category = large_town
+	provinces={
+		209 2534 3308 6253 6405 9645 9690 
+	}
+	manpower=1265165
+	buildings_max_level_factor=1.000
+	history={
+		owner = LBR
+		controller = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			209 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			9645 10
+		}
+	}
+}

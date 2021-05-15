@@ -1,0 +1,24 @@
+
+state={
+	id=119
+	name="STATE_119"
+	state_category = rural
+	provinces={
+		1520 1687 2771 3581 4314 4657 4667 5093 5901 6154 9362 9403 9406 9421 
+	}
+	manpower=725571
+	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			9403 10
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=331
+	name="STATE_331"
+	state_category = rural
+	provinces={
+		268 360 2276 2543 3344 3523 4347 10159 10192 10205 10208 10220 10234 10256 
+	}
+	manpower=2461679
+	buildings_max_level_factor=1.000
+	history={
+		owner = HMR
+		controller = HMR
+		add_core_of = HMR
+		add_core_of = HSR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			10220 10
+		}
+	}
+}

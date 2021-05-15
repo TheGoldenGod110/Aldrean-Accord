@@ -1,0 +1,25 @@
+state={
+	id=149
+	name="STATE_149"
+	state_category = rural
+	provinces={
+		355 1053 1586 2572 3951 4910 5849 6462 8990 8993 9023 9039 
+	}
+	manpower=462788
+	buildings_max_level_factor=1.000
+	history={
+		owner = RBG
+		controller = RBG
+		add_core_of = RBG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			8993 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			8993 10
+		}
+	}
+}

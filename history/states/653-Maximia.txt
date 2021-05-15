@@ -1,0 +1,25 @@
+
+state={
+	id=653
+	name="STATE_653"
+	state_category = large_town
+	provinces={
+		2925 3914 4979 5302 5646 7535 7623 
+	}
+	manpower=3123246
+	buildings_max_level_factor=1.000
+	history={
+		owner = OXM
+		controller = OXM
+		add_core_of = OXM
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 4
+		}
+		victory_points = {
+			3914 10
+		}
+	}
+}

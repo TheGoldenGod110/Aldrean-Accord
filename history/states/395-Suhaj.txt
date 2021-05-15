@@ -1,0 +1,25 @@
+
+state={
+	id=395
+	name="STATE_395"
+	state_category = city
+	provinces={
+		309 1625 2055 2210 9302 9400 9423 9454 
+	}
+	manpower=2254541
+	buildings_max_level_factor=1.000
+	history={
+		owner = OLG
+		controller = OLG
+		add_core_of = OLG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 3
+		}
+		victory_points = {
+			9454 20
+		}
+	}
+}

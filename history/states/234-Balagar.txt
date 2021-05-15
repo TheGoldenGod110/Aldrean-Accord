@@ -1,0 +1,24 @@
+
+state={
+	id=234
+	name="STATE_234"
+	state_category = large_town
+	provinces={
+		2671 4649 4906 5948 7875 7905 7947 7988 7989 8039 
+	}
+	manpower=1341426
+	buildings_max_level_factor=1.000
+	history={
+		owner = ETR
+		controller = ETR
+		add_core_of = ETR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			4906 10
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=100
+	name="STATE_100"
+	state_category = large_town
+	provinces={
+		4366 4500 5842 7202 7225 7229 7258 7275 7335 7351 7356 7382 7398 7424 7431 
+	}
+	manpower=1266271
+	buildings_max_level_factor=1.000
+	history={
+		owner = GDY
+		controller = GDY
+		add_core_of = GDY
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			7356 10
+		}
+	}
+}
