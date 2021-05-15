@@ -1,0 +1,24 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	##### PACIFIC FLEET #####
+	### BATTLE FLEET ###
+	### Split between San Pedro (Los Angeles) and San Diego ###
+	fleet = {
+		name = "Iantic Fleet"			
+		naval_base = 9136
+		task_force = {				
+			name = "Main force"
+			location = 9136
+			ship = { name = "HMS 7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }
+			ship = { name = "HMS 8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }
+			ship = { name = "HMS 9" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }
+			ship = { name = "HMS 10" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }
+			ship = { name = "HMS 11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RBG version_name = "Gavra Class" } } }
+			ship = { name = "HMS 11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RBG version_name = "Gavra Class" } } }
+		}
+	}
+}	
+
+#####################

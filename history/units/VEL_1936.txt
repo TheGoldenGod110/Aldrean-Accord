@@ -1,0 +1,322 @@
+﻿division_template = {
+	name = "Hadernsk Infanteridivisjon"			# Infantry Division - Planned formation for mobilization of divisions, 1937-1940
+	division_names_group = SWE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+      	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+      	infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Regiment of 155mm howitzers, 105mm arty
+	}
+}
+division_template = {
+	name = "Pansarregemente"  	
+	division_names_group = SWE_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon consisted of ACs, motorcycle inf, cavalry
+	}
+}
+division_template = {
+	name = "Arbeiderhær"			# Workers militia
+	division_names_group = SWE_INF_01
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Mekaniseret infanteri" 		# Division Légère Mécanique
+	division_names_group = SWE_MEC_01 
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
+		light_armor = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
+		motorized = { x = 1 y = 0 }			# Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
+	}
+}
+units = {
+	######## LAND UNITS ########
+	##### Red Army #####
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7615 #Ressen
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7615 #Ressen
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3675 #Ressen
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3675 #Ressen
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3373 #Rødlund
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6923 #Vilngard
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6865 #Horjby
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 7513 #Medjyvik
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1602 #Cantrabia
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 2565 #Jorland
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 920 #Vejbøl
+		division_template = "Hadernsk Infanteridivisjon"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5130 #Osae
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5130 #Osae
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7045 #Bøgeskov
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7045 #Bøgeskov
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6865 #Bøgeskov
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7192 #Vibern
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 7590 #Vibern
+		division_template = "Arbeiderhær"
+		start_experience_factor = 0.3
+	}
+}
+### Flygvapnet ###
+air_wings = {
+	# Z.d'Op. Aériennes Nord -- Lille
+	48 = { 
+		
+		fighter_equipment_0 = {
+			owner = "VEL" 
+			amount = 250
+		}
+	
+		tac_bomber_equipment_0 =  {
+			owner = "VEL" 
+			amount = 120
+		}
+	}
+
+	42 = {
+		# Groupement de Chasse 22
+		fighter_equipment_0 = {
+			owner = "VEL" 
+			amount = 250
+		}
+	}
+	51 = {
+		# Groupement de Chasse 22
+		fighter_equipment_0 = {
+			owner = "VEL" 
+			amount = 200
+		}
+	}
+}
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "VEL"
+		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "VEL"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "VEL" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "VEL" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "VEL" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "VEL" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}
