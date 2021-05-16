@@ -32,7 +32,7 @@ set_technology = {
 	cv_naval_bomber1 = 1
 	early_bomber = 1
 	motorised_infantry = 1
-	trench_warfare = 1
+	superior_firepower = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -210,8 +210,8 @@ create_country_leader = {
 	}
 }
 create_corps_commander = {
-	name = "Ivar Kelmberg"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	name = "Jacob Oskarsen"
+	portrait_path = "gfx/leaders/VEL/Portrait_Hadernland_Jacob_Oskarsen.tga"
 	traits = { commando }
 	skill = 3
 
@@ -224,7 +224,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Elba Nesby"
 	portrait_path = "gfx/leaders/VEL/elba_nesby.dds"
-	traits = {  hill_fighter }
+	traits = {  infantry_leader }
 	skill = 5
 
 	attack_skill = 5
@@ -233,8 +233,8 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 create_corps_commander = {
-	name = "Hens Olmark"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Arne Jensen"
+	portrait_path = "gfx/leaders/VEL/Portrait_VEL_Arne_Jensen.tga"
 	traits = {  hill_fighter }
 	skill = 4
 
@@ -245,8 +245,8 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "Karl Jemit"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	name = "Karl Overby"
+	portrait_path = "gfx/leaders/VEL/Portrait_Hadernland_Karl_Overby.tga"
 	traits = { battleship_adherent blockade_runner }
 	skill = 4
 	attack_skill = 3

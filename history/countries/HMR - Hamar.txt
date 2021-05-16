@@ -68,10 +68,10 @@ give_guarantee = LBT
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Hector Hernand"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "hector_of_hamar.dds"
+	desc = "POLITICS_HECTOR_HERNAND_DESC"
+	picture = "gfx/leaders/HMR/Portrait_HMR_Hector_Hernand.tga"
 	expire = "1965.1.1"
-	ideology = national_despotism
+	ideology = agrarian_socialist
 	traits = {
 		
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "none.dds"
 	expire = "1965.1.1"
-	ideology = anarchist
+	ideology = karlanism
 	traits = {
 		
 	}
