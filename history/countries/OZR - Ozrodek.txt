@@ -56,12 +56,13 @@ set_convoys = 50
 
 
 set_politics = {
-	ruling_party = autocracy
+	ruling_party = authoritarian_democracy
 	elections_allowed = no
 }
 set_popularities = {
-	autocracy = 80
-	radical_socialist = 20
+	authoritarian_democracy = 80
+	radical_socialist = 17
+	individualist_anarchism = 3
 }
 
 add_ideas = {
@@ -73,9 +74,9 @@ add_ideas = {
 create_country_leader = {
 	name = "Mehmar Edayan"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+	picture = "Portrait_OZR_Mehmar_Edayan.tga"
 	expire = "1965.1.1"
-	ideology = absolute_monarchy
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		stout_defender
 	}
