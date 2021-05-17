@@ -970,11 +970,11 @@ country_event = { ###Chairman Directive 133: Political Education
 	id = hadernland.21
 	title = hadernland.21.t
 	desc = hadernland.21.d
-	picture = GFX_report_event_spain_civil_war_soldiers
+	picture = GFX_report_event_DEN_copenhagen_2
 	is_triggered_only = yes
 	option = { 
 		name = hadernland.21.a
-		add_stability = 0.03
+		add_political_power = -25
 		add_popularity = {
 			ideology = holmarism
 			popularity = 0.03
@@ -983,36 +983,6 @@ country_event = { ###Chairman Directive 133: Political Education
 			country_event = { id = hadernland.22 days = 60 }
 			country_event = { id = hadernland.25 days = 123 random_days = 40 }
 			country_event = { id = hadernland.30 days  = 45 random_days = 15 }
-			if = {
-				limit = {
-					has_idea = VEL_HoG_leah_foster
-				}
-				country_event = { id = hadernland.23 days = 64 }
-			}
-		}
-	}
-	option = { 
-		name = hadernland.21.b
-		add_political_power = -50
-		add_stability = -0.03
-		add_popularity = {
-			ideology = authoritarian_socialism
-			popularity = 0.02
-		}
-		add_popularity = {
-			ideology = holmarism
-			popularity = 0.03
-		}
-		hidden_effect = { ###Fire the wartime flavour events
-			country_event = { id = hadernland.22 days = 60 }
-			country_event = { id = hadernland.25 days = 123 random_days = 40 }
-			country_event = { id = hadernland.30 days  = 45 random_days = 15 }
-			if = {
-				limit = {
-					has_idea = VEL_HoG_leah_foster
-				}
-				country_event = { id = hadernland.23 days = 64 }
-			}
 		}
 	}
 }
@@ -1281,7 +1251,7 @@ country_event = { ###Some wounds...
 		}
 	}
 }
-country_event = { ###Post-Civil War Arbeidsforbund Begins: Føderationists
+country_event = { ###Post-Civil War Federal Congress Begins: Federationists
 	id = hadernland.34
 	title = hadernland.34.t
 	desc = hadernland.34.d
@@ -1305,15 +1275,7 @@ country_event = { ###Post-Civil War Arbeidsforbund Begins: Føderationists
 			country_event = { id = hadernland.35 days = 5 }
 			country_event = { id = hadernland.36 days = 15 }
 			country_event = { id = hadernland.41 days = 55 }
-			if = {
-				limit = {
-					has_country_flag = hjemist_allies
-				}
-				country_event = { id = hadernland.37 days = 26 }
-			}
-			else = {
-				country_event = { id = hadernland.39 days = 26 }
-			}
+			country_event = { id = hadernland.37 days = 26 }
 		}
 	}
 }
@@ -1351,27 +1313,32 @@ country_event = { ###Trial of the Traitors
 		ai_chance = { factor = 30 }
 	}
 }
-country_event = { ###Central Government:Hjemist allies
+country_event = { ###Reconstruction Debate
 	id = hadernland.37
 	title = hadernland.37.t
 	desc = hadernland.37.d
-	picture = GFX_report_event_spain_civil_war_soldiers
+	picture = GFX_report_event_DEN_folketing
 	is_triggered_only = yes
 	option = { 
 		name = hadernland.37.a ###HAK and SDV
 		ai_chance = { factor = 90 }
 		add_popularity = {
 			ideology = radical_socialist
-			popularity = 0.02
+			popularity = 0.03
 		}
 		add_popularity = {
 			ideology = holmarism
-			popularity = 0.02
+			popularity = 0.03
 		}
 	}
 	option = { 
 		name = hadernland.37.b ###FVP
 		ai_chance = { factor = 10 }
+		add_popularity = {
+			ideology = authoritarian_socialism
+			popularity = 0.1
+		}
+		add_political_power = -50
 	}
 }
 country_event = { 

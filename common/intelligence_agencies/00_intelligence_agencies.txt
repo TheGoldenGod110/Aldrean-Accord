@@ -5,7 +5,7 @@
 intelligence_agency = {
 	
 	picture = GFX_intelligence_agency_logo_nor
-	names = { "Komité for Føderal Sikkerhed" }
+	names = { "Federal Security Committee" }
 	
 	default = { tag = VEL }
 	available = { original_tag = VEL }
