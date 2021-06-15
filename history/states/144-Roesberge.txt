@@ -5,12 +5,13 @@ state={
 	provinces={
 		9136 
 	}
-	manpower=1672181
+	manpower=672181
 	buildings_max_level_factor=1.000
 	history={
-		owner = RBG
-		controller = RBG
-		add_core_of = RBG
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		add_claim_by = THR
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

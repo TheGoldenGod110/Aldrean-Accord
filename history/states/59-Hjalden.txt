@@ -3,7 +3,7 @@ state={
 	name="STATE_59"
 	state_category = city
 	provinces={
-		2889 3776 3959 5767 6412 6859 6861 6889 6890 6902 6924 6963 7009 
+		2889 3776 3959 5767 6412 6859 6890 6902 6924 6963 7009 
 	}
 	manpower=1253561
 	buildings_max_level_factor=1.000
@@ -15,7 +15,7 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
-			6861 = {
+			6859 = {
 				naval_base = 2
 			}
 		}

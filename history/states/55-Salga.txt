@@ -3,7 +3,7 @@ state={
 	name="STATE_55"
 	state_category = city
 	provinces={
-		2940 4256 6197 6393 7230 7270 7315 7321 7347 7400 
+		2940 4256 6197 6393 7230 7270 7315 7321 7451 7400
 	}
 	manpower=1752561
 	buildings_max_level_factor=1.000
@@ -17,7 +17,7 @@ state={
 			arms_factory = 1
 		}
 		victory_points = {
-			2940 10
+			6197 10
 		}
 	}
 }

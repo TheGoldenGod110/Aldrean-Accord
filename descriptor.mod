@@ -37,4 +37,4 @@ tags={
 	"Map"
 }
 name="AldreanAccord"
-supported_version="1.10.5"
+supported_version="1.10.7"

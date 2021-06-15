@@ -8,16 +8,16 @@ state={
 	manpower=826552
 	buildings_max_level_factor=1.000
 	history={
-		owner = RBG
-		controller = RBG
-		add_core_of = RBG
+		owner = TRV
+		controller = TRV
+		add_core_of = TRV
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
 			arms_factory = 1
 		}
 		victory_points = {
-			9136 10
+			9141 10
 		}
 	}
 }

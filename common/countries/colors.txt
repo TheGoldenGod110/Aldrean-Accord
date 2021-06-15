@@ -103,8 +103,8 @@ MND = {
 	color_ui = rgb { 255 255 255 }
 }
 RBG = {
-	color = rgb { 87 29 29 }
-	color_ui = rgb { 87 29 29 }
+	color = rgb { 163 29 110 }
+	color_ui = rgb { 163 29 110 }
 }
 ORN = {
 	color = rgb { 22 170 225 }
@@ -173,4 +173,16 @@ HAD = {
 AVI = {
 	color = rgb { 37 105 107 }
 	color_ui = rgb { 37 105 107 }
+}
+VAE = {
+	color = rgb { 97 138 143 }
+	color_ui = rgb { 97 138 143 }
+}
+THR = {
+	color = rgb { 214 171 86 }
+	color_ui = rgb { 214 171 86 }
+}
+TRV = {
+	color = rgb { 83 145 83 }
+	color_ui = rgb { 83 145 83 }
 }

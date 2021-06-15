@@ -25,6 +25,8 @@ LBT = "countries/Lubertatia.txt"
 EDL = "countries/Endlia.txt"
 MND = "countries/Mendary.txt"
 RBG = "countries/Rebegal.txt"
+THR = "countries/Thurgia.txt"
+TRV = "countries/Trovenia.txt"
 
 ###Northern Eshen
 OLG = "countries/OlgumenSultanate.txt"

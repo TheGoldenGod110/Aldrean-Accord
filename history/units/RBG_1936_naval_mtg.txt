@@ -7,10 +7,10 @@ units= {
 	### Split between San Pedro (Los Angeles) and San Diego ###
 	fleet = {
 		name = "Iantic Fleet"			
-		naval_base = 9136
+		naval_base = 9087
 		task_force = {				
 			name = "Main force"
-			location = 9136
+			location = 9087
 			ship = { name = "HMS 7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }
 			ship = { name = "HMS 8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }
 			ship = { name = "HMS 9" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = RBG version_name = "Wolkin Class" } } }

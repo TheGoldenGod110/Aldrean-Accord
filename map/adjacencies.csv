@@ -3,14 +3,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 936;8934;sea;13475;-1;-1;-1;-1;;Macar
 8978;5493;sea;12531;-1;-1;-1;-1;;Hegax
 9232;9174;sea;13394;-1;-1;-1;-1;;Sypus
-5667;7880;sea;11498;-1;-1;-1;-1;;Arlund
+5667;7880;sea;11431;-1;-1;-1;-1;;Albergen
+7002;6955;sea;13288;-1;-1;-1;-1;;Albergen
+6721;705;sea;13529;-1;-1;-1;-1;;Albergen
+6881;5889;sea;13288;-1;-1;-1;-1;;Albergen
+6767;2314;sea;13529;-1;-1;-1;-1;;Northern Hadernish Islands
+6669;2955;sea;13339;-1;-1;-1;-1;;Northern Hadernish Islands
+6650;5293;sea;13339;-1;-1;-1;-1;;Northern Hadernish Islands
+5010;4872;sea;11498;-1;-1;-1;-1;;Arlund
 5667;7985;sea;11498;-1;-1;-1;-1;;Arlund
 7954;6397;sea;12457;-1;-1;-1;-1;;Vilmonde
 5108;4138;sea;13656;-1;-1;-1;-1;;Vilmonde
-6783;6784;sea;13529;-1;-1;-1;-1;;Albergen
-6784;2314;sea;13529;-1;-1;-1;-1;;Albergen
-3235;10994;sea;13529;-1;-1;-1;-1;;Albergen
-10994;3804;sea;13529;-1;-1;-1;-1;;Albergen
 10001;2568;sea;12485;-1;-1;-1;-1;;Lesna Islands
 2568;10995;sea;12485;-1;-1;-1;-1;;Lesna Islands
 10001;10996;sea;12896;-1;-1;-1;-1;;Lesna Islands

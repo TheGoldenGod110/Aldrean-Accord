@@ -8,4 +8,8 @@ spriteTypes = {
 		name = "GFX_hadernsk_ak_victory"
 		texturefile = "gfx/event_pictures/Aldrea/Hadernland/VEL_hadernsk_AK_victory.dds"
 	}
+	spriteType = {
+		name = "GFX_leah_foster_event"
+		texturefile = "gfx/event_pictures/Aldrea/Hadernland/leah_foster_picture.tga"
+	}
 }

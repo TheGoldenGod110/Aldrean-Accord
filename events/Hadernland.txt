@@ -1008,11 +1008,11 @@ country_event = { ###Chairman Directive 252: Food Relief
 		}
 	}
 }
-country_event = { ###General Secretary Foster's Personal Affairs
+country_event = { ###Public Knowledge
 	id = hadernland.23
 	title = hadernland.23.t
 	desc = hadernland.23.d
-	picture = GFX_report_event_spain_civil_war_soldiers
+	picture = GFX_leah_foster_event
 	is_triggered_only = yes
 	option = { 
 		name = hadernland.23.a
@@ -1714,7 +1714,7 @@ country_event = { ###Cruel Rumors
 	id = hadernland.56
 	title = hadernland.56.t
 	desc = hadernland.56.d
-	picture = GFX_report_event_spain_civil_war_soldiers
+	picture = GFX_leah_foster_event
 	is_triggered_only = yes
 	option = { 
 		name = hadernland.56.a
@@ -1855,5 +1855,56 @@ country_event = { ###Hadernish Refugees: Ettinland
 			popularity = 0.01
 		}
 		add_manpower = 2252
+	}
+}
+
+country_event = { ###The 2nd International Congress
+	id = hadernland.104
+	title = hadernland.104.t
+	desc = hadernland.104.d
+	picture = GFX_report_event_generic_conference2
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.104.a 
+		ETT = {
+			country_event = hadernland.105
+		}
+	}
+}
+country_event = { ###The 2nd International Congress: Ettinland hosts
+	id = hadernland.105
+	title = hadernland.105.t
+	desc = hadernland.105.d
+	picture = GFX_report_event_generic_conference2
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.105.a
+		add_stability = 0.01
+		add_political_power = 25
+		every_other_country = {
+			limit = {
+				has_government = holmarism
+				NOT = { has_war_with = ROOT }
+			}
+			country_event = {
+				id = hadernland.106
+				days = 3
+			}
+		}
+	}
+}
+country_event = { ###The 2nd International Congress: Ettinland hosts
+	id = hadernland.106
+	title = hadernland.106.t
+	desc = hadernland.106.d
+	picture = GFX_report_event_generic_conference2
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.106.a
+		set_global_flag = second_inter_congress_@ROOT
+	}
+	option = { 
+		name = hadernland.106.b
+		
 	}
 }

@@ -105,7 +105,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9136
+		location = 9087
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -114,7 +114,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 9136
+		location = 9087
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -123,7 +123,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 9124
+		location = 4475
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -132,7 +132,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 9141
+		location = 9119
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -141,7 +141,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 9141
+		location = 6377
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -150,7 +150,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 8967
+		location = 9001
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -168,16 +168,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 9009
-		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location = 8990
+		location = 8967
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -186,7 +177,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3951
+		location = 1586
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -195,7 +186,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 9076
+		location = 9039
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -203,7 +194,7 @@ units = {
 ### Air Wings
 air_wings = {
 	# Z.d'Op. Aériennes Nord -- Lille
-	168 = { 
+	148 = { 
 		# Groupement de Chasse 21 
 		# Groupement de Chasse 23
 		fighter_equipment_0 = {

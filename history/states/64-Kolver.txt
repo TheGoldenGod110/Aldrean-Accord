@@ -3,7 +3,7 @@ state={
 	name="STATE_64"
 	state_category = town
 	provinces={
-		934 3941 5665 5695 6653 6658 6664 6665 6675 6678 6683 6684 6698 6702 6712 
+		6653 6675 6702 4302 3804 6703 10994 6824 2961 3235 6784 6783 6861
 	}
 	manpower=651662
 	buildings_max_level_factor=1.000
@@ -14,12 +14,12 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			6658 = {
+			6861 = {
 				naval_base = 2
 			}
 		}
 		victory_points = {
-			6658 10
+			6861 10
 		}
 	}
 }
