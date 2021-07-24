@@ -59,6 +59,18 @@
 
  LBR_the_four_edicts:0 "The Four Edicts"
  LBR_the_four_edicts_desc:0 ""
+
+ LBR_strengthen_the_throne:0 "Strengthen the Throne"
+ LBR_strengthen_the_throne_desc:0 "The crisis that has unraveled in recent years has shown us that the monarchy is not as stable as we once thought. We need to root out the traitors in government at once! We demand absolute loyalty!"
+
+ LBR_strengthen_parliament:0 "Strengthen Parliament"
+ LBR_strengthen_parliament_desc:0 "The recent years have shown us that we can't rule with an iron fist. Our new democratic mandate will transfer power to the hands of the people."
+
+ LBR_ensure_army_loyalty:0 "Purge Army Leadership"
+ LBR_ensure_army_loyalty_desc:0 "By removing the old officer class from command, and installing loyal leadership, we will ensure the safety of our kingdom."
+
+ LBR_control_the_army:0 "Control the Army"
+ LBR_control_the_army_desc:0 "For our continued stability, we must reign in the military's rogue mindset."
  
  ###Flavour Events###
  
@@ -78,7 +90,7 @@
  james.2.b:0 "The Duke is right! We can't afford it!"
 
  james.3.t:0 "The [GetMonth] Attacks"
- james.3.d:0 "In the days after the celebration of the King's birthday, a slew of violent attacks was unleashed on government buildings; most notably that of the Interior Ministry headquarters, where three were killed by gunmen. Throughout the ordeal, only a handful of gunmen were able to be aprehended. Military Police took charge of the interrogations, later revealing a coordinated effort by underground anarchist terrorists to unleash an onslaught on the capitol. In the aftermath, a silence had fallen over the capital, with many fearing more violence. An emergency council was convened at the King's behest.\n\nThe Marshall had stormed into court as if charging into battle, and kneeled before the king.\n\n"My king. We must place the capitol under military law." Dorsey said.\n\nWilliam looked to the other members of the council, who gazed at Dorsey as if he were mad."Is that truely necessary, Marshal?"\n\nThe man rose to a stiffened posture."I'm afraid so. My men have discovered a plot for further anarchist violence. We need to go door to door, and flush out the scum."\n\nThe king tapped his fingers on the table, thinking..."
+ james.3.d:0 "In the days after the celebration of the King's birthday, a slew of violent attacks was unleashed on government buildings; most notably that of the Interior Ministry headquarters, where three were killed by gunmen. Throughout the ordeal, only a handful of gunmen were able to be aprehended. Military Police took charge of the interrogations, later revealing a coordinated effort by underground anarchist terrorists to unleash an onslaught on the capitol. In the aftermath, a silence had fallen over the capital, with many fearing more violence. An emergency council was convened at the King's behest.\n\nThe Marshall had stormed into court as if charging into battle, and kneeled before the king.\n\n"My king. We must place the capitol under military law." Dorsey said.\n\nWilliam looked to the other members of the council, who gazed at Dorsey as if he were mad."Is that truely necessary, Marshal?"\n\nThe man rose to a stiffened posture."I'm afraid it is. My men have discovered a plot for further anarchist violence. We need to go door to door, and flush out the scum."\n\nThe king tapped his fingers on the table, thinking..."
  james.3.a:0 "Declare martial law!"
  james.3.b:0 "Surely that's not needed..."
 

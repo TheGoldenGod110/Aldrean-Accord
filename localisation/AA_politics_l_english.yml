@@ -12,4 +12,9 @@
  aa_different_ideology:0 "Different ideology"
  aa_same_ideology:0 "Same ideology"
  aa_factional_rivalry:0 "Factional rivalry"
+ aa_hates_government:0 "Hates Government"
+ aa_disapproves_of_govt:0 "Dissaproves of Government"
+ aa_pleased:0 "Pleased"
+ aa_approves_of_govt:0 "Approves of Government"
+ aa_ended_protection:0 "Ended Protection"
  

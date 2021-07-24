@@ -156,6 +156,10 @@ country_event = { ###More radicals announce congressional bids
 			ideology = communism
 			popularity = 0.05
 		}
+		add_popularity = {
+			ideology = holmarism
+			popularity = 0.01
+		}
 		hidden_effect = {
 			country_event = { id = batvia.7 days = 26 }
 		}
@@ -186,13 +190,13 @@ country_event = { ###Closed Door Meeting with Oxo
 	option = { ###Take out Donelo
 		name = batvia.7.c
 		hidden_effect = {
-			country_event = { id = batvia.10 days = 7 }
+			country_event = { id = batvia.10 days = 10 }
 		}
 	}
 	option = { ###Take out Vasto
 		name = batvia.7.e
 		hidden_effect = {
-			country_event = { id = batvia.9 days  = 7 }
+			country_event = { id = batvia.9 days  = 10 }
 		}
 	}
 }
@@ -313,6 +317,34 @@ country_event = { ###Oxo Criticizes the President-elect: Vasto
 		add_popularity = {
 			ideology = voulgerism
 			popularity = -0.01
+		}
+		add_stability = -0.01
+	}
+}
+country_event = { ###
+	id = batvia.15
+	title = batvia.15.t
+	desc = batvia.15.d
+	picture = GFX_report_event_generic_reporters
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = batvia.15.a
+		end_puppet = SRC
+		SRC = {
+			add_opinion_modifier = {
+				target = BAT
+				modifier = aa_ended_protection
+			}
+		}
+	}
+	option = { 
+		name = batvia.15.b
+		add_political_power = -25
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.02
 		}
 		add_stability = -0.01
 	}

@@ -1,9 +1,26 @@
 state={
 	id=356
 	name="STATE_356"
+	state_category = town
 	provinces={
 		279 642 3195 4463 5119 5603 10333 10356 10373 
 	}
-	manpower=0
+	manpower=3554510
 	buildings_max_level_factor=1.000
+	history={
+		owner = BAT
+		controller = BAT
+		add_core_of = BAT
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			5603 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			5603 15
+		}
+	}
 }

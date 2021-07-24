@@ -283,7 +283,7 @@ news_event = { ###Horner Elected Chairman of the HAF
 		}
 	}
 	option = {
-		name = aanews.11.b
+		name = aanews.11.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -312,7 +312,7 @@ news_event = { ###Orlan Stenling Elected Chairman of the HAF
 		}
 	}
 	option = {
-		name = aanews.12.b
+		name = aanews.12.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -341,7 +341,7 @@ news_event = { ###Alma Bergen Elected Chairwoman of the HAF
 		}
 	}
 	option = {
-		name = aanews.13.b
+		name = aanews.13.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -370,7 +370,7 @@ news_event = { ###Electoral Gridlock in the Union of Hadernland
 		}
 	}
 	option = {
-		name = aanews.14.b
+		name = aanews.14.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -399,7 +399,7 @@ news_event = { ###Horner Escapes North
 		}
 	}
 	option = {
-		name = aanews.15.b
+		name = aanews.15.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -428,13 +428,13 @@ news_event = { ###The Hadernish Civil War
 		}
 	}
 	option = {
-		name = aanews.16.b
+		name = aanews.16.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
 	}
 }
-news_event = { ###Attempt on Foster's Life
+news_event = { ###Removed
 	id = aanews.17
 	title = aanews.17.t
 	desc = aanews.17.d
@@ -457,7 +457,7 @@ news_event = { ###Attempt on Foster's Life
 		}
 	}
 	option = {
-		name = aanews.17.b
+		name = aanews.17.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -467,7 +467,7 @@ news_event = { ###Attempt on Foster's Life
 	id = aanews.18
 	title = aanews.18.t
 	desc = aanews.18.d
-	picture = GFX_news_event_032
+	picture = GFX_news_event_SWI_romandy_revolution
 	
 	major = yes
 	
@@ -486,7 +486,7 @@ news_event = { ###Attempt on Foster's Life
 		}
 	}
 	option = {
-		name = aanews.18.b
+		name = aanews.18.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -496,7 +496,7 @@ news_event = { ###The Union of Hadernland wins the Hadernish Civil War
 	id = aanews.19
 	title = aanews.19.t
 	desc = aanews.19.d
-	picture = GFX_news_event_032
+	picture = GFX_news_event_capture_vienna
 	
 	major = yes
 	
@@ -515,7 +515,7 @@ news_event = { ###The Union of Hadernland wins the Hadernish Civil War
 		}
 	}
 	option = {
-		name = aanews.19.b
+		name = aanews.19.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -544,7 +544,7 @@ news_event = { ###Louis Versen Assassinated
 		}
 	}
 	option = {
-		name = aanews.20.b
+		name = aanews.20.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -574,7 +574,7 @@ news_event = { ###Robert IV Abdicates
 		}
 	}
 	option = {
-		name = aanews.21.b
+		name = aanews.21.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -584,7 +584,7 @@ news_event = { ###The Collapse of the Aldrean Accord
 	id = aanews.22
 	title = aanews.22.t
 	desc = aanews.22.d
-	picture = GFX_news_event_032
+	picture = GFX_news_event_ITA_kingdom
 	
 	major = yes
 	
@@ -603,7 +603,7 @@ news_event = { ###The Collapse of the Aldrean Accord
 		}
 	}
 	option = {
-		name = aanews.22.b
+		name = aanews.22.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -632,7 +632,7 @@ news_event = { ###The trial of the Traitors: All executed
 		}
 	}
 	option = {
-		name = aanews.23.b
+		name = aanews.23.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -661,7 +661,7 @@ news_event = { ###The trial of the Traitors: Just Bowker executed
 		}
 	}
 	option = {
-		name = aanews.24.b
+		name = aanews.24.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -690,7 +690,7 @@ news_event = { ###Alma Bergen Arrested
 		}
 	}
 	option = {
-		name = aanews.25.b
+		name = aanews.25.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -719,7 +719,7 @@ news_event = { ###Johan Horner Arrested
 		}
 	}
 	option = {
-		name = aanews.26.b
+		name = aanews.26.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -748,7 +748,7 @@ news_event = { ###Elections Subverted in Hadernland
 		}
 	}
 	option = {
-		name = aanews.27.b
+		name = aanews.27.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -777,7 +777,36 @@ news_event = { ###Lubertatia claims the Berdava Zone
 		}
 	}
 	option = {
-		name = aanews.28.b
+		name = aanews.28.c
+		trigger = {
+			has_authoritarian_government = yes
+		}
+	}
+}
+news_event = { ###The 2nd International Congress
+	id = aanews.29
+	title = aanews.29.t
+	desc = aanews.29.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aanews.29.a
+		trigger = {
+			has_socialist_government = yes
+		}
+	}
+	option = {
+		name = aanews.29.b
+		trigger = {
+			has_elected_government = yes
+		}
+	}
+	option = {
+		name = aanews.29.c
 		trigger = {
 			has_authoritarian_government = yes
 		}
@@ -787,7 +816,7 @@ news_event = { ###The Fall of Rodlund (Civil War)
 	id = aanews.100
 	title = aanews.100.t
 	desc = aanews.100.d
-	picture = GFX_news_event_032
+	picture = GFX_news_event_CAN_parliament
 	
 	major = yes
 	
@@ -830,7 +859,7 @@ news_event = { ###The Fall of Kalvar (Civil War)
 	id = aanews.101
 	title = aanews.101.t
 	desc = aanews.101.d
-	picture = GFX_news_event_032
+	picture = GFX_news_event_capture_vienna
 	
 	major = yes
 	

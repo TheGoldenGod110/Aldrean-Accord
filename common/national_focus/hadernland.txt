@@ -37,9 +37,9 @@ focus_tree = {
 		mutually_exclusive = { focus = VEL_chairwoman_bergen }
 		mutually_exclusive = { focus = VEL_chairman_stenling }
 		mutually_exclusive = { focus = VEL_compromise_government }
-		x = 3
+		x = 8
 		y = 1
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -62,19 +62,18 @@ focus_tree = {
 	}
 	focus = {
 		id = VEL_industrial_anarchism
-		icon = GFX_libertarian_syndicalism
+		icon = GFX_VEL_breaking_chains
 		prerequisite = { focus = VEL_chairman_horner }
 		relative_position_id = VEL_chairman_horner
-		x = 0
+		x = 1
 		y = 1
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
 		
 		available_if_capitulated = yes
 		available = {
-			has_country_flag = VEL_civil_war_over_flag
 			has_government = holmarism
 		}
 		bypass = {
@@ -89,6 +88,54 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = VEL_collectivize_state_property
+		icon = GFX_goal_syndicalist_workers
+		prerequisite = { focus = VEL_chairman_horner }
+		mutually_exclusive = {focus = VEL_collectivize_state_property }
+		relative_position_id = VEL_chairman_horner
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			has_government = holmarism
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			###TODO: give effect
+		}
+	}
+	focus = {
+		id = VEL_anarchist_revolution
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = VEL_industrial_anarchism }
+		prerequisite = { focus = VEL_collectivize_state_property }
+		relative_position_id = VEL_chairman_horner
+		x = 1
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			has_government = holmarism
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			###TODO: give effect
+		}
+	}
+	focus = {
 		id = VEL_chairman_stenling
 		icon = GFX_focus_chairman_stenling
 		prerequisite = { focus = VEL_10th_arbeider }
@@ -96,7 +143,7 @@ focus_tree = {
 		mutually_exclusive = { focus = VEL_chairman_horner }
 		mutually_exclusive = { focus = VEL_chairwoman_bergen }
 		mutually_exclusive = { focus = VEL_compromise_government }
-		x = 1
+		x = 3
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -119,12 +166,343 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = VEL_trade_union_autonomy
-		icon = GFX_radical_socialism
-		prerequisite = { focus = VEL_chairman_stenling }
-		relative_position_id = VEL_10th_arbeider
+		id = VEL_local_aid_intiative
+		icon = GFX_collective_housing
+		relative_position_id = VEL_home_front
+		mutually_exclusive = {focus = VEL_planned_economy }
+		
+		x = 6
+		y = 5
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			###TODO: add effect
+		}
+	}
+	focus = {
+		id = VEL_rally_the_people
+		icon = GFX_goal_mass_concentration_of_army
+		prerequisite = { focus = VEL_home_front }
+		relative_position_id = VEL_home_front
+		
 		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			###TODO: add effect
+		}
+	}
+	focus = {
+		id = VEL_fortify_northern_cities
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = VEL_home_front }
+		relative_position_id = VEL_home_front
+		
+		x = -1
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			###TODO: add effect
+		}
+	}
+	focus = {
+		id = VEL_war_syndicalism
+		icon = GFX_focus_rifle_production
+		prerequisite = { focus = VEL_fortify_northern_cities }
+		relative_position_id = VEL_home_front
+		
+		x = -1
 		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_ideas = war_economy
+			add_ideas = wartime_industrial_development
+		}
+	}
+	focus = {
+		id = VEL_united_front
+		icon = GFX_VEL_syndicalism_frame
+		prerequisite = { focus = VEL_war_syndicalism }
+		prerequisite = { focus = VEL_women_soldiers }
+		relative_position_id = VEL_home_front
+		
+		x = 0
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			has_country_flag = VEL_civil_war_over_flag
+		}
+		completion_reward = {
+			add_ideas = war_economy
+			add_ideas = wartime_industrial_development
+		}
+	}
+	focus = {
+		id = VEL_planned_economy
+		icon = GFX_socialist_constitution
+		prerequisite = { focus = VEL_the_hammer }
+		prerequisite = { focus = VEL_purge_anarchists }
+		relative_position_id = VEL_the_hammer
+		mutually_exclusive = {focus = VEL_local_aid_intiative }
+		
+		x = 0
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				has_government = authoritarian_socialism
+				has_country_flag = centralization_flag
+			}
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VEL_council_of_worker_militia
+		icon = GFX_hadernish_officers
+		prerequisite = { focus = VEL_home_front }
+		relative_position_id = VEL_home_front
+		mutually_exclusive = {
+			focus = VEL_voluntary_cooperation
+		}
+		x = 6
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = VEL_civil_war_begun_flag
+			OR = {
+				has_government = holmarism
+				has_government = radical_socialist
+			}
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = workers_militias
+				add_idea = workers_militias_1
+			}
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = VEL_voluntary_cooperation
+		icon = GFX_focus_militias
+		prerequisite = { focus = VEL_home_front }
+		relative_position_id = VEL_home_front
+		mutually_exclusive = {
+			focus = VEL_council_of_worker_militia
+		}
+		x = 8
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = VEL_civil_war_begun_flag
+			has_government = holmarism
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = workers_militias
+				add_idea = workers_militias_1
+			}
+		}
+	}
+	focus = {
+		id = VEL_arm_workers
+		icon = GFX_focus_hadernish_resistance
+		prerequisite = { focus = VEL_voluntary_cooperation focus = VEL_council_of_worker_militia }
+		relative_position_id = VEL_voluntary_cooperation
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = workers_militias_1
+				add_idea = workers_militias_2
+			}
+		}
+	}
+	focus = {
+		id = VEL_decentralized_command
+		icon = GFX_goal_anarcho_communism
+		prerequisite = { focus = VEL_voluntary_cooperation focus = VEL_council_of_worker_militia }
+		relative_position_id = VEL_voluntary_cooperation
+		x = -3
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_ideas = decentralized_command_idea
+		}
+	}
+	focus = {
+		id = VEL_officer_elections
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = VEL_arm_workers }
+		prerequisite = { focus = VEL_decentralized_command }
+		relative_position_id = VEL_arm_workers
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = workers_militias_2
+				add_idea = workers_militias_3
+			}
+		}
+	}
+	focus = {
+		id = VEL_women_soldiers
+		icon = GFX_focus_generic_female_soldiers
+		relative_position_id = VEL_rally_the_people
+		prerequisite = { focus = VEL_rally_the_people }
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			set_rule = { can_generate_female_aces = yes }
+			add_manpower = 50000
+			hidden_effect = {
+				create_VEL_militia_template = yes
+			}
+			add_ideas = women_soldiers_idea
+			random_controlled_state = {
+				create_unit = {
+						division = "name = \"1st Women Division\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+						allow_spawning_on_enemy_provs = yes
+						owner = ROOT
+						id = 1000
+					}
+				create_unit = {
+					division = "name = \"2nd Women Division\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+					id = 1000
+				}
+			}
+		}
+	}
+	focus = {
+		id = VEL_parliamentarianism
+		icon = GFX_goal_red_star_dove
+		prerequisite = { focus = VEL_chairman_stenling }
+		relative_position_id = VEL_chairman_stenling
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -142,6 +520,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = VEL_cooperatives
+		icon = GFX_focus_anarchist_economy
+		prerequisite = { focus = VEL_chairman_stenling }
+		mutually_exclusive = {focus = VEL_collectivize_state_property }
+		relative_position_id = VEL_chairman_stenling
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_ideas = cooperatives
+		}
+	}
+	focus = {
 		id = VEL_chairwoman_bergen
 		icon = GFX_focus_chairwoman_bergen
 		prerequisite = { focus = VEL_10th_arbeider }
@@ -149,7 +551,7 @@ focus_tree = {
 		mutually_exclusive = { focus = VEL_chairman_horner }
 		mutually_exclusive = { focus = VEL_chairman_stenling }
 		mutually_exclusive = { focus = VEL_compromise_government }
-		x = -3
+		x = -8
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -176,7 +578,30 @@ focus_tree = {
 		icon = GFX_the_hammer
 		prerequisite = { focus = VEL_chairwoman_bergen }
 		relative_position_id = VEL_chairwoman_bergen
-		x = 0
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VEL_purge_anarchists
+		icon = GFX_goal_purge_opposition
+		prerequisite = { focus = VEL_chairwoman_bergen }
+		relative_position_id = VEL_chairwoman_bergen
+		x = 1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -202,7 +627,7 @@ focus_tree = {
 		mutually_exclusive = { focus = VEL_chairman_horner }
 		mutually_exclusive = { focus = VEL_chairman_stenling }
 		mutually_exclusive = { focus = VEL_chairwoman_bergen }
-		x = -1
+		x = -3
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -229,7 +654,7 @@ focus_tree = {
 		icon = GFX_Socialist_Law
 		prerequisite = { focus = VEL_compromise_government }
 		relative_position_id = VEL_compromise_government
-		x = 0
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -251,13 +676,37 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = VEL_home_front
+		icon = GFX_hadernland_revolution
+		prerequisite = { focus = VEL_chairman_horner focus = VEL_chairman_stenling focus = VEL_chairwoman_bergen focus = VEL_compromise_government }
+		relative_position_id = VEL_10th_arbeider
+		x = 0
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = VEL_haf_done
+			has_country_flag = VEL_civil_war_begun_flag
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
 		id = VEL_post_civil_war_congress
 		icon = GFX_goal_commune_politics
-		prerequisite = { focus = VEL_industrial_anarchism focus = VEL_status_quo focus = VEL_trade_union_autonomy focus = VEL_the_hammer }
+		prerequisite = {  }
 		relative_position_id = VEL_10th_arbeider
 		
 		x = 0
-		y = 3
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -300,7 +749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VEL_restore_the_provincial_congresses
-		icon = GFX_VEL_syndicalism_frame
+		icon = GFX_goal_generic_elections
 		prerequisite = { focus = VEL_the_direction_of_the_union }
 		relative_position_id = VEL_the_direction_of_the_union
 		mutually_exclusive = {focus = VEL_strengthen_the_state}
@@ -664,7 +1113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VEL_assess_the_economy
-		icon = GFX_generic_market_socialism
+		icon = GFX_VEL_breaking_chains
 		prerequisite = { focus = VEL_post_civil_war_congress }
 		relative_position_id = VEL_post_civil_war_congress
 		
@@ -792,30 +1241,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = VEL_local_aid_intiative
-		icon = GFX_generic_hammer_star
-		prerequisite = { focus = VEL_expand_public_welfare }
-		relative_position_id = VEL_workers_cooperatives
-		
-		x = 1
-		y = 2
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		
-		available_if_capitulated = yes
-		available = {
-			
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = VEL_strengthen_the_state
 		icon = GFX_goal_red_star_gold_wreath
 		prerequisite = { focus = VEL_the_direction_of_the_union }
@@ -843,7 +1268,7 @@ focus_tree = {
 		id = VEL_second_red_army
 		icon = GFX_hadernland_revolution
 		relative_position_id = VEL_10th_arbeider
-		x = 10
+		x = 14
 		y = 0
 		cost = 8
 		ai_will_do = {
@@ -865,90 +1290,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = VEL_officer_elections
-		icon = GFX_hadernish_officers
-		relative_position_id = VEL_second_red_army
-		prerequisite = { focus = VEL_second_red_army}
-		mutually_exclusive = { focus = VEL_political_commissars }
-		x = -2
-		y = 1
-		cost = 6
-		ai_will_do = {
-			factor = 5
-		}
-		
-		available_if_capitulated = yes
-		available = {
-			OR = {
-				has_country_flag = federationist_military
-				has_country_flag = hjemist_military
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			army_experience = 20
-		}
-	}
-	focus = {
-		id = VEL_militias
-		icon = GFX_focus_militias
-		relative_position_id = VEL_officer_elections
-		prerequisite = { focus = VEL_officer_elections}
-		x = -1
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		
-		available_if_capitulated = yes
-		available = {
-			OR = {
-				has_country_flag = federationist_military
-				has_country_flag = hjemist_military
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = workers_militias_1
-				add_idea = workers_militias_2
-			}
-		}
-	}
-	focus = {
-		id = VEL_decentralized_command
-		icon = GFX_generic_mutual_cooperation
-		relative_position_id = VEL_officer_elections
-		prerequisite = { focus = VEL_militias}
-		x = 0
-		y = 2
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		
-		available_if_capitulated = yes
-		available = {
-			
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_ideas = decentralized_command_idea
-		}
-	}
-	focus = {
 		id = VEL_political_commissars
 		icon = GFX_focus_volunteer_army
 		relative_position_id = VEL_second_red_army
 		prerequisite = { focus = VEL_second_red_army}
-		mutually_exclusive = { focus = VEL_officer_elections }
 		x = 2
 		y = 1
 		cost = 6
@@ -1043,7 +1388,7 @@ focus_tree = {
 		id = VEL_arm_the_workers
 		icon = GFX_focus_hadernish_resistance
 		relative_position_id = VEL_political_commissars
-		prerequisite = { focus = VEL_political_commissars focus = VEL_officer_elections }
+		prerequisite = { focus = VEL_political_commissars }
 		x = -1
 		y = 1
 		cost = 10
@@ -1070,7 +1415,7 @@ focus_tree = {
 		id = VEL_uniforms_and_guns
 		icon = GFX_focus_generic_military_equipment
 		relative_position_id = VEL_political_commissars
-		prerequisite = { focus = VEL_political_commissars focus = VEL_officer_elections }
+		prerequisite = { focus = VEL_political_commissars }
 		x = -3
 		y = 1
 		cost = 8
@@ -1121,51 +1466,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = war_measures
-		}
-	}
-	focus = {
-		id = VEL_women_soldiers
-		icon = GFX_Generic_Revolutionary_Women
-		relative_position_id = VEL_fight_for_the_cardinal_flag
-		prerequisite = { focus = VEL_fight_for_the_cardinal_flag }
-		x = -1
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		
-		available_if_capitulated = yes
-		available = {
-			
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			set_rule = { can_generate_female_aces = yes }
-			add_manpower = 50000
-			hidden_effect = {
-				create_VEL_militia_template = yes
-			}
-			swap_ideas = {
-				remove_idea = workers_militias_2
-				add_idea = workers_militias_3
-			}
-			random_controlled_state = {
-				create_unit = {
-						division = "name = \"1st Women Division\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
-						allow_spawning_on_enemy_provs = yes
-						owner = ROOT
-						id = 1000
-					}
-				create_unit = {
-					division = "name = \"2nd Women Division\" division_template = \"Arbeiderhær\"  start_experience_factor = 0.3"
-					allow_spawning_on_enemy_provs = yes
-					owner = ROOT
-					id = 1000
-				}
-			}
 		}
 	}
 	focus = {
@@ -1282,7 +1582,6 @@ focus_tree = {
 		prerequisite = { focus = VEL_international_military_schools }
 		prerequisite = { focus = VEL_the_rifle }
 		prerequisite = { focus = VEL_economic_mobilization }
-		prerequisite = { focus = VEL_women_soldiers }
 		x = 2
 		y = 2
 		cost = 9
@@ -1318,7 +1617,6 @@ focus_tree = {
 		prerequisite = { focus = VEL_international_military_schools }
 		prerequisite = { focus = VEL_the_rifle }
 		prerequisite = { focus = VEL_economic_mobilization }
-		prerequisite = { focus = VEL_women_soldiers }
 		x = -2
 		y = 2
 		cost = 8
@@ -1347,7 +1645,6 @@ focus_tree = {
 		prerequisite = { focus = VEL_international_military_schools }
 		prerequisite = { focus = VEL_the_rifle }
 		prerequisite = { focus = VEL_economic_mobilization }
-		prerequisite = { focus = VEL_women_soldiers }
 		x = 0
 		y = 2
 		cost = 9

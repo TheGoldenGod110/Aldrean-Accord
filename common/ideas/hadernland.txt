@@ -172,9 +172,8 @@ ideas = {
 			
 			modifier = {
 				army_morale_factor = 0.2
-				army_org_Factor = -0.15
+				army_org_Factor = -0.10
 				max_planning = -0.4
-				conscription_factor = 0.15
 			}
 		}
 		workers_militias_4 = { ###Standardized Unit Sizes
@@ -195,9 +194,29 @@ ideas = {
 			
 			modifier = {
 				army_morale_factor = 0.2
-				army_org_Factor = -0.10
+				army_org_Factor = -0.05
 				max_planning = -0.3
+			}
+		}
+		women_soldiers_idea = { ###Women Soldiers
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			picture = hadernish_militia
+			
+			modifier = {
 				conscription_factor = 0.15
+				female_random_army_leader_chance = 5
 			}
 		}
 		decentralized_command_idea = { ###Decentralized Command

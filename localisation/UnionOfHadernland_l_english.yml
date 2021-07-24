@@ -23,6 +23,7 @@
  hjem_majority_post_hcw:0 "SDV have secured a majority in the post-civil war Federal Congress"
  bergen_coup:0 "The Bergen Plot is successful"
  second_aldrean_war:0 "The 2nd Aldrean War has begun"
+ centralization_flag:0 "Federal Congress has voted to centralize the economy"
  
  ###Tooltips###
 
@@ -73,8 +74,8 @@
  VEL_social_democrat_party_long:0 "Socialdemokratisk Partiet"
  VEL_holmarism_party:0 "Hadernsk AK"
  VEL_holmarism_party_long:0 "Hadernsk Arbejdskonfederation"
- VEL_radical_socialist_party:0 "SDV"
- VEL_radical_socialist_party_long:0 "Socialdemokratisk Venstrepartiet"
+ VEL_radical_socialist_party:0 "SDV/NHF"
+ VEL_radical_socialist_party_long:0 "Socialdemokratisk Venstrepartiet/Nationale Handværksforbund"
  VEL_authoritarian_socialism_party:0 "FVP"
  VEL_authoritarian_socialism_party_long:0 "Forketverkalistisk Partiet"
  VEL_communism_party:0 "HKP"
@@ -107,6 +108,9 @@
  cooperatives_desc:0 "-"
  HBC_idea:0 "Hadernish Broadcasting Cooperative"
  HBC_idea_desc:0 "A daily radio channel featuring news, interviews, and discussions on history."
+
+ women_soldiers_idea:0 "Women Soldiers"
+ women_soldiers_idea_desc:0 "Our revolution will not only break the chains of men, but all of the exploited peoples! Women make up half of those people, after all. To not let them aid in their own liberation would be a disservice."
  
  ###Decisions###
  VEL_civil_war_decisions:0 "The Hadernish Civil War"
@@ -136,7 +140,7 @@
  VEL_10th_arbeider:0 "The 1936 Federal Congress"
  VEL_10th_arbeider_desc:0 "It's time for another session of the congress, Hadernland's unicameral legislative body made up of elected representatives from all government sanctioned unions."
  VEL_chairman_horner:0 "Chairman Horner"
- VEL_chairman_horner_desc:0 "Johan Horner has beaten the odds and defeated the political establishment in the congress!"
+ VEL_chairman_horner_desc:0 "Johan Horner has beaten the odds and broken the entrenched political establishment in the congress!"
  VEL_chairman_stenling:0 "Chairman Stenling"
  VEL_chairman_stenling_desc:0 "Comrade Stenling and his autonomist Hjemists have secured a majority!"
  VEL_chairwoman_bergen:0 "Chairwoman Bergen"
@@ -145,12 +149,42 @@
  VEL_compromise_government_desc:0 "Not much progress has been made in the congress. Maybe next year will be better, or perhaps we can find other ways to unite the congress..."
  VEL_status_quo:0 "Embrace the Status Quo"
  VEL_status_quo_desc:0 "Everything is fine! Maybe we can persuade others in congress of this simple fact!"
- VEL_industrial_anarchism:0 "The Hammer and Hummingbird"
- VEL_industrial_anarchism_desc:0 "For the people of Hadernland to truely be free, we must also liberate them from wage slavery as well."
+ VEL_industrial_anarchism:0 "Uncompromised Syndicalism"
+ VEL_industrial_anarchism_desc:0 "For the people of Hadernland to truely be free, we must can't merely replace the exploitation of the capitalist state with a socialist one! We must liberate them from both!\n\nSince the compromise government of 1922, syndicalism had not until now been realized in government."
  VEL_trade_union_autonomy:0 "The Hummingbird"
  VEL_trade_union_autonomy_desc:0 "We don't need to control the organisation of the workers! Let them decide for themselves!"
- VEL_the_hammer:0 "The Hammer"
- VEL_the_hammer_desc:0 "Swift change will - and must - come to this country, striking down on our enemies."
+ VEL_the_hammer:0 "Control the Trade Unions"
+ VEL_the_hammer_desc:0 "Swift change will - and must - come to this country, striking down on our enemies. Even if those enemies are the unions themselves!"
+ VEL_parliamentarianism:0 "Socialist Moderates" ###Syndicalist Parliament
+ VEL_parliamentarianism_desc:0 "-"
+
+ VEL_collectivize_state_property:0 "Collectivize State Property"
+ VEL_collectivize_state_property_desc:0 "Many industries remain in the hands of the state, where working conditions aren't much better than the bourgeois bosses! We must finally hand over these properties to the Trade Unions of their respective industries."
+
+ VEL_anarchist_revolution:0 "Anarchists in Control"
+ VEL_anarchist_revolution_desc:0 "-"
+
+ VEL_purge_anarchists:0 "Purge Anarchists from Trade Unions"
+ VEL_purge_anarchists_desc:0 "-"
+
+ VEL_rally_the_people:0 "Rally the People"
+ VEL_rally_the_people_desc:0 "-"
+
+ VEL_market_socialism:0 "-"
+ VEL_market_socialism_desc:0 "-"
+
+ VEL_cooperatives:0 "Workers Cooperatives"
+ VEL_cooperatives_desc:0 "-"
+
+ VEL_war_syndicalism:0 "Redouble Production"
+ VEL_war_syndicalism_desc:0 "-"
+
+ VEL_fortify_northern_cities:0 "Fortify the Northern Cities"
+ VEL_fortify_northern_cities_desc:0 "-"
+
+ VEL_united_front:0 "A United Front"
+ VEL_united_front_desc:0 "Syndicalists and socialists of all types must come together to beat back the reactionaries!"
+
  ###Post Civil War Political Focuses###
  VEL_post_civil_war_congress:0 "The Reconstruction Federal Congress"
  VEL_post_civil_war_congress_desc:0 "The civil war has come to an end at last, and now is the time to rebuild our country."
@@ -255,10 +289,21 @@
  VEL_enforce_discipline:0 "Enforce Discipline"
  VEL_enforce_discipline_desc:0 "To turn the loose band of workers into soldiers that will liberate themselves, we must enforce a standard of discipline on them."
  VEL_the_end_of_the_war:0 "The Dust Settles"
- VEL_decentralized_command:0 "Decentralized Command"
+ VEL_decentralized_command:0 "Guarantee Militia Autonomy"
  VEL_decentralized_command_desc:0 "-"
  VEL_central_command:0 "Central Command"
  VEL_central_command_desc:0 "-"
+ VEL_voluntary_cooperation:0 "Voluntary Cooperation"
+ VEL_voluntary_cooperation_desc:0 "A coercive state must never tell the people which master they serve! Give the people freedom, and they will choose to fight for it."
+ VEL_council_of_worker_militia:0 "Council of Militia Coordination"
+ VEL_council_of_worker_militia_desc:0 "The congress must coordinate the militias on a national level if we hope for victory."
+
+ VEL_home_front:0 "Secure the Home Front"
+
+ VEL_arm_workers:0 "Arm the Workers"
+ VEL_arm_workers_desc:0 "The workers cannot be liberated by external forces. They must do it themselves!"
+
+ VEL_planned_economy:0 "Implement Planned Economy"
 
  ###Hadernish Naval Focuses###
  VEL_restore_navy:0 "Restore the Red Fleet"
@@ -275,49 +320,49 @@
  hadernland.1.a:0 "Raise the ruby banner!"
 
  hadernland.40.t:0 "Trouble in the New Hadernland"
- hadernland.40.d:0 "In the years after the revolution, socialist party and syndicalist organization membership skyrocketed. The HAK and FVP, under the Labour coalition, managed to keep a firm grasp on the congress in the government's early years with minimal opposition. It even became an established tradition for Chairman Karlan - the leader of the HAK - to appoint a member of the allied FVP to the post of General Secretary, symbolizing the unity of Labour.\n\nChange came swiftly when, in 1933, an election upset in the congress briefly placed the FVP at the head of the coalition - allowing for far-reaching centralist legislation to slip by. The most infamous of which was the 'Centralised Government Act,' which relegated the provincial legislatures to that of an advisory role with little real powers.\n\nMany in the HAK saw this as a betrayal of their alliance and syndicalism as a whole. When the chair was back in the hands of the HAK the following year, representatives called on Chairman Karlan to reverse the 'ill-advised' centralising acts, which ultimately fell on deaf ears.\n\nWith the forming of the left-opposition Socialdemokratisk Venstrepartiet (SDV) and the HAK now divided between the establishment Unionists and the growing libertarian-syndicalist Federationists, fractures began to form in government as the congress slowed to a halt.\n\nAs the crisis in governmant continued into 1936, it fueled the meteoric rise of the radical reactionary Nasjonalt Republikanske Partiet, which soon became the largest political organization outside of the Federal Congress. Now, as the congressional elections draw nearer, many around the country hold their breath, fearing some form of political upheaval in the near future."
+ hadernland.40.d:0 "In the years following the revolution, socialist party and syndicalist organization membership skyrocketed. The HAK and FVP, under the Labour coalition, managed to keep a firm grasp on the congress in the government's early years with minimal opposition. It even became an established tradition for Chairman Karlan - the leader of the HAK - to appoint a member of the allied FVP to the post of General Secretary, symbolizing the unity of Labour.\n\nChange came swiftly when, in 1933, an election upset in the congress briefly placed the FVP at the head of the coalition - allowing for far-reaching centralist legislation to slip by. The most infamous of which was the "Centralised Government Act," which relegated the provincial legislatures to that of an advisory role with little real powers.\n\nMany in the HAK saw this as a betrayal of their alliance and syndicalism as a whole. When the chair was back in the hands of the HAK the following year, representatives called on Chairman Karlan to reverse the "ill-advised" centralising acts. These cries ultimately fell on deaf ears.\n\nWith the forming of the left-opposition Socialdemokratisk Venstrepartiet (SDV) and the HAK now divided between the establishment Unionists and the growing libertarian-syndicalist Federationists, fractures began to form in government as the congress slowed to a halt.\n\nAs the crisis in governmant continued into 1936, it fueled the meteoric rise of the radical reactionary Nasjonalt Republikanske Partiet, which soon became the largest political organization outside of the Federal Congress. Now, as the congressional elections draw nearer, many around the country hold their breath, fearing some form of political upheaval in the near future."
  hadernland.40.a:0 "This isn't good."
 
  hadernland.52.t:0 "Another Day in the Congress"
- hadernland.52.d:0 "A bill had been brought to the floor of the congress - what must have been the tenth of its kind - to take action against reactionary groups. Namely, the NRP. This is what Leah Foster had been writing down in her journal. On the floor of Hadernish Congress, Leah would often sit silently, listening to the other member's arguments, writing their words and positions, and taking notes. It was always her hope that - when it came time for her to say her piece, she would have her thoughts and arguments in order, and she plainly knew who her enemies were.\n\nThe bill had once again failed after a short vote. Leah wrote which way the other representatives had voted, and which groups opposed and supported it. The FVP member who had proposed it this time had the support of the Alma Bergen and the other vanguardists. Most others - Leah included, had voted no this time, mostly citing its overt authoritarianism.\n\nWhen an HAK member inevitably brings a more moderate bill to the floor to combat the NRP, the FVP will no doubt strike it down as well, saying that it doesn't go far enough. Simply put, nothing important was ever getting done.\n\nBy the time the congress had adjourned for the day, many words had been said, many arguments had ensued, Leah had written another few pages, but not much had changed."
+ hadernland.52.d:0 "A bill had been brought to the floor of the congress - what must have been the tenth of its kind - to ban many reactionary groups. Namely, the NRP. This is what Leah Foster had been writing down in her journal. On the floor of Hadernish Congress, Leah would often sit silently, listening to the other member's arguments, writing their words and positions, and taking notes. It was always her hope that - when it came time for her to say her piece, she would have her thoughts and arguments in order, and she plainly knew who her enemies were.\n\nThe bill had once again failed after a short vote. Leah wrote which way the other representatives had voted, and which groups opposed and supported it. The FVP member who had proposed it this time had the support of the Alma Bergen and the other vanguardists. Most others - Leah included, had voted no this time, mostly due to the bill's wide-reaching definition of a reactionary.\n\nWhen an HAK member inevitably brings a more moderate bill to the floor to combat the NRP, the FVP will no doubt strike it down as well, saying that it doesn't go far enough. Simply put, nothing important was ever getting done.\n\nBy the time the congress had adjourned for the day, many words had been said, many arguments had ensued, Leah had written another few pages, but not much had changed."
  hadernland.52.a:0 "Another day adjourned."
 
  hadernland.53.t:0 "A Northern Accent" ###TODO: Not done yet
- hadernland.53.d:0 "It wasn't uncommon for other representatives to ask Leah Foster to repeat herself. No matter how hard she tried, she just couldn't shake her particularly northern accent in a government largely dominated by southerners. Sometimes, she'd even catch some snickering, sneering comments behind her back.\n\n "
+ hadernland.53.d:0 "It wasn't uncommon for other representatives to ask Leah Foster to repeat herself. No matter how hard she tried, she just couldn't shake her particularly northern accent in a government largely dominated by southerners. Occasionally, she'd even catch some snickering, sneering comments behind her back.\n\n Sometimes, Leah believed she will never get anywhere - and never make any kind of a difference - in this line of work."
 
  hadernland.54.t:0 "Kept Hidden"
- hadernland.54.d:0 "Many would think Leah was living immorally if they knew her secret. And part of her knew it was wrong, too. Other representatives - typically FVP ones - were constantly ranting against homosexuals. It wasn't against the law, but it was clear that some thought that it should be.\n\nIt had been a couple months since she and Katja began seeing eachother. It started innocent enough at first - meeting in the committee for gender equality, Katja had seemed so lonely. They had quickly become friends outside of congress. Talking turned into flirting, and soon enough, they were in love.\n\nCongress adjourned for the day, with the rest of the representatives clearing off. Leah waited in her office for the dawdlers to leave, and snuck around to one of their many secret meeting spots in a secluded area of the courtyard. There she was, standing in the corner, twirling her ginger hair. An ear-to-ear smile formed on her dimpled face as she saw Leah.\n\nThe two held eachother close in an affectionate hug.\n\n"Where were you? I've been waiting nearly a half-hour," Katja said, releasing her grasp.\n\n"I had to make sure it was safe."\n\nKatja laughed a tad, "You're always too careful, darling."\n\nLeah was tempted to voice her worries, but instead kissed her; though softly at first, as Katja's lips clinged to her, it soon became the only solid thing in a dizzying world."
+ hadernland.54.d:0 "Many would think Leah was living immorally if they knew her secret. And part of her knew it was wrong, too. Other representatives - typically FVP ones - were constantly ranting against homosexuals. It wasn't against the law, but it was clear that some thought that it should be.\n\nIt had been a couple months since she and Katja began seeing eachother. It started innocent enough at first - meeting in the Committee for Women's Rights, Katja had seemed so lonely. They had quickly become friends outside of congress. Talking turned into flirting, and soon enough, they were in love.\n\nCongress adjourned for the day, with the rest of the representatives clearing off. Leah waited in her office for the dawdlers to leave, and snuck around to one of their many secret meeting spots in a secluded area of the courtyard. There she was, standing in the corner, twirling her dark black hair. An ear-to-ear smile formed on her dimpled face as she saw Leah.\n\nThe two greeted eachother with a hug.\n\n"Where were you? I've been waiting nearly a half-hour," Katja said, releasing her grasp.\n\n"I had to make sure it was safe."\n\nKatja laughed a tad, "You're always too careful, darling."\n\nLeah was tempted to voice her worries, but instead kissed her; though softly at first, as Katja's lips clinged to her, it soon became the only solid thing in a dizzying world."
  hadernland.54.a:0 "I love you."
 
  hadernland.56.t:0 "Cruel Rumors"
- hadernland.56.d:0 "The bike sheds behind the corner store was the safest place to meet. Leah knew the shopkeeps well, and trusted they wouldn't speak a word if they saw anything. She crossed the street, frequently glacing over her shoulder to check that she wasn't being followed. As she snuck around the shop and turned the corner into bike sheds, she made out a subtle sobbing. It was Katja, sitting against the wall with her head burrowed in her legs.\n\n"Katja? What's wrong, dear?" Leah said softly. Katja pulled her head up and gazed at Leah with puffy, red eyes; looking terribly exhausted.\n\n"I'm sorry. They..." She sniffled and wiped her nose. "I had no choice."\n\nLeah's heart sank to the pit of her stomach. She sat down beside Katja, placing a hand over her shoulder. "What happened?"\n\n"Some FVP troublmakers came to my office today... Said they had dirt on me. They know about us, Leah." Katja caught her breath. "They forced me to write a confession, threatening to have me arrested as a reactionary."\n\nLeah was furious. Not at her, of course. Trying not to contort her face into a mess, she pulled Katja in close. "Who were they?"\n\nKatja pulled back, and suddenly became stiff. "I can't tell you... They might hurt you.""
- hadernland.56.a:0 "They'll pay for this."
+ hadernland.56.d:0 "The bike sheds behind the corner store was the safest place to meet. Leah knew the shop workers well, and trusted they wouldn't speak a word if they saw anything. She crossed the street, frequently glacing over her shoulder to check that she wasn't being followed. As she snuck around the shop and turned the corner into bike sheds, she made out a subtle sobbing. It was Katja, sitting against the wall with her head burrowed in her legs.\n\n"Katja? What's wrong, dear?" Leah said softly. Katja pulled her head up and gazed at Leah with puffy, red eyes; looking terribly exhausted.\n"I'm sorry. They..." She sniffled and wiped her nose. "I had no choice."\nLeah's heart sank to the pit of her stomach. She sat down beside Katja, placing a hand over her shoulder. "What happened?"\n"Some FVP troublmakers came to my office today... Said they snatched your personal journal. Whatever you wrote in there, it lead them to my office."\n\nLeah's face went bright red. Rummaging through her bag, her heart dropped as she soon realized that it was gone. Utterly terrified by the thought of some FVP strong-arms reading what she'd wrote in there, she was able to breath again when Katja pulled the book out of her bag and held it in her hand. Katja, looking drained of all energy, rubbed her eyes."I had to confess to everything to get this back. They made me write and sign it and everything. I didn't read any of your journal, but I figured you'd do anything to get it out of their hands."\n\nLeah felt terrible, and couldn't be any more grateful. Trying not to contort her face into a mess, she pulled Katja in close after squeaking out a strained "thank you". How could Leah be so stupid, losing track of her journal? She should have been more careful."
+ hadernland.56.a:0 "How did they find it?"
 
  hadernland.55.t:0 "The Assassination of Henry Witting"
- hadernland.55.d:0 "At 12:30PM yesterday, Henry Witting, one of the major representatives within the Federationist wing of the HAK, was shot in broad daylight while returning to his home in Kalvar. The perpetrator of the attack quickly fled, scurrying back into the shadows before the police arrvied at the scene.\n\nWith the sudden death, the Federal Congress has entered a state of chaos. Witting, supposedly suspected of being a target in the past, had been assured by the Federal Security Committee that were was no such threat. Now, some in congress - such as HAK representative Horner - have already made public statements, placing varying degrees of blame on the security committee and its head, Alma Bergen, for their inaction.\n\nIn the aftermath of the death, many have been left speculating on the motives of the killer - with some already accusing the NRP of being behind the killing."
+ hadernland.55.d:0 "At 12:30PM yesterday, Henry Witting, one of the major representatives within the Federationist wing of the HAK, was shot in broad daylight while returning to his home in Kalvar. The perpetrators of the attack quickly fled, scurrying back into the shadows before the police arrvied at the scene.\n\nWith the sudden death, the Federal Congress has entered a state of chaos. Witting, supposedly suspected of being a target in the past, had been assured by the Federal Security Committee that were was no such threat. Now, some in congress - such as HAK representative Horner - have already made public statements, placing varying degrees of blame on the security committee and its head, Alma Bergen, for their inaction.\n\nIn the aftermath of the death, many have been left speculating on the motives of the killer - with some already accusing the NRP and other radical reactionary groups of being behind the killing."
  hadernland.55.a:0 "We need justice!"
 
  ###Federal Congress Events
  
- hadernland.2.t:0 "The 1936 Federal Congress begins"
+ hadernland.2.t:0 "The 1936 Federal Congress begins" ###TODO: Rewrite
  hadernland.2.d:0 "The silence of the Federal Congress Building, accompanied by the echoing voice of the chairman and muffled whispers from representatives, signalled the beginning of the 1936 congress.\n\n 'As the revolution endures another year, we see the integrity and humanity of socialism in affect across our nation. And these halls, where the people are represented, we have to thank for that.' As Chairman Karlan finished his opening address, the room was filled with uneasy applause. The formality lacked the usual enthusiasm, and was clearly tainted by a faltering confidence in government.\n\nMany suspect that this year's congress would be an extraordinary one, and would determine the direction of the country for the foreseeable future. As the once entrenched political establishment crumbles, rumours swirl of the Chairman's future resignation. We shall see what happens when the dust settles."
  hadernland.2.a:0 "Let it begin."
  
  hadernland.3.t:0 "Economy Vote"
- hadernland.3.d:0 "The question of the economy has always been a contentious one in the nascent Federal Congress. Since the inaugural congress was held in late 1922, most mines, utilities, roads, railways and other industries had been nationalized and handed over to independent trade unions who are represented by members of members of the Arbejdsverkat. Members of the FVP would rather the trade unions be brought under the control of federal government directly, possibly under a single, big union. There is a notable divide between HAK Unionists who wish to keep the economy running smoothly under the status quo, and HAK Føderationists, who want to fully realize syndicalist industrial democracy. The SDV represents moderate socialist economics, supporting market socialism."
+ hadernland.3.d:0 "The question of the economy has always been a contentious one in the nascent Federal Congress. Since the inaugural congress was held in late 1922, most mines, utilities, roads, railways and other industries had been nationalized and handed over to independent trade unions who are represented by members of members of the HAK. Members of the FVP would rather the trade unions be brought under the control of federal government directly, possibly under a single, big union. There is a notable divide between HAK Unionists who wish to keep the economy running smoothly under the status quo, and the anarchist federationists in the HAK, who want to fully realize syndicalist industrial democracy and collectivize the remaining state-run industries. The SDV's economic goals, while sometimes unclear, largely represents moderate syndicalist economics and market socialism."
  hadernland.3.a:0 "HAK Unionists: The economy is already working!"
  hadernland.3.b:0 "SDV: Market socialism!"
  hadernland.3.c:0 "FVP: Large-scale centralisation."
- hadernland.3.e:0 "HAK Føderationists: Worker self-determination!"
+ hadernland.3.e:0 "HAK Federationists: Worker self-determination!"
  
  hadernland.4.t:0 "Internal Politics Debate"
- hadernland.4.d:0 "The Union of Hadernland is a nation with a syndicalist economy, though its legislature is hardly syndicalist - depending on who you ask. Hadernish Federal Congress was formed in a compromise by socialist parties and syndicalist federations in 1922. This unicameral legislature is officially considered a multi-party one, yet all major organizations represented in the congress support some form of socialism. All representatives are elected by municipality and, in some cases such as the HAK, trade union elections; and the Chairman is elected by Congressional majority, who then appoints the executive branch.\n\nThe Hadernsk Arbejdskonfederation (HAK) is the largest syndicalist federation in the congress, representing the vast majority of all trade unions in the country. The HAK makes up a sort of informal lower chamber within the congress. The FVP have always seen this political reality as a major obstacle for the socialist state, and would rather a single vanguard lead the revolution.\n\nMany in the HAK are in stark disagreement with the FVP, arguing that the "qualified unicameralism" in congress should end be replace by a full, bicameral legislature. The coalition of between the FVP and HAK seems to be breaking down further, as this issue lays bear their striking disagreements.\n\nThe SDV opposition has again broken from the rest of the congress, making the argument for a return to parliamentarianism."
+ hadernland.4.d:0 "The Union of Hadernland is a nation with a syndicalist economy, though its legislature is hardly syndicalist - depending on who you ask. Hadernish Federal Congress was formed in a compromise by socialist parties and syndicalist federations in 1922. This unicameral legislature is officially considered a multi-party one, yet all major organizations represented in the congress support some form of socialism. All representatives are elected by municipality and, in some cases such as the HAK, trade union elections; and the Chairman is elected by Congressional majority, who then appoints the executive branch. Seperate trade union elections are then held within the HAK to appoint a General Secretary, who then acts as head of the trade union council within government.\n\nBeing the largest syndicalist federation in the congress, the HAK represent the vast majority of all trade unions in the country. Due to the complicated and sometimes unclear nature of government, the HAK makes up a sort of informal lower chamber within the congress. The FVP have always seen this political reality as a major obstacle for the socialist state, and would rather a single vanguard lead the revolution.\n\nMany in the HAK are in stark disagreement with the FVP, arguing that the "qualified unicameralism" in congress should end be replace by a full, bicameral legislature. The coalition of between the FVP and HAK seems to be breaking down further, as this issue lays bear their striking disagreements.\n\nThe SDV opposition has again broken from the rest of the congress, making the argument for a return to parliamentarianism."
  hadernland.4.a:0 "HAK: Argue for a bicameral legislature."
  hadernland.4.b:0 "SDV: Argue for parliamentarianism."
  hadernland.4.c:0 "FVP: Argue for a Syndicalist vanguard."
  
  hadernland.5.t:0 "Military Policy"
- hadernland.5.d:0 "As tensions in Aldrea slowly begin to rise, the topic of defending our nation has become more and more important to the Federal Congress, though it has also laid bare the deep rift within the congress. Currently, our military is split between the Arbejdermilits, our locally organised militia forces, and the Rød Hær, our standing army.\n\nLately, the militias have become deeply unpopular among FVP delegates of the congress, who see them as an undisciplined force that cannot properly protect the nation. They insist that the local militias need to be disbanded or absorbed into our standing army. The HAK Federationists and the SDV and have made a sort of informal alliance in opposition to that idea, favouring militia reform, so it is unlikely that the FVP will win the debate."
+ hadernland.5.d:0 "As tensions in Aldrea slowly begin to rise, the topic of defending our nation has become more and more important to the Federal Congress, though it has also laid bare the deep rift within the congress. Currently, our military is split between the Arbejdermilits, our locally organised militia forces, and the Rød Hær, our standing army.\n\nLately, the militias have become deeply unpopular among FVP delegates of the congress, who see them as an undisciplined force that cannot properly protect the nation. They insist that the local militias need to be disbanded or absorbed into our standing army. While some HAK representatives find themselves in agreement with the FVP, the growing anarchist wing of the HAK and the SDV fought back against the idea, claiming that a state with a monopoly on force will only bring tyranny."
  hadernland.5.a:0 "HAK: The Army is fine!"
  hadernland.5.b:0 "HAK Feds & SDV: Reform the militias!"
  hadernland.5.c:0 "FVP: Centralize the army." 
@@ -329,7 +374,7 @@
  hadernland.6.c:0 "FVP: We must fight the reactionaries, wherever they may be!"
  
  hadernland.7.t:0 "Henrik Karlan Resigns"
- hadernland.7.d:0 "'Perhaps the chairman would prefer to do nothing and watch our country crumble!' Was the sharp cry of representative Foster in the congress last week in response to Henry Witting's death. Many others spoke similiar words in the following days. And as the chairman's wavering support collapsed, nearly all representatives in the congress - barring the ever shrinking old-guard of the HAK - began calling for the his resignation. Staring down the barrel of the preverbial gun and facing a looming vote of no confidence from Johan Horner, Karlan had little choice but to take the speakers podium today, announcing his resignation.\n\n 'To have served in office this long, it has truly been an honour. In leaving it, I part with these words: May the country press on, and may the people continue to prosper under syndicalism.' The final words of the chairman left the federal congress shocked - if not a little relieved.\n\n For the second time in the history of the nascent republic, the coming election was unclear. General Secretary Bergen has made brief statements in the aftermath of the resignation, stating a clear intention to win the upcoming election and 'do whatever it takes to preserve syndicalism' against the reactionaries.\n\nJohan Horner and his federationist supporters, primarily made up of newer HAK representatives and formerly independent trade-unionists, have their begun their own push in the aftermath of the resignation. Planning to overturn the political establishment that is becoming less and less popular, they are working tirelessly to elect Horner as the HAK candidate for his libertarian syndicalist and reformist ideals.\n\nThe coming election could easily shape up to a race between bitter rivals Bergen and Horner."
+ hadernland.7.d:0 "'Perhaps the chairman would prefer to do nothing and watch our revolution crumble!' Was the sharp cry of representative Foster in the congress last week in the aftermath of Henry Witting's death. Many others spoke similiar words in the following days. And as the chairman's wavering support collapsed, nearly all representatives in the congress - barring the ever shrinking old-guard of the HAK - began calling for the his resignation. Staring down the barrel of the preverbial gun and facing a looming vote of no confidence from Johan Horner, Karlan had little choice but to take the speakers podium today, announcing his resignation.\n\n 'To have served in office this long, it has truly been an honour. In leaving it, I part with these words: May the country press on, and may the people continue to prosper under syndicalism.' The final words of the chairman left the federal congress shocked - if not a little relieved.\n\n For the second time in the history of the nascent republic, the coming election was resolutely unclear. General Secretary Bergen has made brief statements in the aftermath of the resignation, stating a clear intention to win the upcoming election and 'do whatever it takes to preserve syndicalism' against the reactionaries.\n\nJohan Horner and his federationist supporters, primarily made up of anarchists and formerly independent trade-unionists, have their begun their own push in the aftermath of the resignation. Planning to overturn the political establishment that is becoming less and less popular, they are working tirelessly to elect Horner as the HAK candidate for his libertarian syndicalist and reformist ideals.\n\nThe coming election could easily shape up to a race between bitter rivals Bergen and Horner."
  hadernland.7.a:0 "A sad day for the congress."
  hadernland.7.b:0 "Horner takes the speaker's podium..."
  
@@ -348,7 +393,7 @@
  hadernland.201.a:0 "Haestad does it!"
 
  hadernland.10.t:0 "Johan Horner Becomes the HAK Candidate" ###TODO: possibly take a second look at this
- hadernland.10.d:0 "Echoing a call for change in the congress, the Hadernsk AK held a vote to confirm Johan Horner's candidacy in the upcoming election. Horner, a well known critic of the political establishment and authoritarianism espoused by some federal representatives, has eagerly accepted the position and promised a platform of radical reform.\n\nHorner, coming from a background in education at the University of Oslen, has also chosen Leah Foster, a former Protégé turned political activist in the congress, as his running mate for the post of General Secretary, should the HAK keep hold of their majority in the upcoming election. Critics, like his longtime rival Alma Bergen, have labeled Horner an unkempt anarchist undeserving of political office, and have called Foster, a new representative 25 years of age, far too young for such a responsibility.\n\nDespite the sneers of some, the HAK have bet all they have on Horner and Foster, for any hope of positive change, or at least in hopes of keeping the HAK in charge of government."
+ hadernland.10.d:0 "Echoing a call for change in the congress, the Hadernsk AK held a vote to confirm Johan Horner's candidacy in the upcoming election. Horner, a well known critic of the political establishment and authoritarianism espoused by some federal representatives, has eagerly accepted the position and promised a platform of radical reform.\n\nHorner, coming from a background in education at the University of Oslen, has also chosen Leah Foster, a former Protégé turned political activist in the congress, as his running mate for the post of General Secretary, should the HAK keep hold of their majority in the upcoming election. Critics, like his longtime rival Alma Bergen, have labeled Horner an unkempt agitator undeserving of political office, and have called Foster, a new representative 25 years of age, far too young for such a responsibility.\n\nDespite the sneers of some, the HAK have bet all they have on Horner and Foster, for any hope of positive change, or at least in hopes of keeping the HAK in charge of government."
  hadernland.10.a:0 "Horner does it!"
  
  hadernland.11.t:0 "Hadernsk AK Secure a Majority"
@@ -372,16 +417,16 @@
  hadernland.14.a:0 "Compromise with the SDV."
  hadernland.14.b:0 "Compromise with the FVP."
  
- hadernland.20.t:0 "Mending the Rifts"
- hadernland.20.d:0 "Horner, upon assuming the position of chairman, was soon faced with a frustrating reality in the congress. Despite his victory in the election, the congress is still as divided as ever. With the collapse of the HAK-FVP Labour coalition, a new political reality of distrust is dawning. Even the old-guard of the HAK, while outwardly supporting the new chairman, only give backhanded tacit approval at the very best, and actively plot to obstruct the new administration at worst.\n\nHoping to vanquish any future threats to his reforms and repair a deeply entrenched divide in government, Horner sought to court more allies. So, albeit reluctantly, he met with the heads of the other parties. Ultimately, to the chairman's dismay, during the eventful meeting, none of the larger factions seemed to be interested in reconciling with one another. To make matters worse, Alma Bergen has refused to meet, openly denouncing Horner, and has vowed to defeat any bills he puts up.\n\nHorner now faces two choices, either spend the effort to convince the old guard of the HAK, or seek allies within the SDV."
+ hadernland.20.t:0 "Mending the Rifts" ###TODO: rewrite
+ hadernland.20.d:0 "Horner, upon assuming the position of chairman, was soon faced with a frustrating reality in the congress. Despite his victory in the election, the congress is still as divided as ever. With the collapse of the HAK-FVP Labour coalition, a new political reality of distrust is dawning. Even the old-guard of the HAK, while outwardly supporting the new chairman, only give backhanded tacit approval at best, and actively plot to obstruct the new administration at worst.\n\nHoping to vanquish any future threats to his reforms and repair a deeply entrenched divide in government, Horner sought to court more allies. So, albeit reluctantly, he met with the heads of the other parties. Ultimately, to the chairman's dismay, during the eventful meeting, none of the larger factions seemed to be interested in reconciling with one another. To make matters worse, Alma Bergen has refused to meet, openly denouncing Horner, and has vowed to defeat any bills he puts up.\n\nHorner now faces two choices, either spend the effort to convince the old guard of the HAK, or seek allies within the SDV."
  hadernland.20.a:0 "Ally with the SDV!"
  hadernland.20.c:0 "Persuade the old guard of the HAK."
  
- hadernland.42.t:0 "Bergen Protests the Hadernsk AK" ###TODO: Turn this event into something else
- hadernland.42.d:0 "Change this"
- hadernland.42.a:0 "Let them whine all they want."
+ hadernland.42.t:0 "Witting Assassins Apprehended" ###TODO:Thomsen Brothers Apprehended
+ hadernland.42.d:0 "Following an investigation, the plan to apprehend the Thomsen brothers, suspected of carrying out the killing of Representative Witting, was put in motion yesterday. During the early hours, police and federal security entered the house of the brothers after a brief shootout. The brothers, one having been gravely wounded, then surrendered to police and were taken into custody.\n\n"
+ hadernland.42.a:0 "Justice...?"
  
- hadernland.43.t:0 "Foster Accuses Bergen"
+ hadernland.43.t:0 "Foster Accuses Bergen" ###TODO: This could be revised
  hadernland.43.d:0 "Leah Foster, who has gone to the Attorney General with some damning information, has now asked the courts to submit a criminal case against Alma Bergen, alleging blackmail, forgery, conspiracy, and most shocking of all, having a hand in the planning of the bombing attack in Oslen that supposedly targeted her.\n\nSome of the evidence includes Bergen's letters of correspondence with members of the Voulgerist Hadernsk Rige during the civil war, including a particularly damning one to Halvard Bowker before his overthrow of the south. Foster also submitted letters between herself and Bergen's close assosciates, with attempted blackmailing, and believed with reasonable amounts of evidence that Bergen was behind the blackmailing of Katja Birk, who was ceorced into revealing her personal relationship with the General Secretary in an attempt to slander them both.\n\nLeah Foster, as head of the KSF, has ordered the arrest of Bergen on these charges, and is now being held in custody. Though, the choice of whether to persue the case is up to the Attorney General of the People's Supreme Court. This will likely ruffle some feathers of - and possibly enrage - some members of the Federal Congress."
  hadernland.43.a:0 "Another traitor!"
  
@@ -447,8 +492,8 @@
 
  ###New Syndicalist Constitution Events###
 
- hadernland.58.t:0 "The Oslen Constitution" ###TODO: Include communists and controversy in the conference.
- hadernland.58.d:0 "The conference in Oslen was open to the public, with representatives and the people alike being able to directly vote on amendments to the new and better syndicalist constitution. Unsurprisingly, the Arbejdskonfederation and SDV made up the majority of attending delegates and voters, with meager turnout for the near-defunct FVP and other interest groups. Though, with many disagreements in the HAK, there will still be much room for debate.\n\nOn the first day of the conference, controversy erupted as many delegates voted to prohibit communist party representatives from entering the discussion. Later that day, Horner spoke on the subject, stating that "This conference is primarily a syndicalist and trade union one.""
+ hadernland.58.t:0 "The Oslen Constitution"
+ hadernland.58.d:0 "The conference in Oslen was open to the public, with representatives and the people alike being able to directly vote on proposed amendments to the new and better syndicalist constitution. Unsurprisingly, the Arbejdskonfederation (HAK) and Nationale Handværksforbund (NHF) made up the majority of attending delegates and voters, with meager turnout for the near-defunct FVP and other interest groups. Though, with many disagreements in the HAK, there will still be much room for debate.\n\nOn the first day of the conference, controversy erupted as many delegates voted to prohibit communist party representatives from entering the discussion. Later that day, Horner spoke on the subject, stating that "This conference is primarily a syndicalist and trade union one.""
  hadernland.58.a:0 "Only Trade Unions are invited!"
 
  hadernland.59.t:0 "Communist Resurgence"
@@ -456,9 +501,17 @@
  hadernland.59.a:0 "Oh well."
 
  hadernland.60.t:0 "Oslen Constitution - Government"
- hadernland.60.d:0 "The conference has already found itself divided on its first major debate. In the discussion, the HAK has galvanized behind either General Secretary Leah Foster or Foreign Minister Frank Hjort, who both commanded their respective sides of the debate. Foster's proposal for all legislative power to be vested in trade union councils, with representatives elected by wall-to-wall union elections, was supported by Chairman Horner. He then went on to rebuke the 1922 legislative compromise, decrying the failure and authoritarianism of the past federal government.\n\nFrank Hjort, HAK representative an current Foreign Affairs Deputy, opposing the idea, has positioned himself as a man of compromise. Echoing the words of the opposition, he claimed that subordination to the trade unions and the HAK is no different than a single party state. Foster rose to strongly object, saying that council based democracy will prevent tyranny of a central government, not promote it."
+ hadernland.60.d:0 "The conference has already found itself divided on its first major debate. In the discussion, the Hadernsk AK has galvanized behind either General Secretary Leah Foster or Representative Frank Hjort, who both commanded their respective sides of the debate. Foster's proposal for all legislative power to be vested in trade union councils, with representatives elected by wall-to-wall union elections, was supported by Chairman Horner. Horner then went on to rebuke the 1922 legislative compromise, decrying the failure and authoritarianism of the past federal government.\n\nFrank Hjort, current Foreign Affairs Deputy and representative from the HNF, positioned himself as a man of compromise. Echoing the words of the opposition, he claimed that total subordination to the trade unions and the HAK is no different than a single party state. Foster rose to strongly object, saying that council based democracy will prevent tyranny of a central government, not promote it."
  hadernland.60.a:0 "The people excercise power through Trade Union Councils!"
  hadernland.60.b:0 "The people excercise power through Federal Congress!"
+
+ hadernland.61.t:0 "Oslen Constitution - Judiciary"
+ hadernland.61.d:0 "The HAK has drawn attention to the judicial system, proposing a secondary "Constitutional Court" to review our laws and ensure the principles of our syndicalist constitution are upheld. Leah Foster gave her support for the proposal, commenting that this secondary court would make it significantly harder for authoritarianism to take root in government.\n\nThe NHF has bluntly expressed their disagreement, with representative Hjort arguing that weakening and seperating the duties of the courts will destabilize the country further. Although, Hjort's opinion has become somewhat controversial within the HNF, with some dissenters pledging to support the HAK's proposal."
+ hadernland.61.a:0 "Form the Consitutional Court!"
+ hadernland.61.b:0 "The Supreme Court will have the powers of judicial review!"
+
+ hadernland.62.t:0 "Oslen Constitution - The Executive Branch"
+ hadernland.62.d:0 "On the final few days of the conference"
 
  ###Hadernish Civil War: Chairman Horner###
  
@@ -519,8 +572,8 @@
  hadernland.22.b:0 "Never again! The army fights for the people, not the other way around! Cut back on army food supplies."
  
  hadernland.23.t:0 "Public Knowledge"
- hadernland.23.d:0 "Leah wilted into her chair, barely able to bring herself to reach across the desk for the day's papers; an unrelenting dread twisting her stomach into knots. The color had drained from her face the second she saw the headline again. She'd read the whole thing, top to bottom, what must have been three times. She crumpled and tossed the retched paper across the desk. Her life was over.\n\nHer rhythmically tapping fingers were interrupted by the thundering knocks on her door. Sauntering towards her entryway, she could feel her heartbeat in her throat. As soon as she saw Katja through the doorhole, she opened it right away.\n\n"You're not suppose to be here." She said as she pulled Katja inside and out of sight.\n\n"It doesn't matter. They already know about us. I rushed over as soon as I saw it in the papers." Katja gently took hold of Leah's hand. After an hour of dread and worry - wondering if they should have been more careful - Leah finally broke down at the sound of Katja's sweet voice.\n\n"What are we gonna do?" Leah whimpered, tears welling up in her eyes. "What if we can't stay together?"\n\nKatja wrapped her arms tightly around Leah. "I'm so sorry. This is all my fault." ###I should be the one to say something - this is all my fault." Katja whimpered.\n\nTears welled up in Leah's eyes as she wrapped her arms tightly around her. "That doesn't matter." "
- hadernland.23.a:0 ""
+ hadernland.23.d:0 "Leah wilted into her chair, barely able to bring herself to reach across the desk for the day's papers; an unrelenting dread twisting her stomach into knots. The color had drained from her face the second she saw the headline again, taunting her. She'd read the whole thing, top to bottom, what must have been three times. She crumpled and tossed the wretched paper across the desk. Her life was over.\n\nHer shaky, rhythmically tapping fingers were interrupted by the thundering knocks on her door. She slowly stood up and sauntered towards her entryway. She could feel her heartbeat in her throat. As soon as she saw Katja through the doorhole, she opened it right away.\n\n"You're not suppose to be here." She said as she pulled Katja inside and out of sight.\n\n"It doesn't matter. They already know about us. I rushed over as soon as I heard." Katja gently took hold of Leah's hand. After an hour of dread and worry - wondering if they should have been more careful - Leah finally broke down at the sound of Katja's sweet voice.\n\n"I'm so sorry. This is all my fault. I shouldn't have been so stupid." Leah whimpered, tears welling up in her eyes as she shook her hand loose of Katja's grasp. She draped her arms over Leah's shoulders, but was swatted away.\n"We shouldn't have done this in the first place! This is wrong! I can't love you." Leah sharply uttered. As much as those words seemed to hurt Katja as she recoiled, they hurt to say all the more.\n\n"Don't say that!" Katja said. As terrible it was too think, Leah almost believed her own words. Would this unkind world ever let people say what they think, show how they felt, or love who they wanted? Maybe not. This could never work, and Leah was finally facing this fact."
+ hadernland.23.a:0 "It's over."
  
  hadernland.30.t:0 "Red Terror"
  hadernland.30.d:0 "Reports of executions and torture of prisoners of war and civilians suspected of aiding the Rige by some rather sadistic officers has sparked concern and outrage in Federal Congress. Dubbed the 'red terror' by our enemies abroad, they have used these leaked reports in their propaganda efforts against us.\n\nHorner has suspicions that the abuses, mostly from FVP-aligned Red Guards, were aided in an attempted cover-up by the FVP in the congress. The implicated officers have all been arrested or discharged from duty, but this will be in the minds of our populace for some time to come."
@@ -543,13 +596,21 @@
  ###FVP Events###
  hadernland.57.t:0 "State of Emergency Declared"
  hadernland.57.d:0 "In a vote by the FVP majority congress, a state of emergency has been declared and the constitution has been temporarily suspended. Additionally, the newly elected Chairwoman has ordered the arrest of any suspected voulgerists.\n\n"Until we can sort the situtation out, we need to rid the country of the enemies of syndicalism." Chairwoman Bergen declared in a radio broadcast.\n\nOver the next few days, protesters took to the streets outside the capitol, with various and scattered appeals to the congress. The largest and the loudest of the groups demanding the restoration of the constitution. The police made many arrests in the following days, mostly on dubious charges of reactionary and voulgerist sympathies."
- hadernland.57.a:0 "Glory to the revolution!"
+ hadernland.57.a:0 "Now is the hour of action!"
  
  ###General Flavour Events###
  
  hadernland.25.t:0 "'The Girl who Fights for Labour' Released in Theatres"
  hadernland.25.d:0 "The film that depicts the struggle of a female regiment on the frontlines of the civil war has been released in theatres. Film critics are raving about its attention to detail and that it doesn't stray from showing the grim reality of the war for our liberation. While harsher reviewers have called it 'thinly veiled propaganda,' the film has been largely a box office success!"
  hadernland.25.a:0 "A must see!"
+
+ hadernland.63.t:0 "The First Peoples of Vikland"
+ hadernland.63.d:0 "Under the Kingdom of Hadernland, the relatively small numbers of indigenous suffered greatly under the capitalist government in its final years. And although the first people's haven't been oppressed under the new syndicalist government, they have until now been ignored by the federal government for the most part. Spearheaded by Kireama Heikki, Hadernland's first indigenous representative in Federal Congress, has proposed the Indigenous Revolutionary Committee, tasked with the welfare of Vikland and northern Hadernland's Indigenous population, and handling the past abuses within their territories.\n\nThe proposal was soon signed, with support from the General Secretary and others from the executive branch."
+ hadernland.63.a:0 "The revolution has finally come to the First Peoples."
+
+ hadernland.107.t:0 "Last stand at Renning"
+ hadernland.107.d:0 "The message had just come in. The men of the 532nd infantry regiment had to hold the once quaint village of Renning at all costs. The men in the trenches stared at one another. They knew what was coming. The regiment had been cut off for days now, holding off against waves of voulgerist assaults and constant artillery. Had they been abandoned? Surrounded on all sides, some men had even got up and put down their rifles, hoping for fair treatment.\n\nThe remaining 400 or so men were up against impossible odds. But, just as their many fallen comrades, their blood ran the deepest red, and many were no doubt ready to die for the revolution."
+ hadernland.107.a:0 "For syndicalism!"
  
  ###Decision Events###
  
@@ -593,14 +654,20 @@
 
  ###International Events###
  hadernland.104.t:0 "The 2nd International Congress"
- hadernland.104.d:0 "Preparations are set to begin for the much anticipated 2nd International Syndicalist Congress. With the Hadernish civil war raging on, many members of the Workers' International have argued that we should this year's congress in the Commune of Ettinland."
+ hadernland.104.d:0 "Preparations are set to begin for the much anticipated 2nd International Congress, the world's largest conference of syndicalists and socialists. With the Hadernish civil war raging on, many members of the Workers' International have argued that we should hold this year's congress in the Commune of Ettinland."
  hadernland.104.a:0 "Understandable. Maybe next year, Hadernland!"
 
  hadernland.105.t:0 "The 2nd International Congress"
- hadernland.105.d:0 "With the civil war raging in Hadernland, members of the Workers' International have asked us to host this year's congress in Ettinland. The highly anticipated event will most likely focus on the Hadernish civil war, as well as other conflicts around the world."
+ hadernland.105.d:0 "With the civil war raging across Hadernland, delegates from the Workers' International have asked us to host this year's congress in Ettinland. The highly anticipated event will most likely focus on the Hadernish civil war, as well as other revolutionary struggles around the world."
  hadernland.105.a:0 "It would be an honour to host!"
 
  hadernland.106.t:0 "Attending the International Congress"
  hadernland.106.d:0 "Our comrades in Ettinland have confirmed that they will host the 2nd International Syndicalist Congress. Now, we must decide whether [ROOT.GetNameDef] will attend."
  hadernland.106.a:0 "We will attend."
  hadernland.106.b:0 "We will not attend."
+
+ aanews.29.t:0 "The 2nd International Congress"
+ aanews.29.d:0 "The world's largest conference of syndicalists and socialists is set to take place in the coming weeks. Many governments from around the world have agreed to attend the event, which will be held in the Commune of Ettinland this year, amid the raging civil war in Hadernland.\n\nThis year's congress will likely focus on socialist and colonial conflicts taking place around the world."
+ aanews.29.a:0 "I hope someone saved me a seat!"
+ aanews.29.b:0 "Let's hope they don't stir up the pot too much."
+ aanews.29.c:0 "Let's hope they don't stir up the pot too much."

@@ -2,7 +2,7 @@
 
 oob = "ETR_1936"
 set_research_slots = 3
-set_stability = 0.5
+set_stability = 0.3
 set_war_support = 0.5
 add_ideas = {
 }
@@ -88,15 +88,17 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservative = 60
-	autocracy = 30
-	holmarism = 10
+	conservative = 36
+	voulgerism = 22
+	authoritarian_socialism = 10
+	holmarism = 28
+	individualist_anarchism = 4
 }
 
 create_country_leader = {
 	name = "Excolus Fermes"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "excolus_fermes.dds"
+	picture = "excolus_fermes.tga"
 	expire = "1965.1.1"
 	ideology = conservative_subtype
 	traits = {

@@ -1,0 +1,33 @@
+﻿l_english:
+
+ ###Flags###
+
+ ###Tooltips###
+ 
+ ###Parties###
+ ETR_holmarism_party:0 "ACL"
+ ETR_holmarism_party_long:0 "Associazione Centrale dei Lavoratori"
+ ETR_authoritarian_socialism_party:0 "PSN"
+ ETR_authoritarian_socialism_party_long:0 "Partito Sindacale Nazionale"
+ ETR_voulgerism_party:0 "PSN"
+ ETR_voulgerism_party_long:0 "Partito Sindacale Nazionale"
+ ETR_conservative_party:0 "Partito Repubblicano"
+ ETR_conservative_party_long:0 "Partito Repubblicano"
+ ETR_individualist_anarchism_party:0 "Etracian Mafia"
+ ETR_individualist_anarchism_party_long:0 "Etracian Mafia"
+ ###Ideas###
+ 
+ ###Decisions###
+ 
+ ###Flavour Events###
+ 
+ ###Events###
+
+ ###General Flavour Events###
+ 
+ ###Decision Events###
+
+ ###Intro Events###
+ etraci.1.t:0 "The Decade of Upheaval"
+ etraci.1.d:0 "Strikes, protests, riots, and organized crime have become commonplace in Etracian society in recent years. Made worse by the conservative government's failure to combat the rise of mass unemployment throughout the nation. ###With the conservative government failing to combat the wave of violence sweeping across the country, the people have begun looking to radical organizations on all sides of the political spectrum."
+ 

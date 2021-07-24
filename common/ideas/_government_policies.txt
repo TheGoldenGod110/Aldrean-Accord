@@ -1,0 +1,152 @@
+ideas = {
+
+	trade_unions = { 
+		law = yes
+
+		illegal_unions = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				AND = {
+					NOT = { has_government = holmarism }
+					NOT = { has_government = radical_socialist }
+					NOT = { has_government = social_democrat }
+				}
+				NOT = {holmarism > 0.3}
+			}
+
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = 0.25
+				stability_factor = 0.05
+				holmarism_drift = -0.03
+			}
+			
+			cancel_if_invalid = no
+		}
+		non_socialist_unions = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				NOT = {has_socialist_government = yes}
+				NOT = {holmarism > 0.3}
+			}
+
+			modifier = {
+				research_speed_factor = -0.02
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				holmarism_drift = -0.01
+			}
+			cancel_if_invalid = no
+		}
+		
+		state_controlled_unions = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				OR = {
+					has_government = authoritarian_socialism
+					has_government = communism
+					has_government = voulgerism
+					has_government = autocracy
+					has_government = authoritarian_democracy
+					has_government = theocratic
+				}
+				NOT = {holmarism > 0.4}
+			}
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 60
+					has_government = authoritarian_socialism
+				}
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		trade_unions_allowed = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			available = {
+				OR = {
+					has_socialist_government = yes
+					has_government = liberal
+					has_government = social_democrat
+					has_government = conservative
+					has_government = authoritarian_democracy
+				}
+			}
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 10
+					OR = {
+						has_government = radical_socialist
+						has_government = holmarism
+						has_government = liberal
+						has_government = social_democrat
+						has_government = conservative
+						has_government = authoritarian_democracy
+					}
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.02
+				war_support_factor = 0.02
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		trade_union_government = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			available = {
+				has_socialist_government = yes
+			}
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 100
+					has_government = holmarism
+				}
+			}
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.02
+				war_support_factor = 0.05
+				holmarism_drift = 0.01
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

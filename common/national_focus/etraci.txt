@@ -1,0 +1,37 @@
+focus_tree = {
+	id = batvia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BAT
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 1600 }
+	focus = {
+		id = BAT_the_issues_at_hand
+		icon = GFX_goal_tripartite_pact
+		x = 8
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+			
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+}

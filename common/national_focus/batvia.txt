@@ -300,13 +300,36 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAT_supreme_workers_assembly
-		icon = GFX_generic_revolutionary_government 
+		id = BAT_communist_control
+		icon = GFX_socialist_constitution 
 		relative_position_id = BAT_stona_donelo_wins
 		prerequisite = { focus =  BAT_fight_reactionaries }
 		prerequisite = { focus =  BAT_early_reforms }
 		x = 0
 		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+		}
+		available = {
+			
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BAT_supreme_workers_assembly
+		icon = GFX_generic_revolutionary_government 
+		relative_position_id = BAT_stona_donelo_wins
+		prerequisite = { focus =  BAT_communist_control }
+		x = 0
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 5

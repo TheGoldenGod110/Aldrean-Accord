@@ -102,7 +102,7 @@ country_event = { ###Economic Vote
 			}
 			country_event = { id = hadernland.4 days = 4 }
 		}
-		set_country_flag = herskist_economy
+		set_country_flag = centralization_flag
 		ai_chance = { factor = 20 }
 	}
 	option = { 
@@ -983,6 +983,7 @@ country_event = { ###Chairman Directive 133: Political Education
 			country_event = { id = hadernland.22 days = 60 }
 			country_event = { id = hadernland.25 days = 123 random_days = 40 }
 			country_event = { id = hadernland.30 days  = 45 random_days = 15 }
+			country_event = { id = hadernland.107 days = 50 random = 50 }
 		}
 	}
 }
@@ -1707,6 +1708,7 @@ country_event = { ###The Assassination of Henry Witting
 		add_political_power = -10
 		hidden_effect = {
 			country_event = { id = hadernland.7 days = 7 }
+			country_event = { id = hadernland.42 days = 22 }
 		}
 	}
 }
@@ -1756,6 +1758,12 @@ country_event = { ###The Oslen Constitution
 			flag = oslen_conference_hjort
 			value = 0
 		}
+		hidden_effect = {
+			country_event = {id = hadernland.59 days = 4}
+			country_event = {id = hadernland.60 days = 7}
+			country_event = {id = hadernland.61 days = 12}
+			country_event = {id = hadernland.62 days = 16}
+		}
 	}
 }
 country_event = { ###Resurgence of the Communist Party
@@ -1794,6 +1802,73 @@ country_event = { ###Oslen Constitution - Government
 		modify_country_flag = {
 			flag = oslen_conference_hjort
 			value = 1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}
+country_event = { ###Oslen Constitution - Judiciary
+	id = hadernland.61
+	title = hadernland.61.t
+	desc = hadernland.61.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.61.a
+		modify_country_flag = {
+			flag = oslen_conference_foster
+			value = 1
+		}
+	}
+	option = { 
+		name = hadernland.61.b
+		modify_country_flag = {
+			flag = oslen_conference_hjort
+			value = 1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}
+country_event = { ###Oslen Constitution - Executive Branch
+	id = hadernland.62
+	title = hadernland.62.t
+	desc = hadernland.62.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.62.a
+		modify_country_flag = {
+			flag = oslen_conference_foster
+			value = 1
+		}
+	}
+	option = { 
+		name = hadernland.62.b
+		modify_country_flag = {
+			flag = oslen_conference_hjort
+			value = 1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}
+country_event = { ###The First Peoples of Vikland
+	id = hadernland.63
+	title = hadernland.63.t
+	desc = hadernland.63.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.63.a
+		67 = {
+			add_extra_state_shared_building_slots = 1
 		}
 	}
 }
@@ -1865,7 +1940,7 @@ country_event = { ###The 2nd International Congress
 	picture = GFX_report_event_generic_conference2
 	is_triggered_only = yes
 	option = { 
-		name = hadernland.104.a 
+		name = hadernland.104.a ###Ettinland Hosts
 		ETT = {
 			country_event = hadernland.105
 		}
@@ -1883,12 +1958,62 @@ country_event = { ###The 2nd International Congress: Ettinland hosts
 		add_political_power = 25
 		every_other_country = {
 			limit = {
-				has_government = holmarism
+				has_socialist_government = yes
 				NOT = { has_war_with = ROOT }
 			}
 			country_event = {
 				id = hadernland.106
 				days = 3
+			}
+		}
+		add_opinion_modifier = {
+			target = BEV
+			modifier = aa_hates_government
+		}
+		add_opinion_modifier = {
+			target = ORN
+			modifier = aa_hates_government
+		}
+		add_opinion_modifier = {
+			target = BTT
+			modifier = aa_hates_government
+		}
+		add_opinion_modifier = {
+			target = OXM
+			modifier = aa_hates_government
+		}
+		add_opinion_modifier = {
+			target = LBR
+			modifier = aa_hates_government
+		}
+		add_opinion_modifier = {
+			target = SYN
+			modifier = aa_pleased
+		}
+		add_opinion_modifier = {
+			target = HMR
+			modifier = aa_pleased
+		}
+		add_opinion_modifier = {
+			target = LBT
+			modifier = aa_pleased
+		}
+		if = {
+			limit = {
+				SVL = { has_socialist_government = no }
+			}
+			add_opinion_modifier = {
+				target = SVL
+				modifier = aa_hates_government
+			}
+		}
+		if = {
+			limit = {
+				BAT = { has_socialist_government = no }
+			}
+			add_opinion_modifier = {
+				target = BAT
+				modifier = aa_disapproves_of_govt
 			}
 		}
 	}
@@ -1902,9 +2027,24 @@ country_event = { ###The 2nd International Congress: Ettinland hosts
 	option = { 
 		name = hadernland.106.a
 		set_global_flag = second_inter_congress_@ROOT
+		reverse_add_opinion_modifier = {
+			target = FROM
+			modifier = aa_approves_of_govt
+		}
 	}
 	option = { 
 		name = hadernland.106.b
 		
+	}
+}
+country_event = { ###Last stand at Renning
+	id = hadernland.107
+	title = hadernland.107.t
+	desc = hadernland.107.d
+	picture = GFX_report_event_generic_conference2
+	is_triggered_only = yes
+	option = { 
+		name = hadernland.107.a
+		add_manpower = -378
 	}
 }

@@ -21,7 +21,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		cancelable = no
+		
 		available_if_capitulated = yes
 		
 		completion_reward = {
@@ -42,7 +42,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		cancelable = no
+		
 		available_if_capitulated = yes
 		
 		completion_reward = {
@@ -54,17 +54,81 @@ focus_tree = {
 		icon = GFX_goal_POR_royal_edicts
 		relative_position_id = LBR_loyalty_to_the_king
 		prerequisite = {focus = LBR_loyalty_to_the_king }
-		x = -2
+		x = -1
 		y = 1
 		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
-		cancelable = no
+		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			###TODO: Event here
+		}
+	}
+	focus = {
+		id = LBR_ensure_army_loyalty
+		icon = GFX_goal_generic_political_purge
+		relative_position_id = LBR_loyalty_to_the_king
+		prerequisite = {focus = LBR_loyalty_to_the_king }
+		x = 1
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			has_government = autocracy
+		}
+		
+		completion_reward = {
+			army_experience = -10
+			add_war_support = 0.05
+			###TODO: Event Here
+		}
+	}
+	focus = {
+		id = LBR_strengthen_the_throne
+		icon = GFX_GRE_empower_monarchy
+		relative_position_id = LBR_the_four_edicts
+		prerequisite = {focus = LBR_the_four_edicts }
+		mutually_exclusive = {
+			focus = LBR_strengthen_parliament
+		}
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability =  0.1
+		}
+	}
+	focus = {
+		id = LBR_strengthen_parliament
+		icon = GFX_goal_DOM_End_Judicial_Corruption
+		relative_position_id = LBR_the_four_edicts
+		prerequisite = {focus = LBR_the_four_edicts }
+		mutually_exclusive = {
+			focus = LBR_strengthen_the_throne
+		}
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability =  0.1
 		}
 	}
 	focus = {
@@ -81,11 +145,29 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		cancelable = no
 		available_if_capitulated = yes
 		
 		completion_reward = {
 			country_event = {id = james.5}
+		}
+	}
+	### Diplomatic Focuses ###
+	focus = {
+		id = LBR_prepare_for_war
+		icon = GFX_goal_generic_major_war
+		relative_position_id = LBR_coronation_of_william
+		prerequisite = {focus = LBR_coronation_of_william }
+		x = 10
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 5
+		}
+		cancelable = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
 		}
 	}
 }

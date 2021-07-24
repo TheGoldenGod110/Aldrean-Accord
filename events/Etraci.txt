@@ -1,0 +1,16 @@
+add_namespace = etraci
+
+
+###Vakbondsraad Elctions###
+###########################
+
+country_event = { ###Intro
+	id = etraci.1
+	title = etraci.1.t
+	desc = etraci.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = { 
+		name = etraci.1.a
+	}
+}

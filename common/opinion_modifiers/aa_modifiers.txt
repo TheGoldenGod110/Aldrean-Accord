@@ -11,4 +11,24 @@ opinion_modifiers = {
 	aa_factional_rivalry = { 
 		value = -30 
 	}
+	aa_hates_government = { 
+		value = -50
+		years = 3
+	}
+	aa_disapproves_of_govt = { 
+		value = -30
+		years = 3
+	}
+	aa_pleased = { 
+		value = 30
+		years = 3
+	}
+	aa_approves_of_govt = {
+		value = 50
+		years = 3
+	}
+	aa_ended_protection = {
+		value = -75
+		years = 5
+	}
 }

@@ -103,6 +103,9 @@
  BAT_haterian_conference:0 "Hold the Haterian Conference"
  BAT_haterian_conference_desc:0 "It's time to attempt a reconcilliation of of the differences between the Haterian peoples."
 
+ BAT_communist_control:0 "Communist Control"
+ BAT_communist_control_desc:0 "Now is the time of action! The capitalists in congress have been defeated in the wake of their attempted coup. Our revolution has truely begun."
+
  ###NEW FOCUSES###
  BAT_fight_reactionaries:0 "Fight Reactionaries"
  BAT_fight_reactionaries_desc:0 "The Unione Nazionalista are the primary threat against the Batvian worker, and must be destroyed; one way or another."
@@ -137,7 +140,7 @@
  batvia.6.a:0 "Interesting."
 
  batvia.7.t:0 "A Formula for Stability"
- batvia.7.d:0 "The meeting between president Oxo and high ranking members of the Ufficio Generale di Sicurezza (UGS) happened behind closed doors, and was absent of even recorders to write down what was said inside. Arguments ensued inside the closed meeting, with each offering up their own solutions on how to deal with the extremist organizations that are cropping up everywhere in Batvian politics. Some suggested crackdowns of the socialists, arrests of more militant leaders on the premise of inciting violence, and - in hushed tones - proposals of assassinating the leaders of either the BCP and the Unione Nazionalista.\n\nOxo advised caution, fearing backlash against the government. However, she does agree that something must be done - to save Batvian democracy."
+ batvia.7.d:0 "The meeting between president Oxo and high ranking members of the Ufficio Generale di Sicurezza (UGS) happened behind closed doors, and was absent of even recorders to write down what was said inside. Arguments ensued inside the closed meeting, with each offering up their own solutions on how to deal with the extremist organizations that are cropping up everywhere in Batvian politics. Some suggested crackdowns of the socialists, arrests of more militant leaders on the premise of inciting violence, and - in hushed tones - proposals of assassinating the leaders of either the BCP and the Unione Nazionalista.\n\nOxo advised caution, fearing further backlash against the government. However, she does agree that something must be done - to save Batvian democracy."
  batvia.7.a:0 "Crackdown on the communists"
  batvia.7.b:0 "Crackdown on the nationalists"
  batvia.7.c:0 "Take out Stona Donelo"
@@ -160,7 +163,7 @@
  batvia.11.a:0 "It's for the good of Batvia!"
 
  batvia.12.t:0 "Riots of [GetMonth]"
- batvia.12.d:0 "After the recent banning of nationalist organizations, many former members of the Unione Nazionalista have taken to the streets in many of our cities. The largest gathering occuring in Adan. What started as a relatively peaceful protest soon turned violent as the police clashed with the mob. Things went from bad to worse, culminating in a bloody nationalist riot. Vordok-owned shops were attacked and burned in the chaos, and suspected communists were beaten to death in the streets.\n\nThe mob was later found to have strong backing in the Kingdom of Oxumut, who even had a hand in planning the events."
+ batvia.12.d:0 "After the recent banning of nationalist organizations, many former members of the Unione Nazionalista have taken to the streets in many of our cities. The largest gathering occuring in Adan. What started as a relatively peaceful protest soon turned violent as the police clashed with the mob. Things went from bad to worse, culminating in a bloody nationalist riot. Vordok-owned shops were attacked and burned in the chaos, and suspected communists were beaten to death in the streets.\n\nSome liberals in congress have asserted that the mob was had strong backing by the Kingdom of Oxumut, though these flimsy claims haven't been supported by hard evidence."
  batvia.12.a:0 "Arrest them all!"
 
  batvia.13.t:0 "Oxo Criticizes the President-Elect"
@@ -170,3 +173,8 @@
  batvia.14.t:0 "Oxo Criticizes the President-Elect"
  batvia.14.d:0 "Limon Oxo has been vocal about her criticisms of the new president-elect, calling the charismatic strongman "a danger to democracy." She has also called on the moderates of congress to temper the radicalism of the president-elect."
  batvia.14.a:0 "Who cares?"
+
+ batvia.15.t:0 "The Fate of the SRC.GetNameDef"
+ batvia.15.d:0 "The protection of the rump Synothesian Republic has long been criticized by many in congress. With the financial burden of the defense of SRC.GetNameDef from SYN.GetNameDef, the presidential elections have brought this argument further into the eyes of the public. With the radicals left and right of the political spectrum both arguing that the strain on our economy is not worth protecting our interests in the Synothesian peninsula.\n\nPresident Oxo, originally a proponent of safeguarding the republic, has also been left wondering if the cost was worth it in the wake of recent authoritarian upheaval in the small republic."
+ batvia.15.a:0 "Withdraw our troops."
+ batvia.15.b:0 "We can't just hand it over to the anarchists!"

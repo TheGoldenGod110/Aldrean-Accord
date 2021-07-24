@@ -12,6 +12,7 @@ state={
 		owner = ABR
 		controller = ABR
 		add_core_of = ABR
+		add_claim_by = BEV
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

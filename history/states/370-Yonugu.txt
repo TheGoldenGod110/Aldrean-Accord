@@ -2,9 +2,22 @@
 state={
 	id=370
 	name="STATE_370"
+	state_category = large_town
 	provinces={
 		234 1273 3137 3672 5203 6295 10026 10029 10065 10112 10115 
 	}
-	manpower=0
+	manpower=784664
 	buildings_max_level_factor=1.000
+	history={
+		owner = SVL
+		controller = SVL
+		add_core_of = SVL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			10065 10
+		}
+	}
 }
