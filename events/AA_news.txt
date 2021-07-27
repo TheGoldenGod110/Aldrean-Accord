@@ -812,6 +812,35 @@ news_event = { ###The 2nd International Congress
 		}
 	}
 }
+news_event = { ###Batvia withdraws from SRC
+	id = aanews.30
+	title = aanews.30.t
+	desc = aanews.30.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aanews.30.a
+		trigger = {
+			has_socialist_government = yes
+		}
+	}
+	option = {
+		name = aanews.30.b
+		trigger = {
+			has_elected_government = yes
+		}
+	}
+	option = {
+		name = aanews.30.c
+		trigger = {
+			has_authoritarian_government = yes
+		}
+	}
+}
 news_event = { ###The Fall of Rodlund (Civil War)
 	id = aanews.100
 	title = aanews.100.t

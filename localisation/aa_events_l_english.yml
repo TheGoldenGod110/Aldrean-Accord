@@ -36,6 +36,12 @@
  aanews.7.d:0 "The leader of the Batvian Communist Party claimed victory today in the Batvian presidential elections. Running on a platform of his own brand of socialism, he managed a slim majority of the vote. Opposing candidates in the election have cried foul, insisting the communists rigged the election. Nevertheless, it looks like Batvia's new president-elect is secure in his position for the time being."
  aanews.7.a:0 "A victory for the workers!"
  aanews.7.b:0 "It looks like we have to accept the results..."
+
+ aanews.30.t:0 "Batvia Withdraws from Synothese"
+ aanews.30.d:0 "The President has announced the recall of all divisions stationed within [SRC.GetNameDef]. The controversial deployment of troops in the region has long been a source of argument within Batvian federal government as the occupation strained the economy. Now, for good or bad, the Synothesian Republic is entirely independent.  [SRC.GetNameDef], in the wake of this news, now fears an iminent attack from the Synothesian Commune, which already controls much of the peninsula."
+ aanews.30.a:0 "A loss for imperialism."
+ aanews.30.b:0 "Sad."
+ aanews.30.c:0 "Sad."
  
  ###Hadernish News Events
  

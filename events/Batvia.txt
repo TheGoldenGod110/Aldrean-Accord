@@ -24,6 +24,7 @@ country_event = { ###Major PCB Rally
 		}
 		hidden_effect = {
 			country_event = { id = batvia.6 days = 34 }
+			country_event = { id = batvia.3 days = 12 }
 		}
 	}
 }
@@ -98,7 +99,7 @@ country_event = { ###Leon Vasto's speech
 			popularity = 0.05
 		}
 		hidden_effect = {
-			
+			country_event = { id = batvia.15 days = 10 }
 		}
 	}
 }
@@ -321,11 +322,11 @@ country_event = { ###Oxo Criticizes the President-elect: Vasto
 		add_stability = -0.01
 	}
 }
-country_event = { ###
+country_event = { ###The Fate of SRC 
 	id = batvia.15
 	title = batvia.15.t
 	desc = batvia.15.d
-	picture = GFX_report_event_generic_reporters
+	picture = GFX_report_event_ARG_car52
 	
 	is_triggered_only = yes
 	
@@ -338,6 +339,7 @@ country_event = { ###
 				modifier = aa_ended_protection
 			}
 		}
+		news_event = aanews.30
 	}
 	option = { 
 		name = batvia.15.b
@@ -347,5 +349,21 @@ country_event = { ###
 			popularity = -0.02
 		}
 		add_stability = -0.01
+	}
+}
+country_event = { ###Liberal Rally
+	id = batvia.16
+	title = batvia.16.t
+	desc = batvia.16.d
+	picture = GFX_report_event_ARG_car52
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = batvia.16.a
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.02
+		}
 	}
 }
